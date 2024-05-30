@@ -1,7 +1,7 @@
 plugins:
   '*':
     - uses:
-      - plugin: Meniole/conversation-rewards@main
+      - plugin: Meniole/conversation-rewards
         type: github
         with:
           evmNetworkId: 100
