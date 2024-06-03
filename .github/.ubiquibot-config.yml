@@ -1,6 +1,12 @@
 plugins:
   '*':
     - uses:
+    - plugin: Meniole/user-activity-watcher
+      type: github
+      with:
+        sendReminders: true
+        unassignUser: true
+    - uses:
       - plugin: Meniole/conversation-rewards
         type: github
         with:
