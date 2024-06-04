@@ -1,7 +1,7 @@
 plugins:
   '*':
     - uses:
-      - plugin: Meniole/user-activity-watcher
+      - plugin: https://ubiquibot-user-activity-watcher.fernand-veyrier.workers.dev
         type: github
         with:
           sendReminders: true
