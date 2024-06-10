@@ -4,8 +4,8 @@ plugins:
       - plugin: Meniole/user-activity-watcher
         type: github
         with:
-          unassignUserThreshold: 0.000695
-          unassignUser: 0.000348
+          unassignUserThreshold: 0.003473
+          sendRemindersThreshold: 0.000695
     - uses:
       - plugin: Meniole/conversation-rewards
         type: github
