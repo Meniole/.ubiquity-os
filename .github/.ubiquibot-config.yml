@@ -1,7 +1,7 @@
 plugins:
   '*':
     - uses:
-      - plugin: gentlementlegen/user-activity-watcher:compute.yml@pull/1
+      - plugin: gentlementlegen/user-activity-watcher
         type: github
         with:
           unassignUserThreshold: 0.003473
@@ -104,3 +104,13 @@ plugins:
         type: github
         with:
           allowPublicQuery: false
+    - uses:
+      - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
+        type: github
+        with:
+          disabledCommands: []
+          timers:
+            reviewDelayTolerance: 86000
+            taskStaleTimeoutDuration: 2580000
+          miscellaneous:
+            maxConcurrentTasks: 3
