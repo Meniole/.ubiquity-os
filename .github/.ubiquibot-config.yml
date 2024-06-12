@@ -1,4 +1,4 @@
-/activplugins:
+plugins:
   '*':
     - uses:
       - plugin: Meniole/user-activity-watcher
