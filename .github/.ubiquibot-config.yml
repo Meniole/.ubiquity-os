@@ -1,7 +1,7 @@
 /activplugins:
   '*':
     - uses:
-      - plugin: Meniole/user-activity-watcher:compute.yml@pull/1
+      - plugin: Meniole/user-activity-watcher
         type: github
         with:
           unassignUserThreshold: 0.003473
