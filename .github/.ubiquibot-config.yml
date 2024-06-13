@@ -1,11 +1,11 @@
 plugins:
   '*':
     - uses:
-      - plugin: gentlementlegen/user-activity-watcher
+      - plugin: Meniole/user-activity-watcher
         type: github
         with:
-          unassignUserThreshold: 0.003473
-          sendRemindersThreshold: 0.000695
+          unassignUserThreshold: "1 minute"
+          sendRemindersThreshold: "5 minutes"
     - uses:
       - plugin: Meniole/conversation-rewards
         type: github
