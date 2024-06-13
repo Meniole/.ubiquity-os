@@ -4,8 +4,8 @@ plugins:
       - plugin: Meniole/user-activity-watcher
         type: github
         with:
-          unassignUserThreshold: "1 minute"
-          sendRemindersThreshold: "5 minutes"
+          unassignUserThreshold: "5 minutes"
+          sendRemindersThreshold: "1 minutes"
     - uses:
       - plugin: Meniole/conversation-rewards
         type: github
