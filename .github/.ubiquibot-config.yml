@@ -78,7 +78,11 @@ plugins:
               enabled: true
               post: true
               debug: false
-    - uses:
+    - name: 'Assistive pricing'
+      command: "/allow"
+      example: "/allow @user1 label"
+      description: "Handles assistive pricing, and allows for users to modify labels."
+      uses:
       - plugin: https://ubiquibot-assistive-pricing.fernand-veyrier.workers.dev
         type: github
         with:
