@@ -108,7 +108,10 @@ plugins:
         type: github
         with:
           allowPublicQuery: false
-    - uses:
+    - name: 'Start | Stop'
+      command: "/[start | stop]"
+      description: "Assign or un-assign yourself from an issue."
+      uses:
       - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
         type: github
         with:
