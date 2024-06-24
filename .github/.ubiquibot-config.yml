@@ -1,14 +1,14 @@
 plugins:
   '*':
     - uses:
+      - plugin: https://ubiquibot-command-wallet.fernand-veyrier.workers.dev
+    - uses:
       - plugin: Meniole/user-activity-watcher
-        type: github
         with:
           unassignUserThreshold: "5 minutes"
           sendRemindersThreshold: "1 minutes"
     - uses:
       - plugin: Meniole/conversation-rewards
-        type: github
         with:
           evmNetworkId: 100
           evmPrivateEncrypted: "kmpTKq5Wh9r9x5j3U9GqZr3NYnjK2g0HtbzeUBOuLC2y3x8ja_SKBNlB2AZ6LigXHP_HeMitftVUtzmoj8CFfVP9SqjWoL6IPku1hVTWkdTn97g1IxzmjydFxjdcf0wuDW1hvVtoq3Uw5yALABqxcQ"
@@ -84,7 +84,6 @@ plugins:
       description: "Handles assistive pricing, and allows for users to modify labels."
       uses:
       - plugin: https://ubiquibot-assistive-pricing.fernand-veyrier.workers.dev
-        type: github
         with:
           labels:
             time:
@@ -105,7 +104,6 @@ plugins:
             fundExternalClosedIssue: false
     - uses:
       - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
-        type: github
         with:
           allowPublicQuery: false
     - name: 'Start | Stop'
@@ -113,7 +111,6 @@ plugins:
       description: "Assign or un-assign yourself from an issue."
       uses:
       - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
-        type: github
         with:
           disabledCommands: []
           timers:
