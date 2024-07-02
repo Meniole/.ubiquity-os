@@ -8,6 +8,10 @@ plugins:
           unassignUserThreshold: "5 minutes"
           sendRemindersThreshold: "1 minutes"
     - uses:
+      - plugin: Meniole/automated-merging
+        with:
+          collaboratorMinimumApprovalsRequired: 0
+    - uses:
       - plugin: Meniole/conversation-rewards
         with:
           evmNetworkId: 100
