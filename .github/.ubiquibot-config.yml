@@ -109,6 +109,7 @@ plugins:
             setLabel: true
             fundExternalClosedIssue: false
     - uses:
+      command: "/query"
       - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
         with:
           allowPublicQuery: false
