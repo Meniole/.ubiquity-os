@@ -114,7 +114,7 @@ plugins:
           allowPublicQuery: false
       command: "/query"
     - name: 'Start | Stop'
-      command: "/[start | stop]"
+      command: "/start"
       description: "Assign or un-assign yourself from an issue."
       uses:
       - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
