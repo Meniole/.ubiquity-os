@@ -116,9 +116,10 @@ plugins:
       uses:
       - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
         with:
-          disabledCommands: []
+          isEnabled: true
           timers:
             reviewDelayTolerance: 86000
             taskStaleTimeoutDuration: 2580000
           miscellaneous:
             maxConcurrentTasks: 3
+            startRequiresWallet: true
