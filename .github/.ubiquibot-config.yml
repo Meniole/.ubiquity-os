@@ -112,9 +112,7 @@ plugins:
       - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
         with:
           allowPublicQuery: false
-      command: "/query"
     - name: 'Start | Stop'
-      command: "/start"
       description: "Assign or un-assign yourself from an issue."
       uses:
       - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
