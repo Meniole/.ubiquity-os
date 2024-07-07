@@ -12,7 +12,7 @@ plugins:
     - uses:
       - plugin: Meniole/automated-merging
         with:
-          collaboratorMinimumApprovalsRequired: 0
+          collaboratorMinimumApprovalsRequired: 1
     - uses:
       - plugin: Meniole/conversation-rewards
         with:
