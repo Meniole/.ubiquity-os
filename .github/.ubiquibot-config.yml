@@ -85,7 +85,6 @@ plugins:
               post: true
               debug: false
     - name: 'Assistive pricing'
-      command: "/allow"
       example: "/allow @user1 label"
       description: "Handles assistive pricing, and allows for users to modify labels."
       uses:
