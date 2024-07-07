@@ -11,10 +11,9 @@ plugins:
           sendRemindersThreshold: "1 minutes"
     - uses:
       - plugin: Meniole/automated-merging
-    - uses:
-      - plugin: Meniole/automated-merging
         with:
           collaboratorMinimumApprovalsRequired: 1
+          collaboratorMergeTimeout: "15 minutes"
     - uses:
       - plugin: Meniole/conversation-rewards
         with:
