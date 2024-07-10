@@ -83,10 +83,7 @@ plugins:
     #           enabled: true
     #           post: true
     #           debug: false
-    - name: 'Assistive pricing'
-      example: "/allow @user1 label"
-      description: "Handles assistive pricing, and allows for users to modify labels."
-      uses:
+    - uses:
         - plugin: https://ubiquibot-assistive-pricing.fernand-veyrier.workers.dev
           with:
             labels:
@@ -110,9 +107,7 @@ plugins:
       - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
         with:
           allowPublicQuery: false
-    - name: 'Start | Stop'
-      description: "Assign or un-assign yourself from an issue."
-      uses:
+    - uses:
       - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
         with:
           isEnabled: true
