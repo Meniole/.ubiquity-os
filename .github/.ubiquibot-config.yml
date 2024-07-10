@@ -1,9 +1,7 @@
 plugins:
   '*':
-    # - uses:
-    #   - plugin: https://ubiquibot-command-wallet.fernand-veyrier.workers.dev
-    #     with:
-    #       argument: true
+    - uses:
+      - plugin: https://ubiquibot-command-wallet.fernand-veyrier.workers.dev
     # - uses:
     #   - plugin: Meniole/user-activity-watcher
     #     with:
