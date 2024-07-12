@@ -2,6 +2,11 @@ plugins:
   - uses:
     - plugin: https://ubiquibot-command-wallet.fernand-veyrier.workers.dev
       runsOn: [ "issue_comment.created" ]
+  - uses:
+    - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
+      runsOn: [ "issue_comment.created" ]
+      with:
+        allowPublicQuery: false
     # - uses:
     #   - plugin: Meniole/user-activity-watcher
     #     with:
@@ -103,11 +108,6 @@ plugins:
     #       publicAccessControl:
     #         setLabel: true
     #         fundExternalClosedIssue: false
-    - uses:
-      - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
-        runsOn: [ "issue_comment.created" ]
-        with:
-          allowPublicQuery: false
     # - uses:
     #   - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
     #     with:
