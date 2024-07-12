@@ -103,10 +103,11 @@ plugins:
     #       publicAccessControl:
     #         setLabel: true
     #         fundExternalClosedIssue: false
-    # - uses:
-    #   - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
-    #     with:
-    #       allowPublicQuery: false
+    - uses:
+        runsOn: [ "issue_comment.created" ]
+      - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
+        with:
+          allowPublicQuery: false
     # - uses:
     #   - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
     #     with:
