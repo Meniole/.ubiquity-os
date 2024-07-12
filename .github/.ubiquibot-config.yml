@@ -1,7 +1,7 @@
 plugins:
   - uses:
     - plugin: https://ubiquibot-command-wallet.fernand-veyrier.workers.dev
-    runsOn: [ "issue_comment.created" ]
+      runsOn: [ "issue_comment.created" ]
     # - uses:
     #   - plugin: Meniole/user-activity-watcher
     #     with:
@@ -104,8 +104,8 @@ plugins:
     #         setLabel: true
     #         fundExternalClosedIssue: false
     - uses:
-        runsOn: [ "issue_comment.created" ]
       - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
+        runsOn: [ "issue_comment.created" ]
         with:
           allowPublicQuery: false
     # - uses:
