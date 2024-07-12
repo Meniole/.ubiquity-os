@@ -4,7 +4,6 @@ plugins:
       runsOn: [ "issue_comment.created" ]
   - uses:
     - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
-      runsOn: [ "issue_comment.created" ]
       with:
         allowPublicQuery: false
     # - uses:
