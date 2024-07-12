@@ -96,23 +96,23 @@ plugins:
             enabled: true
             post: true
             debug: false
-    # - uses:
-    #   - plugin: Meniole/user-activity-watcher
-    #     with:
-    #       unassignUserThreshold: "5 minutes"
-    #       sendRemindersThreshold: "1 minutes"
-    # - uses:
-    #   - plugin: Meniole/automated-merging
-    #     with:
-    #       collaboratorMinimumApprovalsRequired: 1
-    #       collaboratorMergeTimeout: "2 minutes"
-    # - uses:
-    #   - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
-    #     with:
-    #       isEnabled: true
-    #       timers:
-    #         reviewDelayTolerance: 86000
-    #         taskStaleTimeoutDuration: 2580000
-    #       miscellaneous:
-    #         maxConcurrentTasks: 3
-    #         startRequiresWallet: true
+  - uses:
+    - plugin: Meniole/user-activity-watcher
+      with:
+        unassignUserThreshold: "5 minutes"
+        sendRemindersThreshold: "1 minutes"
+  - uses:
+    - plugin: Meniole/automated-merging
+      with:
+        collaboratorMinimumApprovalsRequired: 1
+        collaboratorMergeTimeout: "2 minutes"
+  - uses:
+    - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
+      with:
+        isEnabled: true
+        timers:
+          reviewDelayTolerance: 86000
+          taskStaleTimeoutDuration: 2580000
+        miscellaneous:
+          maxConcurrentTasks: 3
+          startRequiresWallet: true
