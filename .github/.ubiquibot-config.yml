@@ -104,8 +104,10 @@ plugins:
   - uses:
     - plugin: Meniole/automated-merging
       with:
-        collaboratorMinimumApprovalsRequired: 1
-        collaboratorMergeTimeout: "2 minutes"
+        approvalsRequired:
+          collaborator: 1
+        mergeTimeout:
+          collaborator: "2 minutes"
   - uses:
     - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
       with:
