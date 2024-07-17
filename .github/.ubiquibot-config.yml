@@ -109,7 +109,7 @@ plugins:
   #       mergeTimeout:
   #         collaborator: "2 minutes"
   - uses:
-    - plugin: Meniole/test-automated-merging
+    - plugin: Meniole/test-automated-merging@main
       with:
         approvalsRequired:
           collaborator: 1
