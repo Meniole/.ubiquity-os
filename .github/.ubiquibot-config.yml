@@ -101,8 +101,15 @@ plugins:
       with:
         unassignUserThreshold: "5 minutes"
         sendRemindersThreshold: "1 minutes"
+  # - uses:
+  #   - plugin: Meniole/automated-merging
+  #     with:
+  #       approvalsRequired:
+  #         collaborator: 1
+  #       mergeTimeout:
+  #         collaborator: "2 minutes"
   - uses:
-    - plugin: Meniole/automated-merging
+    - plugin: Meniole/test-automated-merging
       with:
         approvalsRequired:
           collaborator: 1
