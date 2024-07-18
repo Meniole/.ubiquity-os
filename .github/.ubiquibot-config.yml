@@ -33,7 +33,7 @@ plugins:
         incentives:
           enabled: true
           contentEvaluator:
-            enabled: true
+            # enabled: true
           userExtractor:
             enabled: true
             redeemTask: true
