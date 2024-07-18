@@ -60,34 +60,34 @@ plugins:
               td: 1
               hr: 0
             multipliers:
-              - type: [ ISSUE, ISSUER, SPECIFICATION ]
+              - select: [ ISSUE_SPECIFICATION ]
                 formattingMultiplier: 1
                 wordValue: 0.1
-              - type: [ ISSUE, ISSUER, COMMENTED ]
+              - select: [ ISSUE_AUTHOR ]
                 formattingMultiplier: 1
                 wordValue: 0.2
-              - type: [ ISSUE, ASSIGNEE, COMMENTED ]
+              - select: [ ISSUE_ASSIGNEE ]
                 formattingMultiplier: 0
                 wordValue: 0
-              - type: [ ISSUE, COLLABORATOR, COMMENTED ]
+              - select: [ ISSUE_COLLABORATOR ]
                 formattingMultiplier: 1
                 wordValue: 0.1
-              - type: [ ISSUE, CONTRIBUTOR, COMMENTED ]
+              - select: [ ISSUE_CONTRIBUTOR ]
                 formattingMultiplier: 0.25
                 wordValue: 0.1
-              - type: [ REVIEW, ISSUER, TASK ]
+              - select: [ PULL_SPECIFICATION ]
                 formattingMultiplier: 0
                 wordValue: 0
-              - type: [ REVIEW, ISSUER, COMMENTED ]
+              - select: [ PULL_AUTHOR ]
                 formattingMultiplier: 2
                 wordValue: 0.2
-              - type: [ REVIEW, ASSIGNEE, COMMENTED ]
+              - select: [ PULL_ASSIGNEE ]
                 formattingMultiplier: 1
                 wordValue: 0.1
-              - type: [ REVIEW, COLLABORATOR, COMMENTED ]
+              - select: [ PULL_COLLABORATOR ]
                 formattingMultiplier: 1
                 wordValue: 0.1
-              - type: [ REVIEW, CONTRIBUTOR, COMMENTED ]
+              - select: [ PULL_CONTRIBUTOR ]
                 formattingMultiplier: 0.25
                 wordValue: 0.1
           permitGeneration:
