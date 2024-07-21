@@ -127,6 +127,6 @@ plugins:
           startRequiresWallet: true
   - uses:
     - plugin: http://127.0.0.1:9090
-        runsOn: [ "issue_comment.created" ]
-        with:
-          response: world
+      runsOn: [ "issue_comment.created" ]
+      with:
+        response: world
