@@ -34,7 +34,7 @@ plugins:
           # enabled: true
           # contentEvaluator:
           #   # enabled: true
-          # userExtractor:
+          userExtractor:
           #   enabled: true
           #   redeemTask: true
           # dataPurge:
