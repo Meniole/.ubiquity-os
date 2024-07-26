@@ -42,7 +42,7 @@ plugins:
             enabled: true
           # formattingEvaluator: {}
           formattingEvaluator:
-            enabled: true
+            # enabled: true
             multipliers:
               - select: [ ISSUE_SPECIFICATION ]
                 formattingMultiplier: 1
