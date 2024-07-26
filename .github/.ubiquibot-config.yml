@@ -31,82 +31,82 @@ plugins:
         evmNetworkId: 100
         evmPrivateEncrypted: "kmpTKq5Wh9r9x5j3U9GqZr3NYnjK2g0HtbzeUBOuLC2y3x8ja_SKBNlB2AZ6LigXHP_HeMitftVUtzmoj8CFfVP9SqjWoL6IPku1hVTWkdTn97g1IxzmjydFxjdcf0wuDW1hvVtoq3Uw5yALABqxcQ"
         incentives:
-          # enabled: true
-          # contentEvaluator:
-          #   # enabled: true
+          enabled: true
+          contentEvaluator:
+            enabled: true
           userExtractor:
-          #   enabled: true
-          #   redeemTask: true
-          # dataPurge:
-          #   enabled: true
-          # formattingEvaluator:
-          #   enabled: true
-          #   scores:
-          #     br: 0
-          #     code: 1
-          #     p: 1
-          #     em: 0
-          #     img: 0
-          #     strong: 0
-          #     blockquote: 0
-          #     h1: 1
-          #     h2: 1
-          #     h3: 1
-          #     h4: 1
-          #     h5: 1
-          #     h6: 1
-          #     a: 1
-          #     li: 1
-          #     td: 1
-          #     hr: 0
-          #   multipliers:
-          #     - select: [ ISSUE_SPECIFICATION ]
-          #       formattingMultiplier: 1
-          #       symbols:
-          #         "\\b\\w+\\b": 0.1
-          #         "\\b\\W+\\b": 0.1
-          #     - select: [ ISSUE_AUTHOR ]
-          #       formattingMultiplier: 1
-          #       symbols:
-          #         "\\b\\w+\\b": 0.2
-          #     - select: [ ISSUE_ASSIGNEE ]
-          #       formattingMultiplier: 0
-          #       symbols:
-          #         "\\b\\w+\\b": 0
-          #     - select: [ ISSUE_COLLABORATOR ]
-          #       formattingMultiplier: 1
-          #       symbols:
-          #         "\\b\\w+\\b": 0.1
-          #     - select: [ ISSUE_CONTRIBUTOR ]
-          #       formattingMultiplier: 0.25
-          #       symbols:
-          #         "\\b\\w+\\b": 0.1
-          #     - select: [ PULL_SPECIFICATION ]
-          #       formattingMultiplier: 0
-          #       symbols:
-          #         "\\b\\w+\\b": 0
-          #     - select: [ PULL_AUTHOR ]
-          #       formattingMultiplier: 2
-          #       symbols:
-          #         "\\b\\w+\\b": 0.2
-          #     - select: [ PULL_ASSIGNEE ]
-          #       formattingMultiplier: 1
-          #       symbols:
-          #         "\\b\\w+\\b": 0.1
-          #     - select: [ PULL_COLLABORATOR ]
-          #       formattingMultiplier: 1
-          #       symbols:
-          #         "\\b\\w+\\b": 0.1
-          #     - select: [ PULL_CONTRIBUTOR ]
-          #       formattingMultiplier: 0.25
-          #       symbols:
-          #         "\\b\\w+\\b": 0.1
-          # permitGeneration:
-          #   enabled: false
-          # githubComment:
-          #   enabled: true
-          #   post: true
-          #   debug: false
+            enabled: true
+            redeemTask: true
+          dataPurge:
+            enabled: true
+          formattingEvaluator:
+            enabled: true
+            scores:
+              br: 0
+              code: 1
+              p: 1
+              em: 0
+              img: 0
+              strong: 0
+              blockquote: 0
+              h1: 1
+              h2: 1
+              h3: 1
+              h4: 1
+              h5: 1
+              h6: 1
+              a: 1
+              li: 1
+              td: 1
+              hr: 0
+            multipliers:
+              - select: [ ISSUE_SPECIFICATION ]
+                formattingMultiplier: 1
+                symbols:
+                  "\\b\\w+\\b": 0.1
+                  "\\b\\W+\\b": 0.1
+              - select: [ ISSUE_AUTHOR ]
+                formattingMultiplier: 1
+                symbols:
+                  "\\b\\w+\\b": 0.2
+              - select: [ ISSUE_ASSIGNEE ]
+                formattingMultiplier: 0
+                symbols:
+                  "\\b\\w+\\b": 0
+              - select: [ ISSUE_COLLABORATOR ]
+                formattingMultiplier: 1
+                symbols:
+                  "\\b\\w+\\b": 0.1
+              - select: [ ISSUE_CONTRIBUTOR ]
+                formattingMultiplier: 0.25
+                symbols:
+                  "\\b\\w+\\b": 0.1
+              - select: [ PULL_SPECIFICATION ]
+                formattingMultiplier: 0
+                symbols:
+                  "\\b\\w+\\b": 0
+              - select: [ PULL_AUTHOR ]
+                formattingMultiplier: 2
+                symbols:
+                  "\\b\\w+\\b": 0.2
+              - select: [ PULL_ASSIGNEE ]
+                formattingMultiplier: 1
+                symbols:
+                  "\\b\\w+\\b": 0.1
+              - select: [ PULL_COLLABORATOR ]
+                formattingMultiplier: 1
+                symbols:
+                  "\\b\\w+\\b": 0.1
+              - select: [ PULL_CONTRIBUTOR ]
+                formattingMultiplier: 0.25
+                symbols:
+                  "\\b\\w+\\b": 0.1
+          permitGeneration:
+            enabled: false
+          githubComment:
+            enabled: true
+            post: true
+            debug: false
   - uses:
     - plugin: Meniole/user-activity-watcher
       with:
