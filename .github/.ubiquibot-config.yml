@@ -41,7 +41,7 @@ plugins:
           dataPurge:
             enabled: true
           formattingEvaluator: {}
-          formattingEvaluator:
+          # formattingEvaluator:
             # enabled: true
             # multipliers:
             #   - select: [ ISSUE_SPECIFICATION ]
@@ -103,12 +103,12 @@ plugins:
             #     formattingMultiplier: 0.25
             #     symbols:
             #       "\\b\\w+\\b": 0.1
-          permitGeneration:
-            enabled: false
-          githubComment:
-            enabled: true
-            post: true
-            debug: false
+            # permitGeneration:
+            #   enabled: false
+            # githubComment:
+            #   enabled: true
+            #   post: true
+            #   debug: false
   - uses:
     - plugin: Meniole/user-activity-watcher
       with:
