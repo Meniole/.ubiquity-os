@@ -120,6 +120,7 @@ plugins:
         sendRemindersThreshold: "1 minutes"
   - uses:
     - plugin: gentlementlegen/automated-merging@feat/tracking-from-config
+      runsOn: ["issues.labeled"]
       with:
         approvalsRequired:
           collaborator: 1
