@@ -119,7 +119,7 @@ plugins:
         unassignUserThreshold: "5 minutes"
         sendRemindersThreshold: "1 minutes"
   - uses:
-    - plugin: Meniole/test-automated-merging
+    - plugin: Meniole/automated-merging
       runsOn: ["issues.labeled"]
       with:
         approvalsRequired:
