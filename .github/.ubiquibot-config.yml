@@ -26,8 +26,8 @@ plugins:
           setLabel: true
           fundExternalClosedIssue: false
   - uses:
-    # - plugin: Meniole/conversation-rewards
-    - plugin: gentlementlegen/conversation-rewards@fork/retry
+    - plugin: Meniole/conversation-rewards
+    # - plugin: gentlementlegen/conversation-rewards@fork/retry
       with:
         evmNetworkId: 100
         evmPrivateEncrypted: "kmpTKq5Wh9r9x5j3U9GqZr3NYnjK2g0HtbzeUBOuLC2y3x8ja_SKBNlB2AZ6LigXHP_HeMitftVUtzmoj8CFfVP9SqjWoL6IPku1hVTWkdTn97g1IxzmjydFxjdcf0wuDW1hvVtoq3Uw5yALABqxcQ"
@@ -119,7 +119,7 @@ plugins:
         unassignUserThreshold: "5 minutes"
         sendRemindersThreshold: "1 minutes"
   - uses:
-    - plugin: Meniole/automated-merging
+    - plugin: gentlementlegen/automated-merging@feat/tracking-from-config
       with:
         approvalsRequired:
           collaborator: 1
