@@ -126,7 +126,8 @@ plugins:
           collaborator: 1
         mergeTimeout:
           collaborator: "2 minutes"
-        watch: [ "Meniole/automated-merging" ]
+        repos:
+          monitor: [ "Meniole/automated-merging" ]
   # - uses:
   #   - plugin: Meniole/test-automated-merging@main
   #     with:
