@@ -143,7 +143,7 @@ plugins:
           reviewDelayTolerance: 86000
           taskStaleTimeoutDuration: 2580000
         miscellaneous:
-          maxConcurrentTasks: []
+          # maxConcurrentTasks: []
           # maxConcurrentTasks: 0
           startRequiresWallet: true
   # - uses:
