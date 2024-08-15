@@ -26,6 +26,8 @@ plugins:
           setLabel: true
           fundExternalClosedIssue: false
   - uses:
+    - plugin: gentlementlegen/conversation-rewards@feat/symbol-coefficient
+  - uses:
     - plugin: Meniole/conversation-rewards
     # - plugin: gentlementlegen/conversation-rewards@fork/retry
       with:
