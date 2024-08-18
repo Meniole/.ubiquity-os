@@ -36,7 +36,6 @@ plugins:
           contentEvaluator: {}
           userExtractor:
             redeemTask: true
-          dataPurge: {}
           contentEvaluator: {}
           userExtractor:
             redeemTask: true
