@@ -98,8 +98,7 @@ plugins:
                 formattingMultiplier: 0.25
                 symbols:
                   "\\b\\w+\\b": 0.1
-            # permitGeneration:
-            #   enabled: false
+            permitGeneration: {}
             githubComment:
               post: true
               debug: true
