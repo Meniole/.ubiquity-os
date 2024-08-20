@@ -137,13 +137,14 @@ plugins:
   - uses:
     - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
       with:
-        isEnabled: true
         timers:
           reviewDelayTolerance: 86000
           taskStaleTimeoutDuration: 2580000
         miscellaneous:
-          # maxConcurrentTasks: []
-          # maxConcurrentTasks: 0
+          maxConcurrentTasks:
+            - role: Admin
+              limit: 20
+          # maxConcurrentTasks: 3
           startRequiresWallet: true
   # - uses:
   #   - plugin: http://127.0.0.1:9090
