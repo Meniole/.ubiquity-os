@@ -117,8 +117,12 @@ plugins:
     # - plugin: Meniole/user-activity-watcher@main
       runsOn: ["issues.labeled"]
       with:
-        unassignUserThreshold: "5 minutes"
-        sendRemindersThreshold: "1 minutes"
+        disqualification: "7 days"
+        warning: "3.5 days"
+        watch:
+          optOut: 
+            - "repoName"
+            - "repoName2"
   - uses:
     - plugin: Meniole/automated-merging:compute.yml@main
       runsOn: ["issues.labeled"]
