@@ -118,7 +118,8 @@ plugins:
         unassignUserThreshold: "5 minutes"
         sendRemindersThreshold: "1 minutes"
   - uses:
-    - plugin: Meniole/automated-merging:compute.yml@main
+    # - plugin: Meniole/automated-merging:compute.yml@main
+    - plugin: Meniole/automated-merging@refactor/remove-supabase
       runsOn: ["issues.labeled"]
       with:
         approvalsRequired:
@@ -128,13 +129,6 @@ plugins:
         repos:
           monitor: [ ]
           ignore: ["conversation-rewards"]
-  # - uses:
-  #   - plugin: Meniole/test-automated-merging@main
-  #     with:
-  #       approvalsRequired:
-  #         collaborator: 1
-  #       mergeTimeout:
-  #         collaborator: "2 minutes"
   - uses:
     - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
       with:
