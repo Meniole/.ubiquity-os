@@ -113,13 +113,14 @@ plugins:
               post: true
               debug: true
   - uses:
-    - plugin: Meniole/user-activity-watcher
+    - plugin: Meniole/user-activity-watcher@refactor/remove-supabase
+    # - plugin: Meniole/user-activity-watcher@main
+      runsOn: ["issues.labeled"]
       with:
         unassignUserThreshold: "5 minutes"
         sendRemindersThreshold: "1 minutes"
   - uses:
-    # - plugin: Meniole/automated-merging:compute.yml@main
-    - plugin: Meniole/automated-merging@refactor/remove-supabase
+    - plugin: Meniole/automated-merging:compute.yml@main
       runsOn: ["issues.labeled"]
       with:
         approvalsRequired:
