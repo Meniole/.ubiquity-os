@@ -125,7 +125,7 @@ plugins:
             - "repoName2"
   - uses:
     - plugin: Meniole/automated-merging:compute.yml@main
-      runsOn: ["issues.labeled"]
+      # runsOn: ["issues.labeled"]
       with:
         approvalsRequired:
           collaborator: 1
