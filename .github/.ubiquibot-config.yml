@@ -117,8 +117,8 @@ plugins:
     # - plugin: Meniole/user-activity-watcher@main
       runsOn: ["issues.labeled"]
       with:
-        disqualification: "7 days"
-        warning: "3.5 days"
+        disqualification: "2 minutes"
+        warning: "1 minute"
         watch:
           optOut: 
             - "repoName"
