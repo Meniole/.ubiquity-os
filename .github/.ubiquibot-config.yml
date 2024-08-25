@@ -28,7 +28,7 @@ plugins:
   # - uses:
     # - plugin: gentlementlegen/conversation-rewards@fix/waiting-message
   - uses:
-    - plugin: Meniole/conversation-rewards@fix/waiting-message
+    - plugin: Meniole/conversation-rewards@main
       with:
         evmNetworkId: 100
         evmPrivateEncrypted: "kmpTKq5Wh9r9x5j3U9GqZr3NYnjK2g0HtbzeUBOuLC2y3x8ja_SKBNlB2AZ6LigXHP_HeMitftVUtzmoj8CFfVP9SqjWoL6IPku1hVTWkdTn97g1IxzmjydFxjdcf0wuDW1hvVtoq3Uw5yALABqxcQ"
@@ -113,7 +113,7 @@ plugins:
               post: true
               debug: true
   - uses:
-    - plugin: Meniole/user-activity-watcher@refactor/remove-supabase
+    - plugin: Meniole/user-activity-watcher@fork/ubq-testing/chore/testing
     # - plugin: Meniole/user-activity-watcher@main
       runsOn: ["issues.labeled"]
       with:
