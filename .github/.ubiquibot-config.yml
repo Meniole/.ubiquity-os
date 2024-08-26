@@ -93,7 +93,7 @@ plugins:
                 multiplier: 2
                 rewards:
                   regex:
-                  "\\b\\w+\\b": 0.2
+                    "\\b\\w+\\b": 0.2
               - role: [ PULL_ASSIGNEE ]
                 multiplier: 1
                 rewards:
