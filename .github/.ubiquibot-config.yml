@@ -40,7 +40,7 @@ plugins:
           dataPurge: {}
           formattingEvaluator:
             multipliers:
-              - select: [ ISSUE_SPECIFICATION ]
+              - role: [ ISSUE_SPECIFICATION ]
                 multiplier: 1
                 rewards:
                   regex:
@@ -64,47 +64,47 @@ plugins:
                     li: 1
                     td: 1
                     hr: 0
-              - select: [ ISSUE_AUTHOR ]
+              - role: [ ISSUE_AUTHOR ]
                 multiplier: 1
                 rewards:
                   regex:
                     "\\b\\w+\\b": 0.2
-              - select: [ ISSUE_ASSIGNEE ]
+              - role: [ ISSUE_ASSIGNEE ]
                 multiplier: 0
                 rewards:
                   regex:
                     "\\b\\w+\\b": 0
-              - select: [ ISSUE_COLLABORATOR ]
+              - role: [ ISSUE_COLLABORATOR ]
                 multiplier: 1
                 rewards:
                   regex:
                     "\\b\\w+\\b": 0.1
-              - select: [ ISSUE_CONTRIBUTOR ]
+              - role: [ ISSUE_CONTRIBUTOR ]
                 multiplier: 0.25
                 rewards:
                   regex:
                     "\\b\\w+\\b": 0.1
-              - select: [ PULL_SPECIFICATION ]
+              - role: [ PULL_SPECIFICATION ]
                 multiplier: 0
                 rewards:
                   regex:
                     "\\b\\w+\\b": 0
-              - select: [ PULL_AUTHOR ]
+              - role: [ PULL_AUTHOR ]
                 multiplier: 2
                 rewards:
                   regex:
                   "\\b\\w+\\b": 0.2
-              - select: [ PULL_ASSIGNEE ]
+              - role: [ PULL_ASSIGNEE ]
                 multiplier: 1
                 rewards:
                   regex:
                     "\\b\\w+\\b": 0.1
-              - select: [ PULL_COLLABORATOR ]
+              - role: [ PULL_COLLABORATOR ]
                 multiplier: 1
                 rewards:
                   regex:
                     "\\b\\w+\\b": 0.1
-              - select: [ PULL_CONTRIBUTOR ]
+              - role: [ PULL_CONTRIBUTOR ]
                 multiplier: 0.25
                 rewards:
                   regex:
