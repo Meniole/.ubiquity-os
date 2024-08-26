@@ -109,10 +109,10 @@ plugins:
                 rewards:
                   regex:
                     "\\b\\w+\\b": 0.1
-            permitGeneration: {}
-            githubComment:
-              post: true
-              debug: true
+          permitGeneration: {}
+          githubComment:
+            post: true
+            debug: true
   - uses:
     - plugin: Meniole/user-activity-watcher@main
     # - plugin: Meniole/user-activity-watcher@main
