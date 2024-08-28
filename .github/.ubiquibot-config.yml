@@ -139,7 +139,8 @@ plugins:
           monitor: [ ]
           ignore: ["conversation-rewards"]
   - uses:
-    - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
+    # - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
+    - pluging: https://ubiquibot-command-start-stop-fork-ubq-testing-feat-disabled-mul.fernand-veyrier.workers.dev
       with:
         timers:
           reviewDelayTolerance: 86000
