@@ -142,15 +142,10 @@ plugins:
     # - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
     - plugin: https://ubiquibot-command-start-stop-fork-ubq-testing-feat-disabled-mul.fernand-veyrier.workers.dev
       with:
-        timers:
-          reviewDelayTolerance: 86000
-          taskStaleTimeoutDuration: 2580000
-        miscellaneous:
-          maxConcurrentTasks:
-            - role: Admin
-              limit: 20
-          # maxConcurrentTasks: 3
-          startRequiresWallet: true
+        reviewDelayTolerance: "3 Days"
+        taskStaleTimeoutDuration: "30 Days"
+        maxConcurrentTasks: 3
+        startRequiresWallet: true # default is true
   # - uses:
   #   - plugin: http://127.0.0.1:9090
   #     runsOn: [ "issue_comment.created" ]
