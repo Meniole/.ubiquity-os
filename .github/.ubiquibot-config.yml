@@ -28,7 +28,7 @@ plugins:
   # - uses:
     # - plugin: gentlementlegen/conversation-rewards@fix/waiting-message
   - uses:
-    - plugin: Meniole/conversation-rewards@main
+    - plugin: Meniole/conversation-rewards@my/cool/branch/yeah
     # - plugin: Meniole/conversation-rewards@feat/graphql-pr-fetch
       with:
         evmNetworkId: 100
