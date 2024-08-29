@@ -139,7 +139,7 @@ plugins:
           monitor: [ ]
           ignore: ["conversation-rewards"]
   - uses:
-    - plugin: Meniole/isse-comment-embeddings@fork/sshivaditya2019/development
+    - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
   - uses:
     # - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
     - plugin: https://ubiquibot-command-start-stop-fork-ubq-testing-feat-disabled-mul.fernand-veyrier.workers.dev
