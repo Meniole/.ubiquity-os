@@ -138,7 +138,7 @@ plugins:
           ignore: ["conversation-rewards"]
   - uses:
     # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
-    - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev/
+    - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
   - uses:
     # - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
     - plugin: https://ubiquibot-command-start-stop-fork-ubq-testing-feat-disabled-mul.fernand-veyrier.workers.dev
