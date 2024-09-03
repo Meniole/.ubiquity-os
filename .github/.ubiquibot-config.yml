@@ -140,8 +140,8 @@ plugins:
     # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
     - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
   - uses:
-    # - plugin: https://ubiquibot-command-start-stop.fernand-veyrier.workers.dev
-    - plugin: https://ubiquibot-command-start-stop-feat-notify-self-assign.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-command-start-stop-main.fernand-veyrier.workers.dev/
+    # - plugin: https://ubiquibot-command-start-stop-feat-notify-self-assign.fernand-veyrier.workers.dev
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "30 Days"
