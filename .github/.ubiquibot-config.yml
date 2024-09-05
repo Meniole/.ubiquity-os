@@ -146,7 +146,10 @@ plugins:
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "30 Days"
-        # maxConcurrentTasks: 3
+        maxConcurrentTasks:
+          member: 1
+          admin: 1
+          contributor: 1
         startRequiresWallet: true # default is true
   # - uses:
   #   - plugin: http://127.0.0.1:9090
