@@ -126,8 +126,8 @@ plugins:
             - "repoName"
             - "repoName2"
   - uses:
-    - plugin: Meniole/automated-merging:compute.yml@main
-      # runsOn: ["issues.labeled"]
+    - plugin: Meniole/automated-merging:compute.yml@fork/ubq-testing/development
+      runsOn: ["issues.labeled", "issues.unlabeled"]
       with:
         approvalsRequired:
           collaborator: 1
