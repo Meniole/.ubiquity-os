@@ -142,8 +142,8 @@ plugins:
     - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
   - uses:
     # - plugin: https://ubiquibot-command-start-stop-main.fernand-veyrier.workers.dev
-    # - plugin: https://ubiquibot-command-start-stop-feat-notify-self-assign.fernand-veyrier.workers.dev
-    - plugin: https://ubiquibot-command-start-stop-fork-ubq-test-jordan-max-assignmen.fernand-veyrier.workers.dev
+    # - plugin: https://ubiquibot-command-start-stop-fork-ubq-test-jordan-max-assignmen.fernand-veyrier.workers.dev
+    - plugin : https://ubiquibot-command-start-stop-feat-assign-user-pr.fernand-veyrier.workers.dev
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "30 Days"
