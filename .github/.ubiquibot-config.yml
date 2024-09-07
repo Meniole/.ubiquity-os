@@ -136,6 +136,7 @@ plugins:
         repos:
           monitor: [ ]
           ignore: ["conversation-rewards"]
+        allowedReviewerRoles: ["OWNER"]
   - uses:
     # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
     - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
