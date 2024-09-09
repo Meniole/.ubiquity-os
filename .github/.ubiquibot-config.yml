@@ -140,21 +140,21 @@ plugins:
   - uses:
     # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
     - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
-  # - uses:
-  #   # - plugin: https://ubiquibot-command-start-stop-main.fernand-veyrier.workers.dev
-  #   # - plugin: https://ubiquibot-command-start-stop-fork-ubq-test-jordan-max-assignmen.fernand-veyrier.workers.dev
-  #   - plugin : https://ubiquibot-command-start-stop-feat-assign-user-pr.fernand-veyrier.workers.dev
-  #     with:
-  #       reviewDelayTolerance: "3 Days"
-  #       taskStaleTimeoutDuration: "30 Days"
-  #       # maxConcurrentTasks:
-  #       #   member: 1
-  #       #   admin: 1
-  #       #   contributor: 1
-  #       startRequiresWallet: true # default is true
   - uses:
-    - plugin: https://comic-bee-miserably.ngrok-free.app
-      # runsOn: [ "issue_comment.created" ]
+    # - plugin: https://ubiquibot-command-start-stop-main.fernand-veyrier.workers.dev
+    # - plugin: https://ubiquibot-command-start-stop-fork-ubq-test-jordan-max-assignmen.fernand-veyrier.workers.dev
+    - plugin : https://ubiquibot-command-start-stop-fix-trim-command.fernand-veyrier.workers.dev
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "30 Days"
+        # maxConcurrentTasks:
+        #   member: 1
+        #   admin: 1
+        #   contributor: 1
+        startRequiresWallet: true # default is true
+  # - uses:
+  #   - plugin: https://comic-bee-miserably.ngrok-free.app
+  #     # runsOn: [ "issue_comment.created" ]
+  #     with:
+  #       reviewDelayTolerance: "3 Days"
+  #       taskStaleTimeoutDuration: "30 Days"
