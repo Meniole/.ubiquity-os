@@ -25,8 +25,9 @@ plugins:
         publicAccessControl:
           setLabel: true
           fundExternalClosedIssue: false
-  - uses:
-    - plugin: Meniole/conversation-rewards@main
+  - skipBotEvents: false
+    uses:
+    - plugin: Meniole/conversation-rewards
     # - plugin: Meniole/conversation-rewards@todel/custom-manifest
       with:
         evmNetworkId: 100
@@ -126,7 +127,7 @@ plugins:
             - "repoName"
             - "repoName2"
   - uses:
-    - plugin: Meniole/automated-merging:compute.yml@fork/ubq-testing/development
+    - plugin: Meniole/automated-merging
       runsOn: ["issues.labeled", "issues.unlabeled"]
       with:
         approvalsRequired:
@@ -136,14 +137,13 @@ plugins:
         repos:
           monitor: [ ]
           ignore: ["conversation-rewards"]
-        allowedReviewerRoles: ["OWNER"]
+        allowedReviewerRoles: ["OWNER", "COLLABORATOR"]
   - uses:
     # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
     - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
   - uses:
-    # - plugin: https://ubiquibot-command-start-stop-main.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-command-start-stop-main.fernand-veyrier.workers.dev
     # - plugin: https://ubiquibot-command-start-stop-fork-ubq-test-jordan-max-assignmen.fernand-veyrier.workers.dev
-    - plugin : https://ubiquibot-command-start-stop-fix-trim-command.fernand-veyrier.workers.dev
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "30 Days"
