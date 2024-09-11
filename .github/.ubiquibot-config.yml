@@ -1,12 +1,12 @@
 plugins:
   - uses:
-    - plugin: https://ubiquibot-command-wallet.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
   - uses:
-    - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-command-query-user-development.fernand-veyrier.workers.dev
       with:
         allowPublicQuery: false
   - uses:
-    - plugin: https://ubiquibot-assistive-pricing.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-assistive-pricing-development.fernand-veyrier.workers.dev
       with:
         labels:
           time:
@@ -27,7 +27,7 @@ plugins:
           fundExternalClosedIssue: false
   - skipBotEvents: false
     uses:
-    - plugin: Meniole/conversation-rewards
+    - plugin: Meniole/conversation-rewards@development
     # - plugin: Meniole/conversation-rewards@todel/custom-manifest
       with:
         evmNetworkId: 100
@@ -116,7 +116,7 @@ plugins:
             post: true
             debug: true
   - uses:
-    - plugin: Meniole/user-activity-watcher@main
+    - plugin: Meniole/user-activity-watcher@development
     # - plugin: Meniole/user-activity-watcher@main
       runsOn: ["issues.labeled"]
       with:
@@ -127,7 +127,7 @@ plugins:
             - "repoName"
             - "repoName2"
   - uses:
-    - plugin: Meniole/automated-merging
+    - plugin: Meniole/automated-merging@development
       runsOn: ["issues.labeled", "issues.unlabeled"]
       with:
         approvalsRequired:
@@ -142,7 +142,7 @@ plugins:
     # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
     - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
   - uses:
-    - plugin: https://ubiquibot-command-start-stop-main.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
     # - plugin: https://ubiquibot-command-start-stop-fork-ubq-test-jordan-max-assignmen.fernand-veyrier.workers.dev
       with:
         reviewDelayTolerance: "3 Days"
