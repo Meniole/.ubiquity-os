@@ -153,7 +153,7 @@ plugins:
         startRequiresWallet: true # default is true
   - uses:
     - plugin: https://comic-bee-miserably.ngrok-free.app
-      # runsOn: ["issue_comment.created"]
+      # runsOn: [ "issue_comment.created" ]
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "30 Days"
