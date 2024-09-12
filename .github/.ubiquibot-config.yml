@@ -126,7 +126,7 @@ plugins:
             - "repoName"
             - "repoName2"
   - uses:
-    - plugin: Meniole/automated-merging@development
+    - plugin: Meniole/automated-merging@fork/ubq-testing/development
       runsOn: ["issues.labeled", "issues.unlabeled"]
       with:
         approvalsRequired:
