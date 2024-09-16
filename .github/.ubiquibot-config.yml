@@ -147,8 +147,8 @@ plugins:
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "30 Days"
-        # maxConcurrentTasks:
-        #   member: 1
+        maxConcurrentTasks:
+          member: 1
         #   admin: 1
         #   contributor: 1
         startRequiresWallet: true # default is true
