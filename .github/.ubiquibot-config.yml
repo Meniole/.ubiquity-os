@@ -27,7 +27,7 @@ plugins:
           fundExternalClosedIssue: false
   - skipBotEvents: false
     uses:
-    - plugin: Meniole/conversation-rewards@fix/ignore-hidden-comments
+    - plugin: Meniole/conversation-rewards@development
       with:
         logLevel: "debug"
         evmNetworkId: 100
