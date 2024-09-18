@@ -116,7 +116,7 @@ plugins:
             post: true
             debug: true
   - uses:
-    - plugin: Meniole/user-activity-watcher@development
+    - plugin: Meniole/user-activity-watcher@fork/ubq-testing/fix-issues
     # - plugin: Meniole/user-activity-watcher@main
       runsOn: ["issues.labeled"]
       with:
