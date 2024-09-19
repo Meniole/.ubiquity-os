@@ -1,4 +1,4 @@
-# etcd
+# etcde
 plugins:
 anon:
   - test: "invalid 1"
