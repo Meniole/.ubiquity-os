@@ -1,4 +1,4 @@
-# etcd
+# etcdd
 plugins:
   - uses:
     - some-stuff: {}
