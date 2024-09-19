@@ -1,7 +1,6 @@
 # etcdd
 this-is-wrong:
   plugins:
-  yolo: {}
   - uses:
     - some-stuff: {}
   - test: "invalid 1"
