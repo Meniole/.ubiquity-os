@@ -1,4 +1,4 @@
-# ab
+# a
 plugins:
   - uses:
     - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
