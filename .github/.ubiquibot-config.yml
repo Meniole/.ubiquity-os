@@ -147,7 +147,7 @@ plugins:
     - plugin: https://ubiquibot-command-start-stop-chore-new-assign-design.fernand-veyrier.workers.dev
       with:
         reviewDelayTolerance: "3 Days"
-        taskStaleTimeoutDuration: "30 Days"
+        taskStaleTimeoutDuration: "1 minute"
         maxConcurrentTasks:
           member: 1
         #   admin: 1
