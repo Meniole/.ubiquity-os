@@ -1,5 +1,6 @@
 # etc
 plugins:
+anon:
   - test: "invalid 1"
     uses:
       - plugin: "test"
