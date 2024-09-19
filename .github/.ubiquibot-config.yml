@@ -1,4 +1,3 @@
-# a
 plugins:
 test: "invalid 1"
   - uses:
