@@ -1,5 +1,6 @@
 # a
 plugins:
+test: "invalid"
   - uses:
     - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
   - uses:
