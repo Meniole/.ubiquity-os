@@ -1,4 +1,4 @@
-# eb
+# eb4
 plugins:
   - test: "invalid 1"
   - uses:
