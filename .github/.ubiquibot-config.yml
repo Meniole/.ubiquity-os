@@ -1,4 +1,4 @@
-# et
+# etc
 plugins:
   - test: "invalid 1"
     uses:
