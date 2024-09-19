@@ -1,6 +1,6 @@
 # ebk
 plugins:
-test: "invalid 1"
+  test: "invalid 1"
   - uses:
     - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
   - uses:
