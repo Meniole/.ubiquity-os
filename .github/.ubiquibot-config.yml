@@ -1,4 +1,4 @@
-# etc56g
+# etc56
 plugins:
   - test: "invalid 1"
     uses:
