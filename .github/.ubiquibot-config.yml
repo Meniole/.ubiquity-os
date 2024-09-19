@@ -1,8 +1,8 @@
 # etcdd
 plugins:
+  yolo: {}
   - uses:
     - some-stuff: {}
-anon:
   - test: "invalid 1"
     uses:
       - plugin: "test"
