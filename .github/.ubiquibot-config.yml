@@ -2,7 +2,7 @@
 plugins:
   - test: "invalid 1"
     uses:
-      - someTest: "test"
+      - plugin: "test"
   - uses:
     - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
   - uses:
