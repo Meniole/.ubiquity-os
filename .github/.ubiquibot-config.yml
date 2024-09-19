@@ -1,7 +1,7 @@
 # etc
 plugins:
   - uses:
-    some-stuff: {}
+    - some-stuff: {}
 anon:
   - test: "invalid 1"
     uses:
