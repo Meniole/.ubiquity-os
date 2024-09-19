@@ -1,6 +1,6 @@
 # etcdd
 this-is-wrong:
-plugins:
+  plugins:
   yolo: {}
   - uses:
     - some-stuff: {}
