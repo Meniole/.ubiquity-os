@@ -1,7 +1,8 @@
 # e
 plugins:
   - test: "invalid 1"
-    uses: []
+    uses:
+      - someTest: "test"
   - uses:
     - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
   - uses:
