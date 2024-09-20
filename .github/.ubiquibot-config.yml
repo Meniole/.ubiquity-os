@@ -1,4 +1,4 @@
-# eg
+# e
 plugins:
   - uses:
     - some-stuff: {}
