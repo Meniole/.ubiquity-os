@@ -4,14 +4,14 @@ plugins:
     - plugin: https://comic-bee-miserably.ngrok-free.app
       # runsOn: [ "issue_comment.created" ]
       with:
-        reviewDelayTolerance: 4
+        reviewDelayTolerance: "1 day"
         taskStaleTimeoutDuration: "27 Days"
-        startRequiresWallet:
+        startRequiresWallet: true
   - uses:
     - plugin: Meniole/automated-merging@feat/schema-validation
       with:
         approvalsRequired:
-          collaborator: 1
+          collaborator: true
         mergeTimeout:
           collaborator: "2 minutes"
         repos:
