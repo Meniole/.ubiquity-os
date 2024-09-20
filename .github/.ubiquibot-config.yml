@@ -1,5 +1,12 @@
 # e
 plugins:
+  - uses:
+    - plugin: https://comic-bee-miserably.ngrok-free.app
+      # runsOn: [ "issue_comment.created" ]
+      with:
+        reviewDelayTolerance: "3 Days"
+        taskStaleTimeoutDuration: "30 Days"
+        startRequiresWallet: []
   # # - uses:
   # #   - some-stuff: {}
   # # - test: "invalid 1"
@@ -162,10 +169,3 @@ plugins:
   #       rolesWithReviewAuthority:
   #         - "OWNER"
   #         - "MEMBER"
-  - uses:
-    - plugin: https://comic-bee-miserably.ngrok-free.app
-      # runsOn: [ "issue_comment.created" ]
-      with:
-        reviewDelayTolerance: "3 Days"
-        taskStaleTimeoutDuration: "30 Days"
-        startRequiresWallet: []
