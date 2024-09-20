@@ -1,6 +1,6 @@
 # et
-this-is-wrong:
-  plugins:
+# this-is-wrong:
+plugins:
   - uses:
     - some-stuff: {}
   - test: "invalid 1"
