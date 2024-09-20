@@ -1,8 +1,8 @@
 # et
 # this-is-wrong:
 plugins:
-  - uses:
-    - some-stuff: {}
+  # - uses:
+  #   - some-stuff: {}
   - test: "invalid 1"
     uses:
       - plugin: "test"
