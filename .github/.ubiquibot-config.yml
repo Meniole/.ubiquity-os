@@ -1,5 +1,4 @@
 # eg
-bs
 plugins:
   - uses:
     - some-stuff: {}
