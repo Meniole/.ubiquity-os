@@ -168,4 +168,4 @@ plugins:
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "30 Days"
-        startRequiresWallet: "maybe"
+        startRequiresWallet: []
