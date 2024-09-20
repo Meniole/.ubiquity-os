@@ -1,5 +1,5 @@
 # etf
-# this-is-wrong:
+this-is-wrong
 plugins:
   - uses:
     - some-stuff: {}
