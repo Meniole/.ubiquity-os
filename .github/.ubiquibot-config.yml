@@ -7,6 +7,17 @@ plugins:
         reviewDelayTolerance: 4
         taskStaleTimeoutDuration: "27 Days"
         startRequiresWallet:
+  - uses:
+    - plugin: Meniole/automated-merging@feat/schema-validation
+      with:
+        approvalsRequired:
+          collaborator: 1
+        mergeTimeout:
+          collaborator: "2 minutes"
+        repos:
+          monitor: [ ]
+          ignore: ["conversation-rewards"]
+        allowedReviewerRoles: ["OWNER", "COLLABORATOR"]
   # # - uses:
   # #   - some-stuff: {}
   # # - test: "invalid 1"
@@ -140,18 +151,6 @@ plugins:
   #         optOut: 
   #           - "repoName"
   #           - "repoName2"
-  # - uses:
-  #   - plugin: Meniole/automated-merging@fork/ubq-testing/development
-  #     # runsOn: ["issues.labeled", "issues.unlabeled"]
-  #     with:
-  #       approvalsRequired:
-  #         collaborator: 1
-  #       mergeTimeout:
-  #         collaborator: "2 minutes"
-  #       repos:
-  #         monitor: [ ]
-  #         ignore: ["conversation-rewards"]
-  #       allowedReviewerRoles: ["OWNER", "COLLABORATOR"]
   # - uses:
   #   # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
   #   - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
