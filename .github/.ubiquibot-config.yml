@@ -4,7 +4,7 @@ plugins:
     - plugin: https://comic-bee-miserably.ngrok-free.app
       # runsOn: [ "issue_comment.created" ]
       with:
-        reviewDelayTolerance: "3 Days"
+        reviewDelayTolerance: 4
         taskStaleTimeoutDuration: "30 Days"
         startRequiresWallet:
   # # - uses:
