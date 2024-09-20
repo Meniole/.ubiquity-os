@@ -5,7 +5,7 @@ plugins:
       # runsOn: [ "issue_comment.created" ]
       with:
         reviewDelayTolerance: 4
-        taskStaleTimeoutDuration: "30 Days"
+        taskStaleTimeoutDuration: "27 Days"
         startRequiresWallet:
   # # - uses:
   # #   - some-stuff: {}
