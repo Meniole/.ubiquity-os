@@ -151,7 +151,7 @@ plugins:
     - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
   - uses:
     # - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
-    - plugin: https://ubiquibot-command-start-stop-chore-new-assign-design.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-command-start-stop-fork-ubq-testing-fix-approved-role.fernand-veyrier.workers.dev
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "1 minute"
