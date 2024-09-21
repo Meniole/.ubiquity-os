@@ -1,12 +1,12 @@
 # e
 plugins:
-  # - uses:
-  #   - plugin: https://comic-bee-miserably.ngrok-free.app
-  #     # runsOn: [ "issue_comment.created" ]
-  #     with:
-  #       reviewDelayTolerance: "1 day"
-  #       taskStaleTimeoutDuration: "27 Days"
-  #       startRequiresWallet: "no"
+  - uses:
+    - plugin: https://comic-bee-miserably.ngrok-free.app
+      # runsOn: [ "issue_comment.created" ]
+      with:
+        reviewDelayTolerance: "1 day"
+        taskStaleTimeoutDuration: "27 Days"
+        startRequiresWallet: "no"
   - uses:
     - plugin: Meniole/automated-merging@feat/schema-validation
       with:
