@@ -1,7 +1,7 @@
 # ee
 plugins:
   - uses:
-    - plugin: https://comic-bee-miserably.ngrok-freee.app
+    - plugin: https://comic-bee-miserably.ngrok-free.app
       # runsOn: [ "issue_comment.created" ] 
       with:
         reviewDelayTolerance: "1 day"
