@@ -8,7 +8,7 @@ plugins:
         taskStaleTimeoutDuration: "27 Days"
         startRequiresWallet: "no"
   - uses:
-    - plugin: Meniole/automated-merging@feat/schema-validationn
+    - plugin: Meniole/automated-merging@feat/schema-validation
       with:
         approvalsRequired:
           collaborator: true
