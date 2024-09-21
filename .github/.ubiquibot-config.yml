@@ -18,8 +18,8 @@ plugins:
   #         monitor: [ ]
   #         ignore: ["conversation-rewards"]
   #       allowedReviewerRoles: ["OWNER", "COLLABORATOR"]
-  - uses:
-    - some-stuff: {}
+  # - uses:
+  #   - some-stuff: {}
   - test: "invalid 1"
     uses:
       - plugin: "test"
