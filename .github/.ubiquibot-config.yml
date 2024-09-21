@@ -1,12 +1,12 @@
 # e4
 plugins:
-  # - uses:
-  #   - plugin: https://comic-bee-miserably.ngrok-free.app
-  #     # runsOn: [ "issue_comment.created" ]
-  #     with:
-  #       reviewDelayTolerance: "1 day"
-  #       taskStaleTimeoutDuration: "27 Days"
-  #       startRequiresWallet: "no"
+  - uses:
+    - plugin: https://comic-bee-miserably.ngrok-freee.app
+      # runsOn: [ "issue_comment.created" ]
+      with:
+        reviewDelayTolerance: "1 day"
+        taskStaleTimeoutDuration: "27 Days"
+        startRequiresWallet: "no"
   # - uses:
   #   - plugin: Meniole/automated-merging@feat/schema-validation
   #     with:
@@ -23,8 +23,8 @@ plugins:
   # - test: "invalid 1"
   #   uses:
   #     - plugin: "test"
-  - uses:
-    - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
+  # - uses:
+  #   - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
   # - uses:
   #   - plugin: https://ubiquibot-command-query-user-development.fernand-veyrier.workers.dev
   #     with:
