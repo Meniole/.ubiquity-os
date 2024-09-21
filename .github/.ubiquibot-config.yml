@@ -20,9 +20,9 @@ plugins:
   #       allowedReviewerRoles: ["OWNER", "COLLABORATOR"]
   - uses:
     - some-stuff: {}
-  # # - test: "invalid 1"
-  # #   uses:
-  # #     - plugin: "test"
+  - test: "invalid 1"
+    uses:
+      - plugin: "test"
   # - uses:
   #   - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
   # - uses:
