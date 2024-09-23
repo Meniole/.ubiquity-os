@@ -62,7 +62,7 @@ plugins:
           setLabel: true
           fundExternalClosedIssue: false
   # - skipBotEvents: false
-    uses:
+  - uses:
     - plugin: Meniole/conversation-rewards@feat/text-strip
       with:
         logLevel: "debug"
