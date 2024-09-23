@@ -34,7 +34,7 @@ plugins:
   - uses:
     - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
   - uses:
-    - plugin: https://ubiquibot-command-query-user-development.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-command-query-user-feat-schema-validation.fernand-veyrier.workers.dev
       with:
         allowPublicQuery: false
   - uses:
