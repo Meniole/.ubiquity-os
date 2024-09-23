@@ -15,17 +15,17 @@ plugins:
   #         admin: 100
   #         member: 20
   #         contributor: 5
-  - uses:
-    - plugin: Meniole/automated-merging@feat/schema-validation
-      with:
-        approvalsRequired:
-          collaborator: "10"
-        mergeTimeout:
-          collaborator: "2 minutes"
-        repos:
-          monitor: [ ]
-          ignore: ["conversation-rewards"]
-        allowedReviewerRoles: ["OWNER", "COLLABORATOR"]
+  # - uses:
+  #   - plugin: Meniole/automated-merging@feat/schema-validation
+  #     with:
+  #       approvalsRequired:
+  #         collaborator: "10"
+  #       mergeTimeout:
+  #         collaborator: "2 minutes"
+  #       repos:
+  #         monitor: [ ]
+  #         ignore: ["conversation-rewards"]
+  #       allowedReviewerRoles: ["OWNER", "COLLABORATOR"]
   # # - uses:
   # #   - some-stuff: {}
   # # - test: "invalid 1"
@@ -35,31 +35,31 @@ plugins:
     - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
       with:
         registerWalletWithVerification: "maybe"
-  - uses:
-    - plugin: https://ubiquibot-command-query-user-feat-schema-validation.fernand-veyrier.workers.dev
-      with:
-        allowPublicQuery: "no"
-  - uses:
-    - plugin: https://ubiquibot-assistive-pricing-feat-schema-validator.fernand-veyrier.workers.dev
-      with:
-        labels:
-          time:
-            - "Time: <1.5 Minutes"
-            - "Time: <1 Hour"
-            - "Time: <2 Hours"
-            - "Time: <4 Hours"
-            - "Time: <1 Day"
-            - "Time: <1 Week"
-          priority:
-            - "Priority: 1 (Normal)"
-            - "Priority: 2 (Medium)"
-            - "Priority: 3 (High)"
-            - "Priority: 4 (Urgent)"
-            - "Priority: 5 (Emergency)"
-        basePriceMultiplier: "high"
-        publicAccessControl:
-          setLabel: true
-          fundExternalClosedIssue: false
+  # - uses:
+  #   - plugin: https://ubiquibot-command-query-user-feat-schema-validation.fernand-veyrier.workers.dev
+  #     with:
+  #       allowPublicQuery: "no"
+  # - uses:
+  #   - plugin: https://ubiquibot-assistive-pricing-feat-schema-validator.fernand-veyrier.workers.dev
+  #     with:
+  #       labels:
+  #         time:
+  #           - "Time: <1.5 Minutes"
+  #           - "Time: <1 Hour"
+  #           - "Time: <2 Hours"
+  #           - "Time: <4 Hours"
+  #           - "Time: <1 Day"
+  #           - "Time: <1 Week"
+  #         priority:
+  #           - "Priority: 1 (Normal)"
+  #           - "Priority: 2 (Medium)"
+  #           - "Priority: 3 (High)"
+  #           - "Priority: 4 (Urgent)"
+  #           - "Priority: 5 (Emergency)"
+  #       basePriceMultiplier: "high"
+  #       publicAccessControl:
+  #         setLabel: true
+  #         fundExternalClosedIssue: false
   # - skipBotEvents: false
   #   uses:
   #   - plugin: Meniole/conversation-rewards@feat/element-score
@@ -165,17 +165,17 @@ plugins:
   # - uses:
   #   # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
   #   - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
-  - uses:
-    - plugin: https://ubiquibot-command-start-stop-feat-schema-validation.fernand-veyrier.workers.dev
-    # - plugin: https://ubiquibot-command-start-stop-fork-ubq-testing-fix-approved-role.fernand-veyrier.workers.dev
-      with:
-        reviewDelayTolerance: "3 Days"
-        taskStaleTimeoutDuration: "1 minute"
-        maxConcurrentTasks:
-          member: true
-        #   admin: 1
-        #   contributor: 1
-        startRequiresWallet: true # default is true
-        rolesWithReviewAuthority:
-          - "OWNER"
-          - "MEMBER"
+  # - uses:
+  #   - plugin: https://ubiquibot-command-start-stop-feat-schema-validation.fernand-veyrier.workers.dev
+  #   # - plugin: https://ubiquibot-command-start-stop-fork-ubq-testing-fix-approved-role.fernand-veyrier.workers.dev
+  #     with:
+  #       reviewDelayTolerance: "3 Days"
+  #       taskStaleTimeoutDuration: "1 minute"
+  #       maxConcurrentTasks:
+  #         member: true
+  #       #   admin: 1
+  #       #   contributor: 1
+  #       startRequiresWallet: true # default is true
+  #       rolesWithReviewAuthority:
+  #         - "OWNER"
+  #         - "MEMBER"
