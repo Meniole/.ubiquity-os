@@ -1,21 +1,21 @@
 # ep
 plugins:
-  - uses:
-    - plugin: https://comic-bee-miserably.ngrok-free.app
-      # runsOn: [ "issue_comment.created" ] 
-      # with:
-      #   reviewDelayTolerance: "1 day"
-      #   taskStaleTimeoutDuration: "27 Days"
-      #   startRequiresWallet: "no"
-      with:
-        registerWalletWithVerification: "maybe"
-        # reviewDelayTolerance: "3 Days"
-        # taskStaleTimeoutDuration: "30 Days"
-        # startRequiresWallet: true
-        # maxConcurrentTasks:
-        #   admin: 100
-        #   member: 20
-        #   contributor: 5
+  # - uses:
+  #   - plugin: https://comic-bee-miserably.ngrok-free.app
+  #     # runsOn: [ "issue_comment.created" ] 
+  #     # with:
+  #     #   reviewDelayTolerance: "1 day"
+  #     #   taskStaleTimeoutDuration: "27 Days"
+  #     #   startRequiresWallet: "no"
+  #     with:
+  #       registerWalletWithVerification: "maybe"
+  #       # reviewDelayTolerance: "3 Days"
+  #       # taskStaleTimeoutDuration: "30 Days"
+  #       # startRequiresWallet: true
+  #       # maxConcurrentTasks:
+  #       #   admin: 100
+  #       #   member: 20
+  #       #   contributor: 5
   # - uses:
   #   - plugin: Meniole/automated-merging@feat/schema-validation
   #     with:
@@ -32,10 +32,10 @@ plugins:
   # # - test: "invalid 1"
   # #   uses:
   # #     - plugin: "test"
-  # - uses:
-  #   - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
-  #     with:
-  #       registerWalletWithVerification: "maybe"
+  - uses:
+    - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
+      with:
+        registerWalletWithVerification: "maybe"
   # - uses:
   #   - plugin: https://ubiquibot-command-query-user-feat-schema-validation.fernand-veyrier.workers.dev
   #     with:
