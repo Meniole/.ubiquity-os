@@ -32,7 +32,7 @@ plugins:
   # #   uses:
   # #     - plugin: "test"
   - uses:
-    - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
   # - uses:
   #   - plugin: https://ubiquibot-command-query-user-development.fernand-veyrier.workers.dev
   #     with:
