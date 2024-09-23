@@ -19,7 +19,7 @@ plugins:
     - plugin: Meniole/automated-merging@feat/schema-validation
       with:
         approvalsRequired:
-          collaborator: 1
+          collaborator: "10"
         mergeTimeout:
           collaborator: "2 minutes"
         repos:
