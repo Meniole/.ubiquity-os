@@ -36,7 +36,7 @@ plugins:
   - uses:
     - plugin: https://ubiquibot-command-query-user-feat-schema-validation.fernand-veyrier.workers.dev
       with:
-        allowPublicQuery: false
+        allowPublicQuery: "no"
   - uses:
     - plugin: https://ubiquibot-assistive-pricing-feat-schema-validator.fernand-veyrier.workers.dev
       with:
