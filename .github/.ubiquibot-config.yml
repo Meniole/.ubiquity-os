@@ -33,10 +33,10 @@ plugins:
   # #     - plugin: "test"
   - uses:
     - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
-  # - uses:
-  #   - plugin: https://ubiquibot-command-query-user-development.fernand-veyrier.workers.dev
-  #     with:
-  #       allowPublicQuery: false
+  - uses:
+    - plugin: https://ubiquibot-command-query-user-development.fernand-veyrier.workers.dev
+      with:
+        allowPublicQuery: false
   - uses:
     - plugin: https://ubiquibot-assistive-pricing-feat-schema-validator.fernand-veyrier.workers.dev
       with:
