@@ -30,7 +30,7 @@ plugins:
       with:
         allowPublicQuery: false
   - uses:
-    - plugin: https://ubiquibot-assistive-pricing-development.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-assistive-pricing-fork-hhio618-development.fernand-veyrier.workers.dev
       with:
         labels:
           time:
