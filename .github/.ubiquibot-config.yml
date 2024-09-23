@@ -33,6 +33,8 @@ plugins:
   # #     - plugin: "test"
   - uses:
     - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
+      with:
+        registerWalletWithVerification: "maybe"
   - uses:
     - plugin: https://ubiquibot-command-query-user-feat-schema-validation.fernand-veyrier.workers.dev
       with:
