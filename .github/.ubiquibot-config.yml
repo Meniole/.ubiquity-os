@@ -16,17 +16,17 @@ plugins:
   #       #   admin: 100
   #       #   member: 20
   #       #   contributor: 5
-  # - uses:
-  #   - plugin: Meniole/automated-merging@feat/schema-validation
-  #     with:
-  #       approvalsRequired:
-  #         collaborator: "10"
-  #       mergeTimeout:
-  #         collaborator: "2 minutes"
-  #       repos:
-  #         monitor: [ ]
-  #         ignore: ["conversation-rewards"]
-  #       allowedReviewerRoles: ["OWNER", "COLLABORATOR"]
+  - uses:
+    - plugin: Meniole/automated-merging@feat/schema-validation
+      with:
+        approvalsRequired:
+          collaborator: "10"
+        mergeTimeout:
+          collaborator: "2 minutes"
+        repos:
+          monitor: [ ]
+          ignore: ["conversation-rewards"]
+        allowedReviewerRoles: ["OWNER", "COLLABORATOR", true]
   # # - uses:
   # #   - some-stuff: {}
   # # - test: "invalid 1"
