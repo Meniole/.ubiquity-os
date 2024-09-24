@@ -63,7 +63,7 @@ plugins:
           fundExternalClosedIssue: false
   # - skipBotEvents: false
   - uses:
-    - plugin: Meniole/conversation-rewards@fix/compress-html
+    - plugin: Meniole/conversation-rewards@feat/element-score
       with:
         logLevel: "debug"
         evmNetworkId: 100
