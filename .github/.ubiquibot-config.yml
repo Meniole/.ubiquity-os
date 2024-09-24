@@ -63,7 +63,7 @@ plugins:
           fundExternalClosedIssue: false
   # - skipBotEvents: false
   - uses:
-    - plugin: Meniole/conversation-rewards@feat/text-strip
+    - plugin: Meniole/conversation-rewards@fix/compress-html
       with:
         logLevel: "debug"
         evmNetworkId: 100
