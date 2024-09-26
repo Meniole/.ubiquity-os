@@ -17,7 +17,7 @@ plugins:
   #       #   member: 20
   #       #   contributor: 5
   - uses:
-    - plugin: Meniole/automated-merging@fix/remove-skip-message
+    - plugin: Meniole/automated-merging@feat/schema-validation
       with:
         approvalsRequired:
           collaborator: "10"
@@ -63,10 +63,10 @@ plugins:
           fundExternalClosedIssue: false
   # - skipBotEvents: false
   - uses:
-    - plugin: Meniole/conversation-rewards@feat/schema-validation
+    - plugin: Meniole/conversation-rewards@fix/remove-skip-message
       with:
         logLevel: "debug"
-        evmNetworkId: "100"
+        evmNetworkId: 100
         evmPrivateEncrypted: "kmpTKq5Wh9r9x5j3U9GqZr3NYnjK2g0HtbzeUBOuLC2y3x8ja_SKBNlB2AZ6LigXHP_HeMitftVUtzmoj8CFfVP9SqjWoL6IPku1hVTWkdTn97g1IxzmjydFxjdcf0wuDW1hvVtoq3Uw5yALABqxcQ"
         incentives:
           contentEvaluator:
