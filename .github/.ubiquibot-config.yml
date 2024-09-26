@@ -17,7 +17,7 @@ plugins:
   #       #   member: 20
   #       #   contributor: 5
   - uses:
-    - plugin: Meniole/automated-merging@feat/schema-validation
+    - plugin: Meniole/automated-merging@fix/remove-skip-message
       with:
         approvalsRequired:
           collaborator: "10"
