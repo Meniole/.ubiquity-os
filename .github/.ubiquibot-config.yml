@@ -19,7 +19,8 @@ plugins:
             - "Priority: 4 (Urgent)"
             - "Priority: 5 (Emergency)"
         basePriceMultiplier: 2
-        globalConfigUpdate: {}
+        globalConfigUpdate:
+          excludeRepos: []
         publicAccessControl:
           setLabel: true
           fundExternalClosedIssue: false
