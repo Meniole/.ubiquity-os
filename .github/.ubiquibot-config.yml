@@ -6,7 +6,7 @@ plugins:
       with:
         reviewDelayTolerance: "1 day"
         taskStaleTimeoutDuration: "27 Days"
-        startRequiresWallet: false
+        startRequiresWallet: true
       # with:
       #   registerWalletWithVerification: "maybe"
         # reviewDelayTolerance: "3 Days"
