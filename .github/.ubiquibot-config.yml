@@ -136,16 +136,16 @@ plugins:
                 multiplier: 0.25
                 rewards:
                   wordValue: 0.1
-          permitGeneration:
-            enabled: true
-          githubComment:
-            post: true
-            debug: false
-          permitGeneration:
-            enabled: true
-          githubComment:
-            post: true
-            debug: false
+          # permitGeneration:
+          #   enabled: true
+          # githubComment:
+          #   post: true
+          #   debug: false
+          # permitGeneration:
+          #   enabled: true
+          # githubComment:
+          #   post: true
+          #   debug: false
           permitGeneration: {}
           githubComment:
             post: true
