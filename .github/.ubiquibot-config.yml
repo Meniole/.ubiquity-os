@@ -41,7 +41,7 @@ plugins:
       with:
         allowPublicQuery: "no"
   - uses:
-    - plugin: https://ubiquibot-assistive-pricing-feat-schema-validator.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-assistive-pricing-fork-ubq-testing-development.fernand-veyrier.workers.dev
       with:
         labels:
           time:
