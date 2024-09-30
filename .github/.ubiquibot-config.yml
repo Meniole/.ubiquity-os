@@ -3,26 +3,26 @@ plugins:
   - uses:
     - plugin: https://comic-bee-miserably.ngrok-free.app
       # runsOn: [ "issue_comment.created" ] 
-        with:
-          labels:
-            time:
-              - "Time: <1.5 Minutes"
-              - "Time: <1 Hour"
-              - "Time: <2 Hours"
-              - "Time: <4 Hours"
-              - "Time: <1 Day"
-              - "Time: <1 Week"
-            priority:
-              - "Priority: 1 (Normal)"
-              - "Priority: 2 (Medium)"
-              - "Priority: 3 (High)"
-              - "Priority: 4 (Urgent)"
-              - "Priority: 5 (Emergency)"
-          basePriceMultiplier: 2
-          globalConfigUpdate: {}
-          publicAccessControl:
-            setLabel: true
-            fundExternalClosedIssue: false
+      with:
+        labels:
+          time:
+            - "Time: <1.5 Minutes"
+            - "Time: <1 Hour"
+            - "Time: <2 Hours"
+            - "Time: <4 Hours"
+            - "Time: <1 Day"
+            - "Time: <1 Week"
+          priority:
+            - "Priority: 1 (Normal)"
+            - "Priority: 2 (Medium)"
+            - "Priority: 3 (High)"
+            - "Priority: 4 (Urgent)"
+            - "Priority: 5 (Emergency)"
+        basePriceMultiplier: 2
+        globalConfigUpdate: {}
+        publicAccessControl:
+          setLabel: true
+          fundExternalClosedIssue: false
   # - uses:
   #   - plugin: Meniole/automated-merging@feat/schema-validation
   #     with:
