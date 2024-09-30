@@ -63,7 +63,7 @@ plugins:
           fundExternalClosedIssue: false
   # - skipBotEvents: false
   - uses:
-    - plugin: Meniole/conversation-rewards@development
+    - plugin: Meniole/conversation-rewards@feat/multiple-prs
       with:
         logLevel: "debug"
         evmNetworkId: 100
