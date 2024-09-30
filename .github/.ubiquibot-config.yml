@@ -141,6 +141,11 @@ plugins:
           githubComment:
             post: true
             debug: false
+          permitGeneration:
+            enabled: true
+          githubComment:
+            post: true
+            debug: false
           permitGeneration: {}
           githubComment:
             post: true
