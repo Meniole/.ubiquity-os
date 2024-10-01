@@ -25,6 +25,8 @@ plugins:
       #     setLabel: true
       #     fundExternalClosedIssue: false
   - uses:
+    - plugin: Meniole/telegram-bridge@development
+  - uses:
     - plugin: Meniole/automated-merging@feat/schema-validation
       with:
         approvalsRequired:
