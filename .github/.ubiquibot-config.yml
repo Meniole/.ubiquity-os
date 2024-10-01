@@ -2,6 +2,8 @@
 plugins:
   - uses:
     - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+        botId: 00000000
       # runsOn: [ "issue_comment.created" ] 
       # with:
       #   labels:
@@ -26,6 +28,8 @@ plugins:
       #     fundExternalClosedIssue: false
   - uses:
     - plugin: Meniole/telegram-bridge@development
+      with:
+       botId: 00000000
   - uses:
     - plugin: Meniole/automated-merging@feat/schema-validation
       with:
