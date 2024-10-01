@@ -30,17 +30,17 @@ plugins:
     - plugin: Meniole/telegram-bridge@development
       with:
        botId: 00000000
-  - uses:
-    - plugin: Meniole/automated-merging@feat/schema-validation
-      with:
-        approvalsRequired:
-          collaborator: "10"
-        mergeTimeout:
-          collaborator: "2 minutes"
-        repos:
-          monitor: [ ]
-          ignore: ["conversation-rewards"]
-        allowedReviewerRoles: ["OWNER", "COLLABORATOR", true]
+  # - uses:
+  #   - plugin: Meniole/automated-merging@feat/schema-validation
+  #     with:
+  #       approvalsRequired:
+  #         collaborator: "10"
+  #       mergeTimeout:
+  #         collaborator: "2 minutes"
+  #       repos:
+  #         monitor: [ ]
+  #         ignore: ["conversation-rewards"]
+  #       allowedReviewerRoles: ["OWNER", "COLLABORATOR", true]
   # # # - uses:
   # # #   - some-stuff: {}
   # # # - test: "invalid 1"
