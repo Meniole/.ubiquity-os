@@ -3,11 +3,11 @@ plugins:
   - uses:
       - plugin: http://localhost:3000
         with:
-          botId: 00000000
+          botId: 5112548588
   - uses:
     - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
-        botId: 00000000
+        botId: 5112548588
       # runsOn: [ "issue_comment.created" ] 
       # with:
       #   labels:
@@ -33,7 +33,7 @@ plugins:
   - uses:
     - plugin: Meniole/telegram-bridge@development
       with:
-       botId: 00000000
+       botId: 5112548588
   # - uses:
   #   - plugin: Meniole/automated-merging@feat/schema-validation
   #     with:
