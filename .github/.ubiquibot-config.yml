@@ -171,8 +171,6 @@ plugins:
   #           debug: true
   - uses:
     - plugin: Meniole/user-activity-watcher@feat/schema-validation
-    # - plugin: Meniole/user-activity-watcher@main
-      runsOn: ["issues.labeled"]
       with:
         disqualification: "2 minutes"
         warning: "1 minute"
