@@ -169,18 +169,18 @@ plugins:
   #         githubComment:
   #           post: true
   #           debug: true
-  # - uses:
-  #   - plugin: Meniole/user-activity-watcher@feat/schema-validation
-  #   # - plugin: Meniole/user-activity-watcher@main
-  #     runsOn: ["issues.labeled"]
-  #     with:
-  #       disqualification: "2 minutes"
-  #       warning: "1 minute"
-  #       watch:
-  #         optOut:
-  #           - {}
-  #           - "repoName"
-  #           - "repoName2"
+  - uses:
+    - plugin: Meniole/user-activity-watcher@feat/schema-validation
+    # - plugin: Meniole/user-activity-watcher@main
+      runsOn: ["issues.labeled"]
+      with:
+        disqualification: "2 minutes"
+        warning: "1 minute"
+        watch:
+          optOut:
+            - {}
+            - "repoName"
+            - "repoName2"
   # # - uses:
   # #   # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
   # #   - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
