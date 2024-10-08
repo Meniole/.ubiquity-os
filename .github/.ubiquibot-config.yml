@@ -82,7 +82,7 @@ plugins:
   #         fundExternalClosedIssue: false
   # # - skipBotEvents: false
   - uses:
-    - plugin: Meniole/conversation-rewards:main.yml@development
+    - plugin: Meniole/conversation-rewards@development
       with:
         logLevel: "debug"
         evmNetworkId: 100
