@@ -64,7 +64,7 @@ plugins:
         labels:
           time:
             - name: "Time: <1.5 Minutes"
-              collaboratorOnly: false
+              collaboratorOnly: true
             - name: "Time: <1 Hour"
             - name: "Time: <2 Hours"
               collaboratorOnly: true
