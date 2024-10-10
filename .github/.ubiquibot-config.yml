@@ -1,13 +1,13 @@
 # e
 plugins:
-  - uses:
-      - plugin: http://localhost:3000
-        with:
-          botId: 5112548588
-  - uses:
-    - plugin: https://comic-bee-miserably.ngrok-free.app
-      with:
-        botId: 5112548588
+  # - uses:
+  #     - plugin: http://localhost:3000
+  #       with:
+  #         botId: 5112548588
+  # - uses:
+  #   - plugin: https://comic-bee-miserably.ngrok-free.app
+  #     with:
+  #       botId: 5112548588
       # runsOn: [ "issue_comment.created" ] 
       # with:
       #   labels:
