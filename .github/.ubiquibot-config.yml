@@ -71,6 +71,7 @@ plugins:
             - name: "Time: <4 Hours"
             - name: "Time: <1 Day"
             - name: "Time: <1 Week"
+              collaboratorOnly: true
           priority:
             - name: "Priority: 1 (Normal)"
             - name: "Priority: 2 (Medium)"
