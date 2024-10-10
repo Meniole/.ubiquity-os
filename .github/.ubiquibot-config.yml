@@ -70,6 +70,7 @@ plugins:
               collaboratorOnly: true
             - name: "Time: <4 Hours"
             - name: "Time: <1 Day"
+              collaboratorOnly: true
             - name: "Time: <1 Week"
               collaboratorOnly: true
           priority:
