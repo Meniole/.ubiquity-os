@@ -67,7 +67,7 @@ plugins:
               collaboratorOnly: true
             - name: "Time: <1 Hour"
             - name: "Time: <2 Hours"
-              collaboratorOnly: true
+              collaboratorOnly: false
             - name: "Time: <4 Hours"
             - name: "Time: <1 Day"
               collaboratorOnly: true
