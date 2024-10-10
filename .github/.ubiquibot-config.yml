@@ -76,6 +76,7 @@ plugins:
             - name: "Priority: 2 (Medium)"
               collaboratorOnly: true
             - name: "Priority: 3 (High)"
+              collaboratorOnly: true
             - name: "Priority: 4 (Urgent)"
               collaboratorOnly: true
             - name: "Priority: 5 (Emergency)"
