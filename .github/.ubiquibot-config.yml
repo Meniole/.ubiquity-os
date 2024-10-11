@@ -30,21 +30,21 @@ plugins:
       #   publicAccessControl:
       #     setLabel: true
       #     fundExternalClosedIssue: false
-  - uses:
-    - plugin: Meniole/telegram-bridge@development
-      with:
-       botId: 5112548588
-  - uses:
-    - plugin: Meniole/automated-merging@feat/schema-validation
-      with:
-        approvalsRequired:
-          collaborator: "10"
-        mergeTimeout:
-          collaborator: "2 minutes"
-        repos:
-          monitor: [ ]
-          ignore: ["conversation-rewards"]
-        allowedReviewerRoles: ["OWNER", "COLLABORATOR", true]
+  # - uses:
+  #   - plugin: Meniole/telegram-bridge@development
+  #     with:
+  #      botId: 5112548588
+  # - uses:
+  #   - plugin: Meniole/automated-merging@feat/schema-validation
+  #     with:
+  #       approvalsRequired:
+  #         collaborator: "10"
+  #       mergeTimeout:
+  #         collaborator: "2 minutes"
+  #       repos:
+  #         monitor: [ ]
+  #         ignore: ["conversation-rewards"]
+  #       allowedReviewerRoles: ["OWNER", "COLLABORATOR", true]
   # # # - uses:
   # # #   - some-stuff: {}
   # # # - test: "invalid 1"
@@ -58,40 +58,40 @@ plugins:
   #   - plugin: https://ubiquibot-command-query-user-feat-schema-validation.fernand-veyrier.workers.dev
   #     with:
   #       allowPublicQuery: "no"
-  - uses:
-    - plugin: Meniole/assistive-pricing@feat/label-gating
-      with:
-        labels:
-          time:
-            - name: "Time: <1.5 Minutes"
-              collaboratorOnly: true
-            - name: "Time: <1 Hour"
-            - name: "Time: <2 Hours"
-              collaboratorOnly: false
-            - name: "Time: <4 Hours"
-            - name: "Time: <1 Day"
-              collaboratorOnly: true
-            - name: "Time: <1 Week"
-              collaboratorOnly: true
-          priority:
-            - name: "Priority: 1 (Normal)"
-              collaboratorOnly: false
-            - name: "Priority: 2 (Medium)"
-              collaboratorOnly: true
-            - name: "Priority: 3 (High)"
-              collaboratorOnly: true
-            - name: "Priority: 4 (Urgent)"
-              collaboratorOnly: true
-            - name: "Priority: 5 (Emergency)"
-        basePriceMultiplier: 1
-        globalConfigUpdate:
-          excludeRepos: []
-        publicAccessControl:
-          setLabel: true
-          fundExternalClosedIssue: false
+  # - uses:
+  #   - plugin: Meniole/assistive-pricing@feat/label-gating
+  #     with:
+  #       labels:
+  #         time:
+  #           - name: "Time: <1.5 Minutes"
+  #             collaboratorOnly: true
+  #           - name: "Time: <1 Hour"
+  #           - name: "Time: <2 Hours"
+  #             collaboratorOnly: false
+  #           - name: "Time: <4 Hours"
+  #           - name: "Time: <1 Day"
+  #             collaboratorOnly: true
+  #           - name: "Time: <1 Week"
+  #             collaboratorOnly: true
+  #         priority:
+  #           - name: "Priority: 1 (Normal)"
+  #             collaboratorOnly: false
+  #           - name: "Priority: 2 (Medium)"
+  #             collaboratorOnly: true
+  #           - name: "Priority: 3 (High)"
+  #             collaboratorOnly: true
+  #           - name: "Priority: 4 (Urgent)"
+  #             collaboratorOnly: true
+  #           - name: "Priority: 5 (Emergency)"
+  #       basePriceMultiplier: 1
+  #       globalConfigUpdate:
+  #         excludeRepos: []
+  #       publicAccessControl:
+  #         setLabel: true
+  #         fundExternalClosedIssue: false
   # - skipBotEvents: false
   - uses:
-    - plugin: Meniole/conversation-rewards@development
+    - plugin: Meniole/conversation-rewards@fix/tags
       with:
         logLevel: "debug"
         evmNetworkId: 100
@@ -168,16 +168,16 @@ plugins:
           githubComment:
             post: true
             debug: true
-  - uses:
-    - plugin: Meniole/user-activity-watcher@feat/schema-validation
-      with:
-        disqualification: "2 minutes"
-        warning: "1 minute"
-        watch:
-          optOut:
-            - {}
-            - "repoName"
-            - "repoName2"
+  # - uses:
+  #   - plugin: Meniole/user-activity-watcher@feat/schema-validation
+  #     with:
+  #       disqualification: "2 minutes"
+  #       warning: "1 minute"
+  #       watch:
+  #         optOut:
+  #           - {}
+  #           - "repoName"
+  #           - "repoName2"
   # # - uses:
   # #   # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
   # #   - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
