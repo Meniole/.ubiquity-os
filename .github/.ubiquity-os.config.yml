@@ -97,289 +97,290 @@ plugins:
         evmNetworkId: 100
         evmPrivateEncrypted: "kmpTKq5Wh9r9x5j3U9GqZr3NYnjK2g0HtbzeUBOuLC2y3x8ja_SKBNlB2AZ6LigXHP_HeMitftVUtzmoj8CFfVP9SqjWoL6IPku1hVTWkdTn97g1IxzmjydFxjdcf0wuDW1hvVtoq3Uw5yALABqxcQ:159901852"
         incentives:
-          contentEvaluator:
-            openAi:
-              model: "llama3-groq-70b-8192-tool-use-preview"
-              endpoint: "https://api.groq.com/openai/v1"
+          requirePriceLabel: true
+          contentEvaluator: {}
           userExtractor:
+            enabled: true
             redeemTask: true
           dataPurge: {}
           formattingEvaluator:
-              multipliers:
-                - role:
-                  - ISSUE_SPECIFICATION
-                  multiplier: 3
-                  rewards:
-                    wordValue: 0.1
-                    html:
-                      br:
-                        score: 0
-                        countWords: true
-                      code:
-                        score: 5
-                        countWords: false
-                      p:
-                        score: 0
-                        countWords: true
-                      em:
-                        score: 0
-                        countWords: true
-                      img:
-                        score: 5
-                        countWords: true
-                      strong:
-                        score: 0
-                        countWords: false
-                      blockquote:
-                        score: 0
-                        countWords: false
-                      h1:
-                        score: 1
-                        countWords: true
-                      h2:
-                        score: 1
-                        countWords: true
-                      h3:
-                        score: 1
-                        countWords: true
-                      h4:
-                        score: 1
-                        countWords: true
-                      h5:
-                        score: 1
-                        countWords: true
-                      h6:
-                        score: 1
-                        countWords: true
-                      a:
-                        score: 5
-                        countWords: true
-                      li:
-                        score: 0.5
-                        countWords: true
-                      ul:
-                        score: 1
-                        countWords: true
-                      td:
-                        score: 0
-                        countWords: true
-                      hr:
-                        score: 0
-                        countWords: true
-                      pre:
-                        score: 0
-                        countWords: false
-                      ol:
-                        score: 1
-                        countWords: true
-                - role:
-                  - ISSUE_AUTHOR
-                  - ISSUE_COLLABORATOR
-                  - PULL_COLLABORATOR
-                  multiplier: 1
-                  rewards:
-                    wordValue: 0.1
-                    html:
-                      br:
-                        score: 0
-                        countWords: true
-                      code:
-                        score: 5
-                        countWords: false
-                      p:
-                        score: 0
-                        countWords: true
-                      em:
-                        score: 0
-                        countWords: true
-                      img:
-                        score: 5
-                        countWords: true
-                      strong:
-                        score: 0
-                        countWords: false
-                      blockquote:
-                        score: 0
-                        countWords: false
-                      h1:
-                        score: 1
-                        countWords: true
-                      h2:
-                        score: 1
-                        countWords: true
-                      h3:
-                        score: 1
-                        countWords: true
-                      h4:
-                        score: 1
-                        countWords: true
-                      h5:
-                        score: 1
-                        countWords: true
-                      h6:
-                        score: 1
-                        countWords: true
-                      a:
-                        score: 5
-                        countWords: true
-                      li:
-                        score: 0.5
-                        countWords: true
-                      ul:
-                        score: 1
-                        countWords: true
-                      td:
-                        score: 0
-                        countWords: true
-                      hr:
-                        score: 0
-                        countWords: true
-                      pre:
-                        score: 0
-                        countWords: false
-                      ol:
-                        score: 1
-                        countWords: true
-                - role:
-                  - ISSUE_CONTRIBUTOR
-                  - PULL_CONTRIBUTOR
-                  multiplier: 0.25
-                  rewards:
-                    wordValue: 0.1
-                    html:
-                      br:
-                        score: 0
-                        countWords: true
-                      code:
-                        score: 5
-                        countWords: false
-                      p:
-                        score: 0
-                        countWords: true
-                      em:
-                        score: 0
-                        countWords: true
-                      img:
-                        score: 5
-                        countWords: true
-                      strong:
-                        score: 0
-                        countWords: false
-                      blockquote:
-                        score: 0
-                        countWords: false
-                      h1:
-                        score: 1
-                        countWords: true
-                      h2:
-                        score: 1
-                        countWords: true
-                      h3:
-                        score: 1
-                        countWords: true
-                      h4:
-                        score: 1
-                        countWords: true
-                      h5:
-                        score: 1
-                        countWords: true
-                      h6:
-                        score: 1
-                        countWords: true
-                      a:
-                        score: 5
-                        countWords: true
-                      li:
-                        score: 0.5
-                        countWords: true
-                      ul:
-                        score: 1
-                        countWords: true
-                      td:
-                        score: 0
-                        countWords: true
-                      hr:
-                        score: 0
-                        countWords: true
-                      pre:
-                        score: 0
-                        countWords: false
-                      ol:
-                        score: 1
-                        countWords: true
-                - role:
-                  - PULL_SPECIFICATION
-                  - PULL_AUTHOR
-                  - ISSUE_ASSIGNEE
-                  - PULL_ASSIGNEE
-                  multiplier: 0
-                  rewards:
-                    wordValue: 0
-                    html:
-                      br:
-                        score: 0
-                        countWords: true
-                      code:
-                        score: 5
-                        countWords: false
-                      p:
-                        score: 0
-                        countWords: true
-                      em:
-                        score: 0
-                        countWords: true
-                      img:
-                        score: 5
-                        countWords: true
-                      strong:
-                        score: 0
-                        countWords: false
-                      blockquote:
-                        score: 0
-                        countWords: false
-                      h1:
-                        score: 1
-                        countWords: true
-                      h2:
-                        score: 1
-                        countWords: true
-                      h3:
-                        score: 1
-                        countWords: true
-                      h4:
-                        score: 1
-                        countWords: true
-                      h5:
-                        score: 1
-                        countWords: true
-                      h6:
-                        score: 1
-                        countWords: true
-                      a:
-                        score: 5
-                        countWords: true
-                      li:
-                        score: 0.5
-                        countWords: true
-                      ul:
-                        score: 1
-                        countWords: true
-                      td:
-                        score: 0
-                        countWords: true
-                      hr:
-                        score: 0
-                        countWords: true
-                      pre:
-                        score: 0
-                        countWords: false
-                      ol:
-                        score: 1
-                        countWords: true
-          permitGeneration: {}
+            multipliers:
+              - role:
+                - ISSUE_SPECIFICATION
+                multiplier: 3
+                rewards:
+                  wordValue: 0.1
+                  html:
+                    br:
+                      score: 0
+                      countWords: true
+                    code:
+                      score: 5
+                      countWords: false
+                    p:
+                      score: 0
+                      countWords: true
+                    em:
+                      score: 0
+                      countWords: true
+                    img:
+                      score: 5
+                      countWords: true
+                    strong:
+                      score: 0
+                      countWords: false
+                    blockquote:
+                      score: 0
+                      countWords: false
+                    h1:
+                      score: 1
+                      countWords: true
+                    h2:
+                      score: 1
+                      countWords: true
+                    h3:
+                      score: 1
+                      countWords: true
+                    h4:
+                      score: 1
+                      countWords: true
+                    h5:
+                      score: 1
+                      countWords: true
+                    h6:
+                      score: 1
+                      countWords: true
+                    a:
+                      score: 5
+                      countWords: true
+                    li:
+                      score: 0.5
+                      countWords: true
+                    ul:
+                      score: 1
+                      countWords: true
+                    td:
+                      score: 0
+                      countWords: true
+                    hr:
+                      score: 0
+                      countWords: true
+                    pre:
+                      score: 0
+                      countWords: false
+                    ol:
+                      score: 1
+                      countWords: true
+              - role:
+                - ISSUE_AUTHOR
+                - ISSUE_COLLABORATOR
+                - PULL_COLLABORATOR
+                multiplier: 1
+                rewards:
+                  wordValue: 0.1
+                  html:
+                    br:
+                      score: 0
+                      countWords: true
+                    code:
+                      score: 5
+                      countWords: false
+                    p:
+                      score: 0
+                      countWords: true
+                    em:
+                      score: 0
+                      countWords: true
+                    img:
+                      score: 5
+                      countWords: true
+                    strong:
+                      score: 0
+                      countWords: false
+                    blockquote:
+                      score: 0
+                      countWords: false
+                    h1:
+                      score: 1
+                      countWords: true
+                    h2:
+                      score: 1
+                      countWords: true
+                    h3:
+                      score: 1
+                      countWords: true
+                    h4:
+                      score: 1
+                      countWords: true
+                    h5:
+                      score: 1
+                      countWords: true
+                    h6:
+                      score: 1
+                      countWords: true
+                    a:
+                      score: 5
+                      countWords: true
+                    li:
+                      score: 0.5
+                      countWords: true
+                    ul:
+                      score: 1
+                      countWords: true
+                    td:
+                      score: 0
+                      countWords: true
+                    hr:
+                      score: 0
+                      countWords: true
+                    pre:
+                      score: 0
+                      countWords: false
+                    ol:
+                      score: 1
+                      countWords: true
+              - role:
+                - ISSUE_CONTRIBUTOR
+                - PULL_CONTRIBUTOR
+                multiplier: 0.25
+                rewards:
+                  wordValue: 0.1
+                  html:
+                    br:
+                      score: 0
+                      countWords: true
+                    code:
+                      score: 5
+                      countWords: false
+                    p:
+                      score: 0
+                      countWords: true
+                    em:
+                      score: 0
+                      countWords: true
+                    img:
+                      score: 5
+                      countWords: true
+                    strong:
+                      score: 0
+                      countWords: false
+                    blockquote:
+                      score: 0
+                      countWords: false
+                    h1:
+                      score: 1
+                      countWords: true
+                    h2:
+                      score: 1
+                      countWords: true
+                    h3:
+                      score: 1
+                      countWords: true
+                    h4:
+                      score: 1
+                      countWords: true
+                    h5:
+                      score: 1
+                      countWords: true
+                    h6:
+                      score: 1
+                      countWords: true
+                    a:
+                      score: 5
+                      countWords: true
+                    li:
+                      score: 0.5
+                      countWords: true
+                    ul:
+                      score: 1
+                      countWords: true
+                    td:
+                      score: 0
+                      countWords: true
+                    hr:
+                      score: 0
+                      countWords: true
+                    pre:
+                      score: 0
+                      countWords: false
+                    ol:
+                      score: 1
+                      countWords: true
+              - role:
+                - PULL_SPECIFICATION
+                - PULL_AUTHOR
+                - ISSUE_ASSIGNEE
+                - PULL_ASSIGNEE
+                multiplier: 0
+                rewards:
+                  wordValue: 0
+                  html:
+                    br:
+                      score: 0
+                      countWords: true
+                    code:
+                      score: 5
+                      countWords: false
+                    p:
+                      score: 0
+                      countWords: true
+                    em:
+                      score: 0
+                      countWords: true
+                    img:
+                      score: 5
+                      countWords: true
+                    strong:
+                      score: 0
+                      countWords: false
+                    blockquote:
+                      score: 0
+                      countWords: false
+                    h1:
+                      score: 1
+                      countWords: true
+                    h2:
+                      score: 1
+                      countWords: true
+                    h3:
+                      score: 1
+                      countWords: true
+                    h4:
+                      score: 1
+                      countWords: true
+                    h5:
+                      score: 1
+                      countWords: true
+                    h6:
+                      score: 1
+                      countWords: true
+                    a:
+                      score: 5
+                      countWords: true
+                    li:
+                      score: 0.5
+                      countWords: true
+                    ul:
+                      score: 1
+                      countWords: true
+                    td:
+                      score: 0
+                      countWords: true
+                    hr:
+                      score: 0
+                      countWords: true
+                    pre:
+                      score: 0
+                      countWords: false
+                    ol:
+                      score: 1
+                      countWords: true
+            wordCountExponent: 0.85
+          permitGeneration:
+            enabled: true
           githubComment:
             post: true
-            debug: true
+            debug: false
   # - uses:
   #   - plugin: Meniole/user-activity-watcher@feat/schema-validation
   #     with:
