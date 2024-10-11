@@ -91,7 +91,8 @@ plugins:
   #         fundExternalClosedIssue: false
   # - skipBotEvents: false
   - uses:
-    - plugin: Meniole/conversation-rewards@fix/tags
+    # - plugin: Meniole/conversation-rewards@fix/tags
+    - plugin: ubiquity-os-marketplace/text-conversation-rewards@development
       with:
         logLevel: "debug"
         evmNetworkId: 100
