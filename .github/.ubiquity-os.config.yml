@@ -394,7 +394,6 @@ plugins:
           - "committed"
         watch:
           optOut:
-            - {}
             - "repoName"
             - "repoName2"
   # # - uses:
