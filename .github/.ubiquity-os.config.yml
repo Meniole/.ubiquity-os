@@ -55,7 +55,7 @@ plugins:
   #     with:
   #       registerWalletWithVerification: "maybe"
   - uses:
-    - plugin: https://command-query-user-feat-sdk.fernand-veyrier.workers.dev/
+    - plugin: https://command-query-user-feat-sdk.fernand-veyrier.workers.dev
       with:
         allowPublicQuery: "no"
   # - uses:
