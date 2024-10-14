@@ -57,7 +57,7 @@ plugins:
   - uses:
     - plugin: https://command-query-user-feat-sdk.fernand-veyrier.workers.dev
       with:
-        allowPublicQuery: "no"
+        allowPublicQuery: true
   # - uses:
   #   - plugin: Meniole/assistive-pricing@feat/label-gating
   #     with:
