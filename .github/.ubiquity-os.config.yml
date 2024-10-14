@@ -54,10 +54,10 @@ plugins:
   #   - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
   #     with:
   #       registerWalletWithVerification: "maybe"
-  # - uses:
-  #   - plugin: https://ubiquibot-command-query-user-feat-schema-validation.fernand-veyrier.workers.dev
-  #     with:
-  #       allowPublicQuery: "no"
+  - uses:
+    - plugin: https://command-query-user-feat-sdk.fernand-veyrier.workers.dev/
+      with:
+        allowPublicQuery: "no"
   # - uses:
   #   - plugin: Meniole/assistive-pricing@feat/label-gating
   #     with:
