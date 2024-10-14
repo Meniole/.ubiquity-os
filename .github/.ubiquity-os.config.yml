@@ -383,7 +383,7 @@ plugins:
             post: true
             debug: false
   - uses:
-    - plugin: Meniole/user-activity-watcher@feat/schema-validation
+    - plugin: Meniole/user-activity-watcher@development
       with:
         disqualification: "2 minutes"
         warning: "1 minute"
