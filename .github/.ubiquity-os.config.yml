@@ -92,7 +92,7 @@ plugins:
   # - skipBotEvents: false
   - uses:
     # - plugin: Meniole/conversation-rewards@feat/fee-value
-    - plugin: Meniole/texconversation-rewards@development
+    - plugin: Meniole/conversation-rewards@development
       with:
         logLevel: "debug"
         evmNetworkId: "100"
