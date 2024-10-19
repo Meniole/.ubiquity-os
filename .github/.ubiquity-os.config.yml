@@ -50,11 +50,12 @@ plugins:
   # # # - test: "invalid 1"
   # # #   uses:
   # # #     - plugin: "test"
+  # - uses:
+  #   - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
+  #     with:
+  #       registerWalletWithVerification: false
   - uses:
-    - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
-      with:
-        registerWalletWithVerification: false
-  - uses:
+    runsOn: ['issues.closed']
     - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
       with:
         allowPublicQuery: true
