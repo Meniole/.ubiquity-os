@@ -91,7 +91,7 @@ plugins:
   #         fundExternalClosedIssue: false
   # - skipBotEvents: false
   - uses:
-    - plugin: https://ubiquibot-command-start-stop-schema-validation.fernand-veyrier.workers.dev
+    - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
     # - plugin: https://ubiquibot-command-start-stop-fork-ubq-testing-fix-approved-role.fernand-veyrier.workers.dev
       with:
         reviewDelayTolerance: "3 Days"
