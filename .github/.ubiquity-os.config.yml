@@ -54,10 +54,10 @@ plugins:
   #   - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
   #     with:
   #       registerWalletWithVerification: "maybe"
-  # - uses:
-  #   - plugin: https://command-query-user-feat-sdk.fernand-veyrier.workers.dev
-  #     with:
-  #       allowPublicQuery: true
+  - uses:
+    - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
+      with:
+        allowPublicQuery: true
   # - uses:
   #   - plugin: Meniole/assistive-pricing@feat/label-gating
   #     with:
@@ -90,20 +90,20 @@ plugins:
   #         setLabel: true
   #         fundExternalClosedIssue: false
   # - skipBotEvents: false
-  - uses:
-    - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
-    # - plugin: https://ubiquibot-command-start-stop-fork-ubq-testing-fix-approved-role.fernand-veyrier.workers.dev
-      with:
-        reviewDelayTolerance: "3 Days"
-        taskStaleTimeoutDuration: "1 minute"
-        maxConcurrentTasks:
-          member: true
-        #   admin: 1
-        #   contributor: 1
-        startRequiresWallet: true # default is true
-        rolesWithReviewAuthority:
-          - "OWNER"
-          - "MEMBER"
+  # - uses:
+  #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
+  #   # - plugin: https://ubiquibot-command-start-stop-fork-ubq-testing-fix-approved-role.fernand-veyrier.workers.dev
+  #     with:
+  #       reviewDelayTolerance: "3 Days"
+  #       taskStaleTimeoutDuration: "1 minute"
+  #       maxConcurrentTasks:
+  #         member: true
+  #       #   admin: 1
+  #       #   contributor: 1
+  #       startRequiresWallet: true # default is true
+  #       rolesWithReviewAuthority:
+  #         - "OWNER"
+  #         - "MEMBER"
   - uses:
     # - plugin: Meniole/conversation-rewards@feat/fee-value
     - plugin: Meniole/conversation-rewards@development
