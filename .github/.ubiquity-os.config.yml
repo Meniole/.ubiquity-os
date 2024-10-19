@@ -50,10 +50,10 @@ plugins:
   # # # - test: "invalid 1"
   # # #   uses:
   # # #     - plugin: "test"
-  # - uses:
-  #   - plugin: https://ubiquibot-command-wallet-feat-schema-validation.fernand-veyrier.workers.dev
-  #     with:
-  #       registerWalletWithVerification: "maybe"
+  - uses:
+    - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
+      with:
+        registerWalletWithVerification: false
   - uses:
     - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
       with:
