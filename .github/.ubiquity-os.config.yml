@@ -56,7 +56,6 @@ plugins:
         registerWalletWithVerification: false
   - uses:
     - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
-      runsOn: ['issues.closed']
       with:
         allowPublicQuery: true
   # - uses:
