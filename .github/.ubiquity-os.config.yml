@@ -2,6 +2,9 @@
 plugins:
   - uses:
       - plugin: http://localhost:3000
+        with:
+          disqualification: "2 minutes"
+          warning: "1 minute"
   # - uses:
   #   - plugin: https://comic-bee-miserably.ngrok-free.app
   #     with:
