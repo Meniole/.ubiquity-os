@@ -1,4 +1,4 @@
-# exz
+# ex
 plugins:
   - uses:
       - plugin: http://localhost:3000
