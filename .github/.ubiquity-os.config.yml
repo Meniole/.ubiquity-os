@@ -396,20 +396,20 @@ plugins:
           githubComment:
             post: true
             debug: false
-  # - uses:
-  #   - plugin: Meniole/user-activity-watcher@development
-  #     with:
-  #       disqualification: "2 minutes"
-  #       warning: "1 minute"
-  #       # eventWhitelist: # these are the tail of the webhook event i.e pull_request.review_requested
-  #       #   - "review_requested"
-  #       #   - "ready_for_review"
-  #       #   - "commented"
-  #       #   - "committed"
-  #       watch:
-  #         optOut:
-  #           - "repoName"
-  #           - "repoName2"
+  - uses:
+    - plugin: Meniole/user-activity-watcher@fix/improvements
+      with:
+        disqualification: "2 minutes"
+        warning: "1 minute"
+        # eventWhitelist: # these are the tail of the webhook event i.e pull_request.review_requested
+        #   - "review_requested"
+        #   - "ready_for_review"
+        #   - "commented"
+        #   - "committed"
+        watch:
+          optOut:
+            - "repoName"
+            - "repoName2"
   # - uses:
   #   # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
   #   - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
