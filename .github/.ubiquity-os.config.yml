@@ -1,4 +1,4 @@
-# ed
+# e
 plugins:
   - uses:
       - plugin: http://localhost:3000
