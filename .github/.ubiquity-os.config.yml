@@ -5,32 +5,29 @@ plugins:
   #       with:
   #         disqualification: "2 minutes"
   #         warning: "1 minute"
-  # - uses:
-  #   - plugin: https://comic-bee-miserably.ngrok-free.app
-  #     with:
-  #       botId: 5112548588
-      # runsOn: [ "issue_comment.created" ] 
-      # with:
-      #   labels:
-      #     time:
-      #       - "Time: <1.5 Minutes"
-      #       - "Time: <1 Hour"
-      #       - "Time: <2 Hours"
-      #       - "Time: <4 Hours"
-      #       - "Time: <1 Day"
-      #       - "Time: <1 Week"
-      #     priority:
-      #       - "Priority: 1 (Normal)"
-      #       - "Priority: 2 (Medium)"
-      #       - "Priority: 3 (High)"
-      #       - "Priority: 4 (Urgent)"
-      #       - "Priority: 5 (Emergency)"
-      #   basePriceMultiplier: 3
-      #   globalConfigUpdate:
-      #     excludeRepos: []
-      #   publicAccessControl:
-      #     setLabel: true
-      #     fundExternalClosedIssue: false
+  - uses:
+    - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+        labels:
+          time:
+            - "Time: <1.5 Minutes"
+            - "Time: <1 Hour"
+            - "Time: <2 Hours"
+            - "Time: <4 Hours"
+            - "Time: <1 Day"
+            - "Time: <1 Week"
+          priority:
+            - "Priority: 1 (Normal)"
+            - "Priority: 2 (Medium)"
+            - "Priority: 3 (High)"
+            - "Priority: 4 (Urgent)"
+            - "Priority: 5 (Emergency)"
+        basePriceMultiplier: 3
+        globalConfigUpdate:
+          excludeRepos: []
+        publicAccessControl:
+          setLabel: true
+          fundExternalClosedIssue: false
   # - uses:
   #   - plugin: Meniole/telegram-bridge@development
   #     with:
@@ -59,37 +56,37 @@ plugins:
     - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
       with:
         allowPublicQuery: true
-  - uses:
-    - plugin: Meniole/assistive-pricing@fork/ubq-testing/development
-      with:
-        labels:
-          time:
-            - name: "Time: <1.5 Minutes"
-              collaboratorOnly: true
-            - name: "Time: <1 Hour"
-            - name: "Time: <2 Hours"
-              collaboratorOnly: false
-            - name: "Time: <4 Hours"
-            - name: "Time: <1 Day"
-              collaboratorOnly: true
-            - name: "Time: <1 Week"
-              collaboratorOnly: true
-          priority:
-            - name: "Priority: 1 (Normal)"
-              collaboratorOnly: false
-            - name: "Priority: 2 (Medium)"
-              collaboratorOnly: true
-            - name: "Priority: 3 (High)"
-              collaboratorOnly: true
-            - name: "Priority: 4 (Urgent)"
-              collaboratorOnly: true
-            - name: "Priority: 5 (Emergency)"
-        basePriceMultiplier: 2
-        globalConfigUpdate:
-          excludeRepos: []
-        publicAccessControl:
-          setLabel: true
-          fundExternalClosedIssue: false
+  # - uses:
+  #   - plugin: Meniole/assistive-pricing@fork/ubq-testing/development
+  #     with:
+  #       labels:
+  #         time:
+  #           - name: "Time: <1.5 Minutes"
+  #             collaboratorOnly: true
+  #           - name: "Time: <1 Hour"
+  #           - name: "Time: <2 Hours"
+  #             collaboratorOnly: false
+  #           - name: "Time: <4 Hours"
+  #           - name: "Time: <1 Day"
+  #             collaboratorOnly: true
+  #           - name: "Time: <1 Week"
+  #             collaboratorOnly: true
+  #         priority:
+  #           - name: "Priority: 1 (Normal)"
+  #             collaboratorOnly: false
+  #           - name: "Priority: 2 (Medium)"
+  #             collaboratorOnly: true
+  #           - name: "Priority: 3 (High)"
+  #             collaboratorOnly: true
+  #           - name: "Priority: 4 (Urgent)"
+  #             collaboratorOnly: true
+  #           - name: "Priority: 5 (Emergency)"
+  #       basePriceMultiplier: 2
+  #       globalConfigUpdate:
+  #         excludeRepos: []
+  #       publicAccessControl:
+  #         setLabel: true
+  #         fundExternalClosedIssue: false
   # - skipBotEvents: false
   # - uses:
   #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
