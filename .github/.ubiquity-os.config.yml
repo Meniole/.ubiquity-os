@@ -6,7 +6,8 @@ plugins:
   #         disqualification: "2 minutes"
   #         warning: "1 minute"
   - uses:
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: http://localhost:4000
+        # - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         labels:
           time:
