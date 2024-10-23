@@ -1,10 +1,10 @@
 # e
 plugins:
-  - uses:
-      - plugin: http://localhost:3000
-        with:
-          disqualification: "2 minutes"
-          warning: "1 minute"
+  # - uses:
+  #     - plugin: http://localhost:3000
+  #       with:
+  #         disqualification: "2 minutes"
+  #         warning: "1 minute"
   # - uses:
   #   - plugin: https://comic-bee-miserably.ngrok-free.app
   #     with:
@@ -59,37 +59,37 @@ plugins:
     - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
       with:
         allowPublicQuery: true
-  # - uses:
-  #   - plugin: Meniole/assistive-pricing@feat/label-gating
-  #     with:
-  #       labels:
-  #         time:
-  #           - name: "Time: <1.5 Minutes"
-  #             collaboratorOnly: true
-  #           - name: "Time: <1 Hour"
-  #           - name: "Time: <2 Hours"
-  #             collaboratorOnly: false
-  #           - name: "Time: <4 Hours"
-  #           - name: "Time: <1 Day"
-  #             collaboratorOnly: true
-  #           - name: "Time: <1 Week"
-  #             collaboratorOnly: true
-  #         priority:
-  #           - name: "Priority: 1 (Normal)"
-  #             collaboratorOnly: false
-  #           - name: "Priority: 2 (Medium)"
-  #             collaboratorOnly: true
-  #           - name: "Priority: 3 (High)"
-  #             collaboratorOnly: true
-  #           - name: "Priority: 4 (Urgent)"
-  #             collaboratorOnly: true
-  #           - name: "Priority: 5 (Emergency)"
-  #       basePriceMultiplier: 1
-  #       globalConfigUpdate:
-  #         excludeRepos: []
-  #       publicAccessControl:
-  #         setLabel: true
-  #         fundExternalClosedIssue: false
+  - uses:
+    - plugin: Meniole/assistive-pricing@fork/ubq-testing/development
+      with:
+        labels:
+          time:
+            - name: "Time: <1.5 Minutes"
+              collaboratorOnly: true
+            - name: "Time: <1 Hour"
+            - name: "Time: <2 Hours"
+              collaboratorOnly: false
+            - name: "Time: <4 Hours"
+            - name: "Time: <1 Day"
+              collaboratorOnly: true
+            - name: "Time: <1 Week"
+              collaboratorOnly: true
+          priority:
+            - name: "Priority: 1 (Normal)"
+              collaboratorOnly: false
+            - name: "Priority: 2 (Medium)"
+              collaboratorOnly: true
+            - name: "Priority: 3 (High)"
+              collaboratorOnly: true
+            - name: "Priority: 4 (Urgent)"
+              collaboratorOnly: true
+            - name: "Priority: 5 (Emergency)"
+        basePriceMultiplier: 1
+        globalConfigUpdate:
+          excludeRepos: []
+        publicAccessControl:
+          setLabel: true
+          fundExternalClosedIssue: false
   # - skipBotEvents: false
   # - uses:
   #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
