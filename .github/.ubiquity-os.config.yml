@@ -84,7 +84,7 @@ plugins:
             - name: "Priority: 4 (Urgent)"
               collaboratorOnly: true
             - name: "Priority: 5 (Emergency)"
-        basePriceMultiplier: 1
+        basePriceMultiplier: 2
         globalConfigUpdate:
           excludeRepos: []
         publicAccessControl:
