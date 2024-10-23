@@ -6,7 +6,7 @@ plugins:
   #         disqualification: "2 minutes"
   #         warning: "1 minute"
   - uses:
-    - plugin: http://localhost:4000
+    - plugin: Meniole/assistive-pricing@fork/ubq-testing/development
         # - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         labels:
