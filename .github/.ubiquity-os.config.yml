@@ -53,10 +53,10 @@ plugins:
     - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
       with:
         registerWalletWithVerification: false
-  - uses:
-    - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
-      with:
-        allowPublicQuery: true
+  # - uses:
+  #   - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
+  #     with:
+  #       allowPublicQuery: true
   # - uses:
   #   - plugin: Meniole/assistive-pricing@fork/ubq-testing/development
   #     with:
