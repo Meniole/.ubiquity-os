@@ -1,10 +1,10 @@
 # e
+with: &walletQuery
+  registerWalletWithVerification: false
 plugins:
-  # - uses:
-  #     - plugin: http://localhost:3000
-  #       with:
-  #         disqualification: "2 minutes"
-  #         warning: "1 minute"
+  - uses:
+      - plugin: http://localhost:3000
+        with: *walletQuery
   - uses:
     - plugin: Meniole/assistive-pricing@fork/ubq-testing/development
         # - plugin: https://comic-bee-miserably.ngrok-free.app
