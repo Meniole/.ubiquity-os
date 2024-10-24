@@ -3,7 +3,7 @@ with: &walletQuery
   registerWalletWithVerification: false
 plugins:
   - uses:
-      - plugin: http://localhost:3000
+      - plugin: http://localhost:4000
         with: *walletQuery
   - uses:
     - plugin: Meniole/assistive-pricing@fork/ubq-testing/development
