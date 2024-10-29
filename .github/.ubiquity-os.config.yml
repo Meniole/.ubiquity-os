@@ -43,10 +43,10 @@ startStopWith: &startStopWith
 
 plugins:
   - uses:
-    - plugin: http://localhost:4000
+    - plugin: http://localhost:4001
       with: *daemonPricingWith
   - uses:
-    - plugin: http://localhost:4001
+    - plugin: http://localhost:4000
       with: *startStopWith
   - uses:
     - plugin: Meniole/daemon-pricing@feat/label-gating
