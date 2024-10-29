@@ -48,10 +48,10 @@ plugins:
   - uses:
     - plugin: http://localhost:4001
       with: *startStopWith
-  # - uses:
-  #   # - plugin: Meniole/daemon-pricing@feat/label-gating
-  #   - plugin: https://ubiquity-os-daemon-pricing-feat-label-gating.fernand-veyrier.workers.dev  
-  #     with: *daemonPricingWith
+  - uses:
+    - plugin: Meniole/daemon-pricing@feat/label-gating
+    # - plugin: https://ubiquity-os-daemon-pricing-feat-label-gating.fernand-veyrier.workers.dev  
+      with: *daemonPricingWith
   # - uses:
   #   - plugin: Meniole/telegram-bridge@development
   #     with:
