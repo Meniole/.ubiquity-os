@@ -25,7 +25,7 @@ daemonPricingWith: &daemonPricingWith
         collaboratorOnly: false
       - name: "Priority: 5 (Emergency)"
         collaboratorOnly: true
-  basePriceMultiplier: 4
+  basePriceMultiplier: 3
   globalConfigUpdate:
     excludeRepos: []
   publicAccessControl:
