@@ -46,9 +46,12 @@ plugins:
     - plugin: http://localhost:4000
       with: *daemonPricingWith
   - uses:
-    # - plugin: Meniole/daemon-pricing@feat/label-gating
-    - plugin: https://ubiquity-os-daemon-pricing-feat-label-gating.fernand-veyrier.workers.dev  
-      with: *daemonPricingWith
+    - plugin: http://localhost:4001
+      with: *startStopWith
+  # - uses:
+  #   # - plugin: Meniole/daemon-pricing@feat/label-gating
+  #   - plugin: https://ubiquity-os-daemon-pricing-feat-label-gating.fernand-veyrier.workers.dev  
+  #     with: *daemonPricingWith
   # - uses:
   #   - plugin: Meniole/telegram-bridge@development
   #     with:
@@ -109,9 +112,9 @@ plugins:
   #         setLabel: true
   #         fundExternalClosedIssue: false
   # - skipBotEvents: false
-  - uses:
-    - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
-      with: *startStopWith
+  # - uses:
+  #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
+  #     with: *startStopWith
   - uses:
     # - plugin: Meniole/conversation-rewards@feat/fee-value
     - plugin: Meniole/conversation-rewards@development
