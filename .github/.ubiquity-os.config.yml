@@ -35,16 +35,16 @@ startStopWith: &startStopWith
     reviewDelayTolerance: "3 Days"
     taskStaleTimeoutDuration: "1 minute"
     maxConcurrentTasks:
-      member: 10
+      member: 1
     startRequiresWallet: false
     rolesWithReviewAuthority:
       - "OWNER"
       - "MEMBER"
 
 plugins:
-  - uses:
-    - plugin: http://localhost:4001
-      with: *daemonPricingWith
+  # - uses:
+  #   - plugin: http://localhost:4001
+  #     with: *daemonPricingWith
   - uses:
     - plugin: http://localhost:4000
       with: *startStopWith
