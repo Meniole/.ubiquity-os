@@ -36,7 +36,7 @@ startStopWith: &startStopWith
     taskStaleTimeoutDuration: "1 minute"
     maxConcurrentTasks:
       member: 10
-    startRequiresWallet: true
+    startRequiresWallet: false
     rolesWithReviewAuthority:
       - "OWNER"
       - "MEMBER"
