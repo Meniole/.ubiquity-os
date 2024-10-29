@@ -5,7 +5,7 @@ daemonPricingWith: &daemonPricingWith
   labels:
     time:
       - name: "Time: <1 Hour"
-        collaboratorOnly: false
+        collaboratorOnly: true
       - name: "Time: <2 Hours"
         collaboratorOnly: false
       - name: "Time: <4 Hours"
