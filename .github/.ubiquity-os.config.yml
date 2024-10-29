@@ -20,7 +20,7 @@ daemonPricingWith: &daemonPricingWith
       - name: "Priority: 2 (Medium)"
         collaboratorOnly: false
       - name: "Priority: 3 (High)"
-        collaboratorOnly: false
+        collaboratorOnly: true
       - name: "Priority: 4 (Urgent)"
         collaboratorOnly: false
       - name: "Priority: 5 (Emergency)"
