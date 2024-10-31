@@ -46,10 +46,14 @@ startStopWith: &startStopWith
 
 telegramWith: &telegramWith
   botId: 5112548588
+
 plugins:
   # - uses:
   #   - plugin: http://localhost:4001
   #     with: *daemonPricingWith
+  - uses:
+    - plugin: Meniole/telegram-bridge@feat/build
+      with: *telegramWith
   - uses:
     - plugin: http://localhost:4000
       with: *startStopWith
@@ -58,9 +62,6 @@ plugins:
   #   - plugin: Meniole/daemon-pricing@feat/label-gating
   #   # - plugin: https://ubiquity-os-daemon-pricing-feat-label-gating.fernand-veyrier.workers.dev  
   #     with: *daemonPricingWith
-  - uses:
-    - plugin: Meniole/telegram-bridge@feat/build
-      with: *telegramWith
   # - uses:
   #   - plugin: Meniole/automated-merging@feat/schema-validation
   #     with:
