@@ -1,6 +1,7 @@
 # x
 walletWith: &walletWith
   registerWalletWithVerification: false
+
 daemonPricingWith: &daemonPricingWith
   labels:
     time:
@@ -31,17 +32,20 @@ daemonPricingWith: &daemonPricingWith
   publicAccessControl:
     setLabel: true
     fundExternalClosedIssue: false
-startStopWith: &startStopWith
-    reviewDelayTolerance: "3 Days"
-    taskStaleTimeoutDuration: "1 minute"
-    maxConcurrentTasks:
-      member: 1
-      contributor: 1
-    startRequiresWallet: false
-    rolesWithReviewAuthority:
-      - "OWNER"
-      - "MEMBER"
 
+startStopWith: &startStopWith
+  reviewDelayTolerance: "3 Days"
+  taskStaleTimeoutDuration: "1 minute"
+  maxConcurrentTasks:
+    member: 1
+    contributor: 1
+  startRequiresWallet: false
+  rolesWithReviewAuthority:
+    - "OWNER"
+    - "MEMBER"
+
+telegramWith: &telegramWith
+  botId: 5112548588
 plugins:
   # - uses:
   #   - plugin: http://localhost:4001
@@ -49,14 +53,14 @@ plugins:
   - uses:
     - plugin: http://localhost:4000
       with: *startStopWith
+  
   # - uses:
   #   - plugin: Meniole/daemon-pricing@feat/label-gating
   #   # - plugin: https://ubiquity-os-daemon-pricing-feat-label-gating.fernand-veyrier.workers.dev  
   #     with: *daemonPricingWith
-  # - uses:
-  #   - plugin: Meniole/telegram-bridge@development
-  #     with:
-  #      botId: 5112548588
+  - uses:
+    - plugin: Meniole/telegram-bridge@feat/build
+      with: *telegramWith
   # - uses:
   #   - plugin: Meniole/automated-merging@feat/schema-validation
   #     with:
