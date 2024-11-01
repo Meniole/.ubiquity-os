@@ -130,7 +130,10 @@ plugins:
         evmPrivateEncrypted: "CfuT-byEUxpZYTwp_DSwCUuIIooaqTI2oWmZtVEsLBk34iYFU7qjhT9mM9HGbgRhurUt-4l51kygfQIUwvYkCi2acpTPxSHTsFQBrZOScll5XvOu-nEwxtKnUhhxXgXTjdE"
         incentives:
           requirePriceLabel: true
-          contentEvaluator: {}
+          contentEvaluator:
+            openAi:
+              endpoint: "https://api.groq.com/openai/v1"
+              model: "llama3-groq-70b-8192-tool-use-preview"
           userExtractor:
             enabled: true
             redeemTask: true
