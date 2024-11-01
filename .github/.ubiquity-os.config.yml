@@ -123,7 +123,7 @@ plugins:
   #     with: *startStopWith
   - uses:
     # - plugin: Meniole/conversation-rewards@feat/fee-value
-    - plugin: Meniole/conversation-rewards@development
+    - plugin: Meniole/conversation-rewards@fix/zero-display
       with:
         logLevel: "debug"
         evmNetworkId: 100
