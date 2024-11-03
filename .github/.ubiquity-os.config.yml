@@ -84,9 +84,9 @@ plugins:
   # - uses:
   #   - plugin: http://localhost:4001
   #     with: *daemonPricingWith
-  - uses:
-    - plugin: Meniole/daemon-disqualifier@fix/permissions
-      with: *disqualifierWith
+  # - uses:
+  #   - plugin: Meniole/daemon-disqualifier@fix/permissions
+  #     with: *disqualifierWith
   # - uses:
   #   - plugin: http://localhost:4000
   #     with: *startStopWith
@@ -155,7 +155,6 @@ plugins:
   #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
   #     with: *startStopWith
   - uses:
-    # - plugin: Meniole/conversation-rewards@feat/fee-value
     - plugin: Meniole/conversation-rewards@fork/ishowvel/development
       with: *conversationRewardsWith
 
