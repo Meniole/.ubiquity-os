@@ -2,6 +2,26 @@
 walletWith: &walletWith
   registerWalletWithVerification: false
 
+conversationRewardsWith: &conversationRewardsWith
+  logLevel: "debug"
+  evmNetworkId: 100
+  evmPrivateEncrypted: "CfuT-byEUxpZYTwp_DSwCUuIIooaqTI2oWmZtVEsLBk34iYFU7qjhT9mM9HGbgRhurUt-4l51kygfQIUwvYkCi2acpTPxSHTsFQBrZOScll5XvOu-nEwxtKnUhhxXgXTjdE"
+  incentives:
+    requirePriceLabel: true
+    contentEvaluator:
+      openAi:
+        endpoint: "https://api.groq.com/openai/v1"
+        model: "llama3-groq-70b-8192-tool-use-preview"
+    userExtractor:
+      redeemTask: true
+    dataPurge: {}
+    formattingEvaluator: {}
+    permitGeneration:
+      enabled: true
+    githubComment:
+      post: true
+      debug: false
+
 daemonPricingWith: &daemonPricingWith
   labels:
     time:
@@ -137,298 +157,8 @@ plugins:
   - uses:
     # - plugin: Meniole/conversation-rewards@feat/fee-value
     - plugin: Meniole/conversation-rewards@fix/zero-display
-      with:
-        logLevel: "debug"
-        evmNetworkId: 100
-        evmPrivateEncrypted: "CfuT-byEUxpZYTwp_DSwCUuIIooaqTI2oWmZtVEsLBk34iYFU7qjhT9mM9HGbgRhurUt-4l51kygfQIUwvYkCi2acpTPxSHTsFQBrZOScll5XvOu-nEwxtKnUhhxXgXTjdE"
-        incentives:
-          requirePriceLabel: true
-          # contentEvaluator:
-            # openAi:
-            #   endpoint: "https://api.groq.com/openai/v1"
-            #   model: "llama3-groq-70b-8192-tool-use-preview"
-          userExtractor:
-            enabled: true
-            redeemTask: true
-          dataPurge: {}
-          # formattingEvaluator:
-          #   multipliers:
-          #     - role:
-          #       - ISSUE_SPECIFICATION
-          #       multiplier: 3
-          #       rewards:
-          #         wordValue: 0.1
-          #         html:
-          #           br:
-          #             score: 0
-          #             countWords: true
-          #           code:
-          #             score: 5
-          #             countWords: false
-          #           p:
-          #             score: 0
-          #             countWords: true
-          #           em:
-          #             score: 0
-          #             countWords: true
-          #           img:
-          #             score: 5
-          #             countWords: true
-          #           strong:
-          #             score: 0
-          #             countWords: false
-          #           blockquote:
-          #             score: 0
-          #             countWords: false
-          #           h1:
-          #             score: 1
-          #             countWords: true
-          #           h2:
-          #             score: 1
-          #             countWords: true
-          #           h3:
-          #             score: 1
-          #             countWords: true
-          #           h4:
-          #             score: 1
-          #             countWords: true
-          #           h5:
-          #             score: 1
-          #             countWords: true
-          #           h6:
-          #             score: 1
-          #             countWords: true
-          #           a:
-          #             score: 5
-          #             countWords: true
-          #           li:
-          #             score: 0.5
-          #             countWords: true
-          #           ul:
-          #             score: 1
-          #             countWords: true
-          #           td:
-          #             score: 0
-          #             countWords: true
-          #           hr:
-          #             score: 0
-          #             countWords: true
-          #           pre:
-          #             score: 0
-          #             countWords: false
-          #           ol:
-          #             score: 1
-          #             countWords: true
-          #     - role:
-          #       - ISSUE_AUTHOR
-          #       - ISSUE_COLLABORATOR
-          #       - PULL_COLLABORATOR
-          #       multiplier: 1
-          #       rewards:
-          #         wordValue: 0.1
-          #         html:
-          #           br:
-          #             score: 0
-          #             countWords: true
-          #           code:
-          #             score: 5
-          #             countWords: false
-          #           p:
-          #             score: 0
-          #             countWords: true
-          #           em:
-          #             score: 0
-          #             countWords: true
-          #           img:
-          #             score: 5
-          #             countWords: true
-          #           strong:
-          #             score: 0
-          #             countWords: false
-          #           blockquote:
-          #             score: 0
-          #             countWords: false
-          #           h1:
-          #             score: 1
-          #             countWords: true
-          #           h2:
-          #             score: 1
-          #             countWords: true
-          #           h3:
-          #             score: 1
-          #             countWords: true
-          #           h4:
-          #             score: 1
-          #             countWords: true
-          #           h5:
-          #             score: 1
-          #             countWords: true
-          #           h6:
-          #             score: 1
-          #             countWords: true
-          #           a:
-          #             score: 5
-          #             countWords: true
-          #           li:
-          #             score: 0.5
-          #             countWords: true
-          #           ul:
-          #             score: 1
-          #             countWords: true
-          #           td:
-          #             score: 0
-          #             countWords: true
-          #           hr:
-          #             score: 0
-          #             countWords: true
-          #           pre:
-          #             score: 0
-          #             countWords: false
-          #           ol:
-          #             score: 1
-          #             countWords: true
-          #     - role:
-          #       - ISSUE_CONTRIBUTOR
-          #       - PULL_CONTRIBUTOR
-          #       multiplier: 0.25
-          #       rewards:
-          #         wordValue: 0.1
-          #         html:
-          #           br:
-          #             score: 0
-          #             countWords: true
-          #           code:
-          #             score: 5
-          #             countWords: false
-          #           p:
-          #             score: 0
-          #             countWords: true
-          #           em:
-          #             score: 0
-          #             countWords: true
-          #           img:
-          #             score: 5
-          #             countWords: true
-          #           strong:
-          #             score: 0
-          #             countWords: false
-          #           blockquote:
-          #             score: 0
-          #             countWords: false
-          #           h1:
-          #             score: 1
-          #             countWords: true
-          #           h2:
-          #             score: 1
-          #             countWords: true
-          #           h3:
-          #             score: 1
-          #             countWords: true
-          #           h4:
-          #             score: 1
-          #             countWords: true
-          #           h5:
-          #             score: 1
-          #             countWords: true
-          #           h6:
-          #             score: 1
-          #             countWords: true
-          #           a:
-          #             score: 5
-          #             countWords: true
-          #           li:
-          #             score: 0.5
-          #             countWords: true
-          #           ul:
-          #             score: 1
-          #             countWords: true
-          #           td:
-          #             score: 0
-          #             countWords: true
-          #           hr:
-          #             score: 0
-          #             countWords: true
-          #           pre:
-          #             score: 0
-          #             countWords: false
-          #           ol:
-          #             score: 1
-          #             countWords: true
-          #     - role:
-          #       - PULL_SPECIFICATION
-          #       - PULL_AUTHOR
-          #       - ISSUE_ASSIGNEE
-          #       - PULL_ASSIGNEE
-          #       multiplier: 0
-          #       rewards:
-          #         wordValue: 0
-          #         html:
-          #           br:
-          #             score: 0
-          #             countWords: true
-          #           code:
-          #             score: 5
-          #             countWords: false
-          #           p:
-          #             score: 0
-          #             countWords: true
-          #           em:
-          #             score: 0
-          #             countWords: true
-          #           img:
-          #             score: 5
-          #             countWords: true
-          #           strong:
-          #             score: 0
-          #             countWords: false
-          #           blockquote:
-          #             score: 0
-          #             countWords: false
-          #           h1:
-          #             score: 1
-          #             countWords: true
-          #           h2:
-          #             score: 1
-          #             countWords: true
-          #           h3:
-          #             score: 1
-          #             countWords: true
-          #           h4:
-          #             score: 1
-          #             countWords: true
-          #           h5:
-          #             score: 1
-          #             countWords: true
-          #           h6:
-          #             score: 1
-          #             countWords: true
-          #           a:
-          #             score: 5
-          #             countWords: true
-          #           li:
-          #             score: 0.5
-          #             countWords: true
-          #           ul:
-          #             score: 1
-          #             countWords: true
-          #           td:
-          #             score: 0
-          #             countWords: true
-          #           hr:
-          #             score: 0
-          #             countWords: true
-          #           pre:
-          #             score: 0
-          #             countWords: false
-          #           ol:
-          #             score: 1
-          #             countWords: true
-            # wordCountExponent: 0.85
-          permitGeneration:
-            enabled: true
-          githubComment:
-            post: true
-            debug: false
+      with: *conversationRewardsWith
+
   # - uses:
   #   - plugin: Meniole/user-activity-watcher@development
   #     with:
