@@ -156,7 +156,7 @@ plugins:
   #     with: *startStopWith
   - uses:
     # - plugin: Meniole/conversation-rewards@feat/fee-value
-    - plugin: Meniole/conversation-rewards@fix/zero-display
+    - plugin: Meniole/conversation-rewards@fork/ishowvel/development
       with: *conversationRewardsWith
 
   # - uses:
