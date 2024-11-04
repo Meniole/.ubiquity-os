@@ -70,11 +70,6 @@ telegramWith: &telegramWith
 disqualifierWith: &disqualifierWith
   disqualification: "2 minutes"
   warning: "1 minute"
-  # eventWhitelist: # these are the tail of the webhook event i.e pull_request.review_requested
-  #   - "review_requested"
-  #   - "ready_for_review"
-  #   - "commented"
-  #   - "committed"
   watch:
     optOut:
       - "repoName"
@@ -84,9 +79,9 @@ plugins:
   # - uses:
   #   - plugin: http://localhost:4001
   #     with: *daemonPricingWith
-  # - uses:
-  #   - plugin: Meniole/daemon-disqualifier@fix/permissions
-  #     with: *disqualifierWith
+  - uses:
+    - plugin: Meniole/daemon-disqualifier@development
+      with: *disqualifierWith
   - uses:
     - plugin: http://localhost:4000
       with: *startStopWith
@@ -152,21 +147,3 @@ plugins:
   - uses:
     - plugin: Meniole/conversation-rewards@development
       with: *conversationRewardsWith
-
-  # - uses:
-  #   - plugin: Meniole/user-activity-watcher@development
-  #     with:
-  #       disqualification: "2 minutes"
-  #       warning: "1 minute"
-  #       # eventWhitelist: # these are the tail of the webhook event i.e pull_request.review_requested
-  #       #   - "review_requested"
-  #       #   - "ready_for_review"
-  #       #   - "commented"
-  #       #   - "committed"
-  #       watch:
-  #         optOut:
-  #           - "repoName"
-  #           - "repoName2"
-  # - uses:
-  #   # - plugin: Meniole/issue-comment-embeddings@fork/sshivaditya2019/development
-  #   - plugin: https://ubiquibot-issue-comment-embeddings-main.fernand-veyrier.workers.dev
