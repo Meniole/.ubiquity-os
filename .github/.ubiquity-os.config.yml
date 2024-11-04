@@ -87,9 +87,9 @@ plugins:
   # - uses:
   #   - plugin: Meniole/daemon-disqualifier@fix/permissions
   #     with: *disqualifierWith
-  # - uses:
-  #   - plugin: http://localhost:4000
-  #     with: *startStopWith
+  - uses:
+    - plugin: http://localhost:4000
+      with: *startStopWith
   
   # - uses:
   #   - plugin: Meniole/daemon-pricing@feat/label-gating
@@ -106,11 +106,6 @@ plugins:
   #         monitor: [ ]
   #         ignore: ["conversation-rewards"]
   #       allowedReviewerRoles: ["OWNER", "COLLABORATOR", true]
-  # # # - uses:
-  # # #   - some-stuff: {}
-  # # # - test: "invalid 1"
-  # # #   uses:
-  # # #     - plugin: "test"
   # - uses:
   #   - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
   #     with:
@@ -155,7 +150,7 @@ plugins:
   #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
   #     with: *startStopWith
   - uses:
-    - plugin: Meniole/conversation-rewards@fork/ishowvel/development
+    - plugin: Meniole/conversation-rewards@development
       with: *conversationRewardsWith
 
   # - uses:
