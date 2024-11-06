@@ -59,7 +59,7 @@ startStopWith: &startStopWith
   taskStaleTimeoutDuration: "1 minute"
   maxConcurrentTasks:
     member: 1
-    contributor: 1
+    contributor: 2
   startRequiresWallet: false
   rolesWithReviewAuthority:
     - "OWNER"
