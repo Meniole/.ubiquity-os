@@ -147,5 +147,5 @@ plugins:
   #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
   #     with: *startStopWith
   - uses:
-    - plugin: Meniole/text-conversation-rewards@fork/ishowvel/development
+    - plugin: Meniole/text-conversation-rewards@feat/local-run
       with: *conversationRewardsWith
