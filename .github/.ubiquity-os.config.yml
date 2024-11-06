@@ -54,6 +54,7 @@ daemonPricingWith: &daemonPricingWith
     fundExternalClosedIssue: false
 
 startStopWith: &startStopWith
+  assignedIssueScope: "org"
   reviewDelayTolerance: "1 minute"
   taskStaleTimeoutDuration: "1 minute"
   maxConcurrentTasks:
