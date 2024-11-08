@@ -80,10 +80,10 @@ plugins:
   # - uses:
   #   - plugin: http://localhost:4001
   #     with: *daemonPricingWith
-  - uses:
-    - plugin: Meniole/daemon-disqualifier@development
-      with: *disqualifierWith
-  - skipBotEvents: true
+  # - uses:
+  #   - plugin: Meniole/daemon-disqualifier@development
+  #     with: *disqualifierWith
+  - skipBotEvents: false
     uses:
       - plugin: http://localhost:4000
         with: *startStopWith
