@@ -147,6 +147,6 @@ plugins:
   # - uses:
   #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
   #     with: *startStopWith
-  # - uses:
-  #   - plugin: Meniole/text-conversation-rewards@fix/link-credit
-  #     with: *conversationRewardsWith
+  - uses:
+    - plugin: Meniole/text-conversation-rewards@fix/link-credit
+      with: *conversationRewardsWith
