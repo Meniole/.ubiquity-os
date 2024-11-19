@@ -84,6 +84,9 @@ plugins:
   # - uses:
   #   - plugin: Meniole/daemon-disqualifier@development
   #     with: *disqualifierWith
+  - uses:
+    - plugin: Meniole/text-conversation-rewards@fix/link-credit
+      with: *conversationRewardsWith
   - skipBotEvents: false
     uses:
       - plugin: http://localhost:4000
@@ -147,6 +150,4 @@ plugins:
   # - uses:
   #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
   #     with: *startStopWith
-  - uses:
-    - plugin: Meniole/text-conversation-rewards@fix/link-credit
-      with: *conversationRewardsWith
+
