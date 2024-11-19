@@ -1,8 +1,8 @@
 # 
 walletWith: &walletWith
-  registerWalletWithVerification: false 
+  registerWalletWithVerification: false
 
-conversationRewardsWith: &conversationRewardsWith
+conversationRewardsWith: &conversationRewardsWith 
   logLevel: "debug"
   evmNetworkId: 100
   evmPrivateEncrypted: "CfuT-byEUxpZYTwp_DSwCUuIIooaqTI2oWmZtVEsLBk34iYFU7qjhT9mM9HGbgRhurUt-4l51kygfQIUwvYkCi2acpTPxSHTsFQBrZOScll5XvOu-nEwxtKnUhhxXgXTjdE"
