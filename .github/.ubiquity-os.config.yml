@@ -1,6 +1,6 @@
 # 
 walletWith: &walletWith
-  registerWalletWithVerification: false
+  registerWalletWithVerification: false 
 
 conversationRewardsWith: &conversationRewardsWith
   logLevel: "debug"
