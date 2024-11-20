@@ -64,7 +64,7 @@ startStopWith: &startStopWith
   rolesWithReviewAuthority:
     - "OWNER"
     - "MEMBER"
-  requiredLabelsToStart: ["Priority: 5 (Emergency)"]
+  requiredLabelsToStart: ["Priority: 5 (Emergency)", "Priority: 4 (Urgent)"]
 
 telegramWith: &telegramWith
   botId: 5112548588
