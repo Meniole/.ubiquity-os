@@ -5,7 +5,8 @@ walletWith: &walletWith
 conversationRewardsWith: &conversationRewardsWith
   logLevel: "debug"
   evmNetworkId: 100
-  evmPrivateEncrypted: "CfuT-byEUxpZYTwp_DSwCUuIIooaqTI2oWmZtVEsLBk34iYFU7qjhT9mM9HGbgRhurUt-4l51kygfQIUwvYkCi2acpTPxSHTsFQBrZOScll5XvOu-nEwxtKnUhhxXgXTjdE"
+  # evmPrivateEncrypted: "CfuT-byEUxpZYTwp_DSwCUuIIooaqTI2oWmZtVEsLBk34iYFU7qjhT9mM9HGbgRhurUt-4l51kygfQIUwvYkCi2acpTPxSHTsFQBrZOScll5XvOu-nEwxtKnUhhxXgXTjdE"
+  evmPrivateEncrypted: "kmpTKq5Wh9r9x5j3U9GqZr3NYnjK2g0HtbzeUBOuLC2y3x8ja_SKBNlB2AZ6LigXHP_HeMitftVUtzmoj8CFfVP9SqjWoL6IPku1hVTWkdTn97g1IxzmjydFxjdcf0wuDW1hvVtoq3Uw5yALABqxcQ"
   incentives:
     requirePriceLabel: true
     contentEvaluator:
