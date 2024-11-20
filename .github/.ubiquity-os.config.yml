@@ -93,7 +93,7 @@ plugins:
         with: *startStopWith
   - skipBotEvents: true
     uses:
-      - plugin: http://localhost:4001
+      - plugin: http://localhost:3000
         with: *conversationRewardsWith
   # - uses:
   #   - plugin: Meniole/daemon-pricing@feat/label-gating
