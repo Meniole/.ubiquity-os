@@ -1,4 +1,4 @@
-# test
+#
 walletWith: &walletWith
   registerWalletWithVerification: false
 
