@@ -147,7 +147,7 @@ plugins:
   #         setLabel: true
   #         fundExternalClosedIssue: false
   # - skipBotEvents: false
-  # - uses:
-  #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
-  #     with: *startStopWith
+  - uses:
+    - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
+      with: *startStopWith
 
