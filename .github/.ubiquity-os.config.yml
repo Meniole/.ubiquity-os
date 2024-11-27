@@ -78,6 +78,9 @@ disqualifierWith: &disqualifierWith
       - "repoName"
       - "repoName2"
 
+commandAskWith: &commandAskWith
+  model: "gpt-o4"
+
 plugins:
   # - uses:
   #   - plugin: http://localhost:4001
@@ -91,7 +94,7 @@ plugins:
   - skipBotEvents: false
     uses:
       - plugin: http://localhost:4000
-        with: *startStopWith
+        with: *commandAskWith
   # - skipBotEvents: true
   #   uses:
   #     - plugin: http://localhost:3000
