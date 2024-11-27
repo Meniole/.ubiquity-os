@@ -93,7 +93,7 @@ plugins:
   #     with: *conversationRewardsWith
   - skipBotEvents: false
     uses:
-      - plugin: http://localhost:4000
+      - plugin: http://localhost:4005
         with: *commandAskWith
   # - skipBotEvents: true
   #   uses:
