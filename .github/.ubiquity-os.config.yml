@@ -94,7 +94,7 @@ plugins:
   - skipBotEvents: false
     uses:
       - plugin: http://localhost:4005
-        with: *commandAskWith
+        with: *conversationRewardsWith
   # - skipBotEvents: true
   #   uses:
   #     - plugin: http://localhost:3000
