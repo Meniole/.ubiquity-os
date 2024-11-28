@@ -91,16 +91,40 @@ automatedMergingWith: &automatedMergingWith
     ignore: ["conversation-rewards"]
   allowedReviewerRoles: ["OWNER", "COLLABORATOR", true]
 
+commandQueryUserWith: &commandQueryUserWith
+  allowPublicQuery: true
+
+assistivePricingWith: &assistivePricingWith
+  labels:
+    time:
+      - name: "Time: <1.5 Minutes"
+        collaboratorOnly: true
+      - name: "Time: <1 Hour"
+      - name: "Time: <2 Hours"
+        collaboratorOnly: false
+      - name: "Time: <4 Hours"
+      - name: "Time: <1 Day"
+        collaboratorOnly: true
+      - name: "Time: <1 Week"
+        collaboratorOnly: true
+    priority:
+      - name: "Priority: 1 (Normal)"
+        collaboratorOnly: false
+      - name: "Priority: 2 (Medium)"
+        collaboratorOnly: true
+      - name: "Priority: 3 (High)"
+        collaboratorOnly: true
+      - name: "Priority: 4 (Urgent)"
+        collaboratorOnly: true
+      - name: "Priority: 5 (Emergency)"
+  basePriceMultiplier: 2
+  globalConfigUpdate:
+    excludeRepos: []
+  publicAccessControl:
+    setLabel: true
+    fundExternalClosedIssue: false
+
 plugins:
-  # - uses:
-  #   - plugin: http://localhost:4001
-  #     with: *daemonPricingWith
-  # - uses:
-  #   - plugin: Meniole/daemon-disqualifier@development
-  #     with: *disqualifierWith
-  # - uses:
-  #   - plugin: Meniole/text-conversation-rewards@fork/ishowvel/admin-gen
-  #     with: *conversationRewardsWith
   # - skipBotEvents: false
   #   uses:
   #     - plugin: http://localhost:4000
@@ -108,56 +132,38 @@ plugins:
 
   - uses:
       - plugin: Meniole/text-vector-embeddings@development
-  # - skipBotEvents: true
-  #   uses:
-  #     - plugin: http://localhost:3000
-  #       with: *conversationRewardsWith
+
+  - skipBotEvents: true
+    uses:
+      - plugin: Meniole/text-conversation-rewards@development
+        with: *conversationRewardsWith
+
   - uses:
-    - plugin: https://ubiquity-os-daemon-development.fernand-veyrier.workers.dev
+    - plugin: https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev
       with: *daemonPricingWith
+
   - uses:
     - plugin: Meniole/automated-merging@development
       with: *automatedMergingWith
+  
   - uses:
     - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
       with: *walletWith
-  # - uses:
-  #   - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
-  #     with:
-  #       allowPublicQuery: true
-  # - uses:
-  #   - plugin: Meniole/assistive-pricing@fork/ubq-testing/development
-  #     with:
-  #       labels:
-  #         time:
-  #           - name: "Time: <1.5 Minutes"
-  #             collaboratorOnly: true
-  #           - name: "Time: <1 Hour"
-  #           - name: "Time: <2 Hours"
-  #             collaboratorOnly: false
-  #           - name: "Time: <4 Hours"
-  #           - name: "Time: <1 Day"
-  #             collaboratorOnly: true
-  #           - name: "Time: <1 Week"
-  #             collaboratorOnly: true
-  #         priority:
-  #           - name: "Priority: 1 (Normal)"
-  #             collaboratorOnly: false
-  #           - name: "Priority: 2 (Medium)"
-  #             collaboratorOnly: true
-  #           - name: "Priority: 3 (High)"
-  #             collaboratorOnly: true
-  #           - name: "Priority: 4 (Urgent)"
-  #             collaboratorOnly: true
-  #           - name: "Priority: 5 (Emergency)"
-  #       basePriceMultiplier: 2
-  #       globalConfigUpdate:
-  #         excludeRepos: []
-  #       publicAccessControl:
-  #         setLabel: true
-  #         fundExternalClosedIssue: false
-  # - skipBotEvents: false
-  # - uses:
-  #   - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
-  #     with: *startStopWith
+  
+  - uses:
+    - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
+      with: *commandQueryUserWith
+  
+  - uses:
+    - plugin: Meniole/assistive-pricing@development
+      with: *assistivePricingWith
+  
+  - uses:
+    - plugin: Meniole/daemon-disqualifier@development
+      with: *disqualifierWith
+  
+  - skipBotEvents: false
+    - uses:
+      - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
+        with: *startStopWith
 
