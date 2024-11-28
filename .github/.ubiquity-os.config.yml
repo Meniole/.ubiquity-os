@@ -163,7 +163,7 @@ plugins:
       with: *disqualifierWith
   
   - skipBotEvents: false
-    - uses:
-      - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
-        with: *startStopWith
+    uses:
+    - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
+      with: *startStopWith
 
