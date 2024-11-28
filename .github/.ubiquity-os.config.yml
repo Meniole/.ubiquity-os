@@ -95,6 +95,7 @@ plugins:
     uses:
       - plugin: http://localhost:4000
         with: *disqualifierWith
+
   - uses:
       - plugin: Meniole/text-vector-embeddings@fork/sshivaditya2019/issuesim
   # - skipBotEvents: true
