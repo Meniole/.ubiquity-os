@@ -1,18 +1,15 @@
-#
-walletWith: &walletWith
+walletWith: &a4
   registerWalletWithVerification: false
-
-conversationRewardsWith: &conversationRewardsWith
-  logLevel: "debug"
+conversationRewardsWith: &a1
+  logLevel: debug
   evmNetworkId: 100
-  evmPrivateEncrypted: "CfuT-byEUxpZYTwp_DSwCUuIIooaqTI2oWmZtVEsLBk34iYFU7qjhT9mM9HGbgRhurUt-4l51kygfQIUwvYkCi2acpTPxSHTsFQBrZOScll5XvOu-nEwxtKnUhhxXgXTjdE"
-  # evmPrivateEncrypted: "kmpTKq5Wh9r9x5j3U9GqZr3NYnjK2g0HtbzeUBOuLC2y3x8ja_SKBNlB2AZ6LigXHP_HeMitftVUtzmoj8CFfVP9SqjWoL6IPku1hVTWkdTn97g1IxzmjydFxjdcf0wuDW1hvVtoq3Uw5yALABqxcQ"
+  evmPrivateEncrypted: CfuT-byEUxpZYTwp_DSwCUuIIooaqTI2oWmZtVEsLBk34iYFU7qjhT9mM9HGbgRhurUt-4l51kygfQIUwvYkCi2acpTPxSHTsFQBrZOScll5XvOu-nEwxtKnUhhxXgXTjdE
   incentives:
     requirePriceLabel: true
     contentEvaluator:
       openAi:
-        endpoint: "https://api.groq.com/openai/v1"
-        model: "llama3-groq-70b-8192-tool-use-preview"
+        endpoint: https://api.groq.com/openai/v1
+        model: llama3-groq-70b-8192-tool-use-preview
     userExtractor:
       redeemTask: true
     dataPurge: {}
@@ -22,8 +19,7 @@ conversationRewardsWith: &conversationRewardsWith
     githubComment:
       post: true
       debug: false
-
-daemonPricingWith: &daemonPricingWith
+daemonPricingWith: &a2
   labels:
     time:
       - name: "Time: <1 Hour"
@@ -53,48 +49,47 @@ daemonPricingWith: &daemonPricingWith
   publicAccessControl:
     setLabel: true
     fundExternalClosedIssue: false
-
-startStopWith: &startStopWith
-  assignedIssueScope: "network"
-  reviewDelayTolerance: "1 minute"
-  taskStaleTimeoutDuration: "1 minute"
+startStopWith: &a8
+  assignedIssueScope: network
+  reviewDelayTolerance: 1 minute
+  taskStaleTimeoutDuration: 1 minute
   maxConcurrentTasks:
     member: 1
     contributor: 1
   startRequiresWallet: false
   rolesWithReviewAuthority:
-    - "OWNER"
-    - "MEMBER"
-  requiredLabelsToStart: ["Priority: 5 (Emergency)", "Priority: 4 (Urgent)"]
-
-telegramWith: &telegramWith
+    - OWNER
+    - MEMBER
+  requiredLabelsToStart:
+    - "Priority: 5 (Emergency)"
+    - "Priority: 4 (Urgent)"
+telegramWith:
   botId: 5112548588
-
-disqualifierWith: &disqualifierWith
-  disqualification: "2 minutes"
-  warning: "1 minute"
+disqualifierWith: &a7
+  disqualification: 2 minutes
+  warning: 1 minute
   watch:
     optOut:
-      - "repoName"
-      - "repoName2"
-
-commandAskWith: &commandAskWith
-  model: "gpt-o4"
-
-automatedMergingWith: &automatedMergingWith
+      - repoName
+      - repoName2
+commandAskWith:
+  model: gpt-o4
+automatedMergingWith: &a3
   approvalsRequired:
     collaborator: "10"
   mergeTimeout:
-    collaborator: "2 minutes"
+    collaborator: 2 minutes
   repos:
-    monitor: [ ]
-    ignore: ["conversation-rewards"]
-  allowedReviewerRoles: ["OWNER", "COLLABORATOR", true]
-
-commandQueryUserWith: &commandQueryUserWith
+    monitor: []
+    ignore:
+      - conversation-rewards
+  allowedReviewerRoles:
+    - OWNER
+    - COLLABORATOR
+    - true
+commandQueryUserWith: &a5
   allowPublicQuery: true
-
-assistivePricingWith: &assistivePricingWith
+assistivePricingWith: &a6
   labels:
     time:
       - name: "Time: <1.5 Minutes"
@@ -123,47 +118,39 @@ assistivePricingWith: &assistivePricingWith
   publicAccessControl:
     setLabel: true
     fundExternalClosedIssue: false
-
 plugins:
-  # - skipBotEvents: false
-  #   uses:
-  #     - plugin: http://localhost:4000
-  #       with: *disqualifierWith
-
   - uses:
       - plugin: Meniole/text-vector-embeddings@development
-
   - skipBotEvents: true
     uses:
       - plugin: Meniole/text-conversation-rewards@development
-        with: *conversationRewardsWith
-
+        with: *a1
   - uses:
-    - plugin: https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev
-      with: *daemonPricingWith
-
+      - plugin: https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev
+        with: *a2
   - uses:
-    - plugin: Meniole/automated-merging@development
-      with: *automatedMergingWith
-  
+      - plugin: Meniole/automated-merging@development
+        with: *a3
   - uses:
-    - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
-      with: *walletWith
-  
+      - plugin: https://ubiquibot-command-wallet-development.fernand-veyrier.workers.dev
+        with: *a4
   - uses:
-    - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
-      with: *commandQueryUserWith
-  
+      - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
+        with: *a5
   - uses:
-    - plugin: Meniole/assistive-pricing@development
-      with: *assistivePricingWith
-  
+      - plugin: Meniole/assistive-pricing@development
+        with: *a6
   - uses:
-    - plugin: Meniole/daemon-disqualifier@development
-      with: *disqualifierWith
-  
+      - plugin: Meniole/daemon-disqualifier@development
+        with: *a7
   - skipBotEvents: false
     uses:
-    - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
-      with: *startStopWith
-
+      - plugin: https://ubiquibot-command-start-stop-development.fernand-veyrier.workers.dev
+        with: *a8
+  - uses:
+      - plugin: ubiquity-os-marketplace/command-ask@development
+        with:
+          model: o1-mini
+          openAiBaseUrl: undefined
+          similarityThreshold: 0.9
+          maxTokens: 10000
