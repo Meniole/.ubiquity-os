@@ -305,7 +305,7 @@ plugins:
         with:
           botId: 7543249164
   - uses:
-      - plugin: https://ubiquity-os-telegram-bridge-development.ubiquity.workers.dev
+      - plugin: https://ubiquity-os-telegram-bridge-development.fernand-veyrier.workers.dev
         with:
           botId: 7543249164
   - uses:
@@ -315,7 +315,7 @@ plugins:
         openAiBaseUrl: "https://openrouter.ai/api/v1"
   - skipBotEvents: false
     uses:
-      - plugin: https://ubiquity-os-command-start-stop-development.ubiquity.workers.dev
+      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
         with:
           reviewDelayTolerance: "3 Days"
           taskStaleTimeoutDuration: "30 Days"
@@ -331,21 +331,21 @@ plugins:
             - "ADMIN"
           requiredLabelsToStart: ["Priority: 3 (High)", "Priority: 4 (Urgent)", "Priority: 5 (Emergency)"]
   - uses:
-      - plugin: https://ubiquity-os-comment-vector-embeddings-development.ubiquity.workers.dev
+      - plugin: https://ubiquity-os-comment-vector-embeddings-development.fernand-veyrier.workers.dev
         with:
           matchThreshold: 0.95
           warningThreshold: 0.75
           jobMatchingThreshold: 0.75
   - uses:
-      - plugin: https://ubiquity-os-command-wallet-development.ubiquity.workers.dev
+      - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev/
         with:
           registerWalletWithVerification: false
   - uses:
-      - plugin: https://command-query-user-development.ubiquity.workers.dev
+      - plugin: https://command-query-user-development.fernand-veyrier.workers.dev
         with:
           allowPublicQuery: true
   - uses:
-      - plugin: https://ubiquity-os-daemon-pricing-development.ubiquity.workers.dev
+      - plugin: https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev
         with:
           labels:
             time:
