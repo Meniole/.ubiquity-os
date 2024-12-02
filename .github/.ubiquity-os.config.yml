@@ -11,6 +11,8 @@ plugins:
           incentives:
             requirePriceLabel: true
             contentEvaluator:
+              openAi:
+                endpoint: "http://localhost:3000/openai"
               multipliers:
                 - role:
                     - "ISSUE_SPECIFICATION"
