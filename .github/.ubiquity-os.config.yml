@@ -345,7 +345,7 @@ plugins:
         with:
           allowPublicQuery: true
   - uses:
-      - plugin: https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev
+      - plugin: Meniole/daemon-pricing@development
         with:
           labels:
             time:
