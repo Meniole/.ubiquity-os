@@ -296,7 +296,7 @@ plugins:
                         score: 0
                         countWords: true
               wordCountExponent: 0.85
-            permitGeneration: {}
+            # permitGeneration: {}
             githubComment:
               post: true
               debug: false
