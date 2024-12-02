@@ -337,7 +337,7 @@ plugins:
   #         warningThreshold: 0.75
   #         jobMatchingThreshold: 0.75
   - uses:
-      - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
+      - plugin: https://ubiquity-os-command-wallet-development.ubiquity.workers.dev
         with:
           registerWalletWithVerification: false
   # - uses:
