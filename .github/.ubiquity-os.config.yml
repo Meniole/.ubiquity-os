@@ -10,13 +10,13 @@ plugins:
           incentives:
             limitRewards: false
             requirePriceLabel: true
-            contentEvaluator:
-              openAi:
-                endpoint: "http://localhost:4000/openai"
-              multipliers:
-                - role:
-                    - "ISSUE_SPECIFICATION"
-                  relevance: 1
+            # contentEvaluator:
+            #   openAi:
+            #     endpoint: "http://localhost:4000/openai"
+            #   multipliers:
+            #     - role:
+            #         - "ISSUE_SPECIFICATION"
+            #       relevance: 1
             userExtractor:
               enabled: true
               redeemTask: true
