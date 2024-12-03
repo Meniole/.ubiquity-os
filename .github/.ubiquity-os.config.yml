@@ -1,8 +1,8 @@
 plugins:
   - skipBotEvents: false
     uses:
-      - plugin: http://localhost:4000
-      # - plugin: Meniole/text-conversation-rewards@development
+      # - plugin: http://localhost:4000
+      - plugin: Meniole/text-conversation-rewards@development
         with:
           logLevel: "debug"
           evmNetworkId: 100
