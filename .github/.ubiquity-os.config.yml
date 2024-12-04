@@ -8,7 +8,7 @@ plugins:
           evmPrivateEncrypted: "giLxu7IVSTpEFO89DaeCgnkKemYf2aFlK9EUQkbt71YmFOcQdIkCT8JDpX5zV5Sg1TqBeziZ486U0E3a6nD3emg0x9oeG3ILRUTlOE4I3RBZ0yTadsnV4RvewJMCMZJaYDuom-rHzog8p9InBwaHBszFeWItttSwS7o" # https://github.com/ubiquibot/conversation-rewards/pull/111#issuecomment-2348639931
           erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
           incentives:
-            limitRewards: false
+            limitRewards: true
             requirePriceLabel: true
             # contentEvaluator:
             #   openAi:
@@ -316,24 +316,24 @@ plugins:
   #     with:
   #       model: "openai/o1-mini"
   #       openAiBaseUrl: "https://openrouter.ai/api/v1"
-  - skipBotEvents: false
-    uses:
-      # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-      - plugin: https://comic-bee-miserably.ngrok-free.app
-        with:
-          reviewDelayTolerance: "3 Days"
-          taskStaleTimeoutDuration: "30 Days"
-          startRequiresWallet: false
-          maxConcurrentTasks:
-            member: 2
-            contributor: 2
-          emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
-          rolesWithReviewAuthority:
-            - "COLLABORATOR"
-            - "OWNER"
-            - "MEMBER"
-            - "ADMIN"
-          requiredLabelsToStart: ["Priority: 3 (High)", "Priority: 4 (Urgent)", "Priority: 5 (Emergency)"]
+  # - skipBotEvents: false
+  #   uses:
+  #     # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+  #     - plugin: https://comic-bee-miserably.ngrok-free.app
+  #       with:
+  #         reviewDelayTolerance: "3 Days"
+  #         taskStaleTimeoutDuration: "30 Days"
+  #         startRequiresWallet: false
+  #         maxConcurrentTasks:
+  #           member: 2
+  #           contributor: 2
+  #         emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
+  #         rolesWithReviewAuthority:
+  #           - "COLLABORATOR"
+  #           - "OWNER"
+  #           - "MEMBER"
+  #           - "ADMIN"
+  #         requiredLabelsToStart: ["Priority: 3 (High)", "Priority: 4 (Urgent)", "Priority: 5 (Emergency)"]
   # - uses:
   #     - plugin: https://ubiquity-os-comment-vector-embeddings-development.fernand-veyrier.workers.dev
   #       with:
