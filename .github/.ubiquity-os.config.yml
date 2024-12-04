@@ -319,7 +319,7 @@ plugins:
   - skipBotEvents: false
     uses:
       # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-      - plugin: https://smee.io/qCvH9IUm8aO23S
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           reviewDelayTolerance: "3 Days"
           taskStaleTimeoutDuration: "30 Days"
