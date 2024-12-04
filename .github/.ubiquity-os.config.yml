@@ -1,6 +1,6 @@
 plugins:
   # - skipBotEvents: false
-    - uses:
+  - uses:
       - plugin: Meniole/text-conversation-rewards@fix/assignee-cap
         with:
           logLevel: "debug"
