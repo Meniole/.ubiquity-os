@@ -318,7 +318,7 @@ plugins:
   #       openAiBaseUrl: "https://openrouter.ai/api/v1"
   - skipBotEvents: false
     uses:
-      - plugin: Meniole/command-start-stop@development
+      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
         with:
           reviewDelayTolerance: "3 Days"
           taskStaleTimeoutDuration: "30 Days"
