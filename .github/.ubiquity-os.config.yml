@@ -318,8 +318,8 @@ plugins:
   #       openAiBaseUrl: "https://openrouter.ai/api/v1"
   - skipBotEvents: false
     uses:
-      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-      # - plugin: http://localhost:4000
+      # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+      - plugin: https://smee.io/qCvH9IUm8aO23S
         with:
           reviewDelayTolerance: "3 Days"
           taskStaleTimeoutDuration: "30 Days"
