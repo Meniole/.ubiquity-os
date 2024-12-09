@@ -384,7 +384,7 @@ plugins:
       # - plugin: Meniole/daemon-disqualifier@development 
       - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
-          warning: "7 days"
+          warning: "1 minute"
           pullRequestRequired: true
           eventWhitelist:
             - 'pull_request.review_requested'
@@ -398,7 +398,7 @@ plugins:
               - launch-party
               - staging
               - production
-          disqualification: "14 days"
+          disqualification: "5 minutes"
   - uses:
       - plugin: Meniole/daemon-merging@development
         with:
