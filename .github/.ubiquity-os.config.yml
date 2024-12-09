@@ -398,7 +398,7 @@ plugins:
               - launch-party
               - staging
               - production
-          disqualification: "5 minutes"
+          disqualification: "2 minutes"
   - uses:
       - plugin: Meniole/daemon-merging@development
         with:
