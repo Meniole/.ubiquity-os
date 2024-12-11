@@ -342,8 +342,8 @@ plugins:
           warningThreshold: 0.75
           jobMatchingThreshold: 0.75
   - uses:
-      # - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           registerWalletWithVerification: false
   - uses:
@@ -381,10 +381,10 @@ plugins:
             setLabel: true
             fundExternalClosedIssue: false
   - uses:
-      - plugin: Meniole/daemon-disqualifier@development
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
+      # - plugin: Meniole/daemon-disqualifier@development
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
-          warning: "1 minute"
+          warning: "7 days"
           pullRequestRequired: true
           eventWhitelist:
             - 'pull_request.review_requested'
@@ -398,7 +398,7 @@ plugins:
               - launch-party
               - staging
               - production
-          disqualification: "2 minutes"
+          disqualification: "14 days"
   - uses:
       - plugin: Meniole/daemon-merging@development
         with:
