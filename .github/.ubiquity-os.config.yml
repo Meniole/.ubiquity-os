@@ -21,7 +21,7 @@ plugins:
             userExtractor:
               redeemTask: true
             dataPurge:
-              skipCommentsWhileAssigned: "exact"
+              skipCommentsWhileAssigned: "none"
             formattingEvaluator:
               multipliers:
                 - role:
