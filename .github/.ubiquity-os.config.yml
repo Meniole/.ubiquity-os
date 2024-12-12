@@ -380,7 +380,7 @@ plugins:
             setLabel: true
             fundExternalClosedIssue: false
   - uses:
-      # - plugin: Meniole/daemon-disqualifier@development 
+      # - plugin: Meniole/daemon-disqualifier@development
       - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           warning: "7 days"
