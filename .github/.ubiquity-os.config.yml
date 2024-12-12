@@ -19,12 +19,10 @@ plugins:
             #         - "ISSUE_SPECIFICATION"
             #       relevance: 1
             userExtractor:
-              enabled: true
               redeemTask: true
             dataPurge:
-              enabled: true
+              skipCommentsWhileAssigned: "exact"
             formattingEvaluator:
-              enabled: true
               multipliers:
                 - role:
                     - ISSUE_SPECIFICATION
