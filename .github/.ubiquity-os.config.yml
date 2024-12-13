@@ -2,7 +2,7 @@ plugins:
   # - skipBotEvents: false
   - uses:
       - plugin: Meniole/text-conversation-rewards@development
-      # - plugin: https://comic-bee-miserably.ngrok-free.app 
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           logLevel: "debug"
           evmNetworkId: 100
