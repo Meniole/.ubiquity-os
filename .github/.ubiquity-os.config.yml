@@ -318,8 +318,8 @@ plugins:
         openAiBaseUrl: "https://openrouter.ai/api/v1"
   - skipBotEvents: false
     uses:
-      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
+      # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           reviewDelayTolerance: "3 Days"
           taskStaleTimeoutDuration: "30 Days"
@@ -380,8 +380,8 @@ plugins:
             setLabel: true
             fundExternalClosedIssue: false
   - uses:
-      # - plugin: Meniole/daemon-disqualifier@development
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/daemon-disqualifier@development
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           warning: "1 minute"
           pullRequestRequired: true
