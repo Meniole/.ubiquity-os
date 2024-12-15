@@ -333,7 +333,8 @@ plugins:
             - "OWNER"
             - "MEMBER"
             - "ADMIN"
-          requiredLabelsToStart: ["Priority: 3 (High)", "Priority: 4 (Urgent)", "Priority: 5 (Emergency)"]
+          requiredLabelsToStart:
+            - name: "Priority: 3 (High)"
   - uses:
       - plugin: https://ubiquity-os-comment-vector-embeddings-development.fernand-veyrier.workers.dev
         with:
