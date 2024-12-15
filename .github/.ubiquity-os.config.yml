@@ -336,6 +336,7 @@ plugins:
           requiredLabelsToStart:
             - name: "Priority: 3 (High)"
             - name: "Priority: 4 (Urgent)"
+              roles: ['contributor']
 
   - uses:
       - plugin: https://ubiquity-os-comment-vector-embeddings-development.fernand-veyrier.workers.dev
