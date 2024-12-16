@@ -335,6 +335,7 @@ plugins:
             - "ADMIN"
           requiredLabelsToStart:
             - name: "Priority: 3 (High)"
+              roles: ['admin', 'billing_manager']
             - name: "Priority: 4 (Urgent)"
               roles: ['contributor', 'billing_manager']
 
