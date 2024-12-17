@@ -385,7 +385,7 @@ plugins:
                 collaboratorOnly: false
           basePriceMultiplier: 2
           publicAccessControl:
-            setLabel: true
+            setLabel: false
             fundExternalClosedIssue: false
   - uses:
       - plugin: Meniole/daemon-disqualifier@development
