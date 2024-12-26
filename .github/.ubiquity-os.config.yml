@@ -388,24 +388,25 @@ plugins:
             setLabel: false
             fundExternalClosedIssue: false
   - uses:
-      - plugin: Meniole/daemon-disqualifier@development
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
-        with:
-          warning: "1 minute"
-          pullRequestRequired: true
-          eventWhitelist:
-            - 'pull_request.review_requested'
-            - 'pull_request.ready_for_review'
-            - 'pull_request_review_comment.created'
-            - 'issue_comment.created'
-            - 'push'
-          watch:
-            optOut:
-              - ubiquibot
-              - launch-party
-              - staging
-              - production
-          disqualification: "2 minutes"
+    skipBotEvents: false
+    - plugin: Meniole/daemon-disqualifier@development
+    # - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+        warning: "1 minute"
+        pullRequestRequired: true
+        eventWhitelist:
+          - 'pull_request.review_requested'
+          - 'pull_request.ready_for_review'
+          - 'pull_request_review_comment.created'
+          - 'issue_comment.created'
+          - 'push'
+        watch:
+          optOut:
+            - ubiquibot
+            - launch-party
+            - staging
+            - production
+        disqualification: "2 minutes"
   - uses:
       - plugin: Meniole/daemon-merging@development
         with:
