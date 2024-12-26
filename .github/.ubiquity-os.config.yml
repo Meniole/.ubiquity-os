@@ -390,6 +390,7 @@ plugins:
   - skipBotEvents: false
     uses:
       - plugin: Meniole/daemon-disqualifier@development
+        skipBotEvents: false
       # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           warning: "1 minute"
