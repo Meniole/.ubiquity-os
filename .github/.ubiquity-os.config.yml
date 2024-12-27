@@ -390,7 +390,7 @@ plugins:
   - skipBotEvents: false
     uses:
       - plugin: Meniole/daemon-disqualifier@development
-        # skipBotEvents: false
+        skipBotEvents: false
       # - plugin: https://comic-bee-miserably.ngrok-free.app
         runsOn: ["issues.assigned", "push"]
         with:
