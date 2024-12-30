@@ -341,12 +341,12 @@ plugins:
             - name: "Priority: 4 (Urgent)"
               roles: ['contributor', 'billing_manager']
 
-  - uses:
-      - plugin: https://ubiquity-os-comment-vector-embeddings-development.fernand-veyrier.workers.dev
-        with:
-          matchThreshold: 0.95
-          warningThreshold: 0.75
-          jobMatchingThreshold: 0.75
+  # - uses:
+  #     - plugin: https://ubiquity-os-comment-vector-embeddings-development.fernand-veyrier.workers.dev
+  #       with:
+  #         matchThreshold: 0.95
+  #         warningThreshold: 0.75
+  #         jobMatchingThreshold: 0.75
   - uses:
       - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
       # - plugin: https://comic-bee-miserably.ngrok-free.app
