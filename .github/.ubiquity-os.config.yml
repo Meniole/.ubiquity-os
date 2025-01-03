@@ -337,7 +337,7 @@ plugins:
             # - name: "Priority: 1 (Normal)"
             #   roles: ['billing_manager']            
             - name: "Priority: 3 (High)"
-              roles: ['admin', 'billing_manager', 'member']
+              roles: ['admin', 'billing_manager', 'member', 'write']
             - name: "Priority: 4 (Urgent)"
               roles: ['contributor', 'billing_manager']
 
