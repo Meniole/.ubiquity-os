@@ -337,9 +337,9 @@ plugins:
             # - name: "Priority: 1 (Normal)"
             #   roles: ['billing_manager']            
             - name: "Priority: 3 (High)"
-              roles: ['admin', 'billing_manager', 'member', 'write']
+              roles: ['collaborator']
             - name: "Priority: 4 (Urgent)"
-              roles: ['contributor', 'billing_manager']
+              roles: ['contributor']
 
   # - uses:
   #     - plugin: https://ubiquity-os-comment-vector-embeddings-development.fernand-veyrier.workers.dev
