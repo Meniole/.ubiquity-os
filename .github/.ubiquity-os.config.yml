@@ -318,8 +318,8 @@ plugins:
         openAiBaseUrl: "https://openrouter.ai/api/v1"
   - skipBotEvents: false
     uses:
-      # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           reviewDelayTolerance: "3 Days"
           taskStaleTimeoutDuration: "30 Days"
@@ -353,7 +353,8 @@ plugins:
         with:
           registerWalletWithVerification: false
   - uses:
-      - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
+      # - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           allowPublicQuery: true
   - uses:
