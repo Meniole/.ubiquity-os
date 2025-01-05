@@ -303,19 +303,19 @@ plugins:
           dataCollection:
             maxAttempts: 10
             delayMs: 1000
-  # - uses:
-  #     - plugin: Meniole/ubiquity-os-kernel-telegram@development
-  #       with:
-  #         botId: 7543249164
+  - uses:
+      - plugin: Meniole/ubiquity-os-kernel-telegram@development
+        with:
+          botId: 7543249164
   - uses:
       - plugin: https://ubiquity-os-telegram-bridge-development.fernand-veyrier.workers.dev
         with:
           botId: 7543249164
-  # - uses:
-  #   - plugin: Meniole/command-ask@development
-  #     with:
-  #       model: "openai/o1-mini"
-  #       openAiBaseUrl: "https://openrouter.ai/api/v1"
+  - uses:
+    - plugin: Meniole/command-ask@development
+      with:
+        model: "openai/o1-mini"
+        openAiBaseUrl: "https://openrouter.ai/api/v1"
   - skipBotEvents: false
     uses:
       # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
@@ -356,84 +356,84 @@ plugins:
       - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
         with:
           allowPublicQuery: true
-  # - uses:
+  - uses:
       - plugin: Meniole/daemon-pricing@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
-  #       with:
-  #         labels:
-  #           time:
-  #             - name: "Time: <1 Hour"
-  #               collaboratorOnly: false
-  #             - name: "Time: <2 Hours"
-  #               collaboratorOnly: false
-  #             - name: "Time: <4 Hours"
-  #               collaboratorOnly: false
-  #             - name: "Time: <1 Day"
-  #               collaboratorOnly: false
-  #             - name: "Time: <1 Week"
-  #               collaboratorOnly: false
-  #           priority:
-  #             - name: "Priority: 0 (Regression)"
-  #               collaboratorOnly: false 
-  #             - name: "Priority: 1 (Normal)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 2 (Medium)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 3 (High)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 4 (Urgent)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 5 (Emergency)"
-  #               collaboratorOnly: false
-  #         basePriceMultiplier: 2
-  #         publicAccessControl:
-  #           setLabel: false
-  #           fundExternalClosedIssue: false
-  # - skipBotEvents: false
-  #   uses:
-  #     - plugin: Meniole/daemon-disqualifier@development
-  #       skipBotEvents: false
-  #     # - plugin: https://comic-bee-miserably.ngrok-free.app
-  #       runsOn: ["issues.assigned", "push"]
-  #       with:
-  #         warning: "1 minute"
-  #         pullRequestRequired: true
-  #         eventWhitelist:
-  #           - 'pull_request.review_requested'
-  #           - 'pull_request.ready_for_review'
-  #           - 'pull_request_review_comment.created'
-  #           - 'issue_comment.created'
-  #           - 'push'
-  #         watch:
-  #           optOut:
-  #             - ubiquibot
-  #             - launch-party
-  #             - staging
-  #             - production
-  #         disqualification: "2 minutes"
-  # - uses:
-  #     - plugin: Meniole/daemon-merging@development
-  #       with:
-  #         approvalsRequired:
-  #           collaborator: 1
-  #           contributor: 2
-  #         mergeTimeout:
-  #           collaborator: "3.5 days"
-  #           contributor: "7 days"
-  #         repos:
-  #           monitor: []
-  #           ignore:
-  #             - ubiquibot
-  #             - launch-party
-  #             - staging
-  #             - production
-  #         allowedReviewerRoles:
-  #           - "COLLABORATOR"
-  #           - "MEMBER"
-  #           - "OWNER"
-  # - uses:
-  #     - plugin: Meniole/text-vector-embeddings@development
-  #       with:
-  #         matchThreshold: 0.90
-  #         warningThreshold: 0.70
-  #         jobMatchingThreshold: 0.75
+        with:
+          labels:
+            time:
+              - name: "Time: <1 Hour"
+                collaboratorOnly: false
+              - name: "Time: <2 Hours"
+                collaboratorOnly: false
+              - name: "Time: <4 Hours"
+                collaboratorOnly: false
+              - name: "Time: <1 Day"
+                collaboratorOnly: false
+              - name: "Time: <1 Week"
+                collaboratorOnly: false
+            priority:
+              - name: "Priority: 0 (Regression)"
+                collaboratorOnly: false 
+              - name: "Priority: 1 (Normal)"
+                collaboratorOnly: false
+              - name: "Priority: 2 (Medium)"
+                collaboratorOnly: false
+              - name: "Priority: 3 (High)"
+                collaboratorOnly: false
+              - name: "Priority: 4 (Urgent)"
+                collaboratorOnly: false
+              - name: "Priority: 5 (Emergency)"
+                collaboratorOnly: false
+          basePriceMultiplier: 2
+          publicAccessControl:
+            setLabel: false
+            fundExternalClosedIssue: false
+  - skipBotEvents: false
+    uses:
+      - plugin: Meniole/daemon-disqualifier@development
+        skipBotEvents: false
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
+        runsOn: ["issues.assigned", "push"]
+        with:
+          warning: "1 minute"
+          pullRequestRequired: true
+          eventWhitelist:
+            - 'pull_request.review_requested'
+            - 'pull_request.ready_for_review'
+            - 'pull_request_review_comment.created'
+            - 'issue_comment.created'
+            - 'push'
+          watch:
+            optOut:
+              - ubiquibot
+              - launch-party
+              - staging
+              - production
+          disqualification: "2 minutes"
+  - uses:
+      - plugin: Meniole/daemon-merging@development
+        with:
+          approvalsRequired:
+            collaborator: 1
+            contributor: 2
+          mergeTimeout:
+            collaborator: "3.5 days"
+            contributor: "7 days"
+          repos:
+            monitor: []
+            ignore:
+              - ubiquibot
+              - launch-party
+              - staging
+              - production
+          allowedReviewerRoles:
+            - "COLLABORATOR"
+            - "MEMBER"
+            - "OWNER"
+  - uses:
+      - plugin: Meniole/text-vector-embeddings@development
+        with:
+          matchThreshold: 0.90
+          warningThreshold: 0.70
+          jobMatchingThreshold: 0.75
