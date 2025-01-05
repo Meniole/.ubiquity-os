@@ -353,8 +353,8 @@ plugins:
         with:
           registerWalletWithVerification: false
   - uses:
-      # - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           allowPublicQuery: true
   - uses:
