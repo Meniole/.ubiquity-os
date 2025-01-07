@@ -392,9 +392,9 @@ plugins:
             fundExternalClosedIssue: false
   - skipBotEvents: false
     uses:
-      - plugin: Meniole/daemon-disqualifier@development
+      # - plugin: Meniole/daemon-disqualifier@development
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         skipBotEvents: false
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
         runsOn: ["issues.assigned", "push"]
         with:
           warning: "1 minute"
