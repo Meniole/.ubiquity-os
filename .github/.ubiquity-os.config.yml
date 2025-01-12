@@ -335,11 +335,11 @@ plugins:
             - "ADMIN"
           requiredLabelsToStart:
             - name: "Priority: 2 (Medium)"
-              roles: ['contributor']            
+              allowedRoles: ['contributor']            
             - name: "Priority: 3 (High)"
-              roles: ['collaborator', 'contributor']
+              allowedRoles: ['collaborator', 'contributor']
             - name: "Priority: 4 (Urgent)"
-              roles: ['collaborator']
+              allowedRoles: ['collaborator']
             - name: "Priority: 5 (Emergency)"
 
   # - uses:
