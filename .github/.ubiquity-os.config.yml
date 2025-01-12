@@ -318,8 +318,8 @@ plugins:
         openAiBaseUrl: "https://openrouter.ai/api/v1"
   - skipBotEvents: false
     uses:
-      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
+      # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           reviewDelayTolerance: "3 Days"
           taskStaleTimeoutDuration: "30 Days"
@@ -337,9 +337,9 @@ plugins:
             # - name: "Priority: 1 (Normal)"
             #   roles: ['billing_manager']            
             - name: "Priority: 3 (High)"
-              roles: ['collaborator']
+              # roles: ['collaborator']
             - name: "Priority: 4 (Urgent)"
-              roles: ['contributor', 'admin']
+              # roles: ['contributor', 'admin']
 
   # - uses:
   #     - plugin: https://ubiquity-os-comment-vector-embeddings-development.fernand-veyrier.workers.dev
@@ -392,8 +392,8 @@ plugins:
             fundExternalClosedIssue: false
   - skipBotEvents: false
     uses:
-      # - plugin: Meniole/daemon-disqualifier@development
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/daemon-disqualifier@development
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         skipBotEvents: false
         runsOn: ["issues.assigned", "push"]
         with:
