@@ -334,6 +334,8 @@ plugins:
             - "MEMBER"
             - "ADMIN"
           requiredLabelsToStart:
+            - name: "Priority: 1 (Normal)"
+              allowedRoles: ['collaborator']                
             - name: "Priority: 2 (Medium)"
               allowedRoles: ['contributor']            
             - name: "Priority: 3 (High)"
