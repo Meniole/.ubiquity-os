@@ -445,3 +445,5 @@ plugins:
   - uses:
       # - plugin: Meniole/daemon-pull-review@development
       - plugin: https://comic-bee-miserably.ngrok-free.app
+        with:
+          openRouterBaseUrl: "https://api.openai.com/v1"
