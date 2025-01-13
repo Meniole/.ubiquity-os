@@ -318,8 +318,8 @@ plugins:
         openAiBaseUrl: "https://openrouter.ai/api/v1"
   - skipBotEvents: false
     uses:
-      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
+      # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           reviewDelayTolerance: "3 Days"
           taskStaleTimeoutDuration: "30 Days"
@@ -443,8 +443,8 @@ plugins:
           jobMatchingThreshold: 0.75
 
   - uses:
-      # - plugin: Meniole/daemon-pull-review@development
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/daemon-pull-review@development
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           openRouterBaseUrl: "https://api.openai.com/v1"
           openRouterAiModel: "gpt-4o"
