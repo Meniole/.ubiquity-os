@@ -4,7 +4,7 @@ plugins:
     uses:
       - plugin: ubiquity-os-marketplace/daemon-disqualifier@main
         skipBotEvents: false
-        runsOn: ['issue.comment_created']
+        runsOn: ['issue_comment.created']
         with:
           warning: 7 days
           pullRequestRequired: true
