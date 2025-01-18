@@ -2,7 +2,7 @@ plugins:
   - uses:
     - plugin: Meniole/daemon-disqualifier
       skipBotEvents: false
-# plugins:
+# plugins: 
 #   # - skipBotEvents: false
 #   - uses:
 #       - plugin: Meniole/text-conversation-rewards@fix/overhead
