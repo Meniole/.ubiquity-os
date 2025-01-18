@@ -1,7 +1,7 @@
 plugins:
   - skipBotEvents: false
     testUbqKey: 1234
-    uses:
+    uses: 
       - plugin: ubiquity-os-marketplace/daemon-disqualifier@main
         skipBotEvents: false
         runsOn: ['issue_comment.created']
