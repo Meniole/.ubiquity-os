@@ -2,7 +2,7 @@ plugins:
   - skipBotEvents: false
     testUbqKey: 1234
     uses: 
-      - plugin: ubiquity-os-marketplace/daemon-disqualifier@main
+      - plugin: Meniole/daemon-merging@fix/skip-bot-events
         skipBotEvents: false
         runsOn: ['issue_comment.created']
         with:
