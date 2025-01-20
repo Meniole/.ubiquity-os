@@ -1,4 +1,17 @@
 plugins:
+  - uses: Meniole/text-conversation-rewards@fork/ishowvel/review-incentive
+    with:
+      evmNetworkId: 100
+      incentives:
+        contentEvaluator: {}
+        userExtractor: {}
+        dataPurge: {}
+        formattingEvaluator: {}
+        # permitGeneration: {}
+        reviewIncentivizer: {}
+        githubComment:
+          post: true
+          debug: false  
   - skipBotEvents: false
     testUbqKey: 1234
     uses: 
