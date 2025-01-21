@@ -36,6 +36,9 @@ plugins:
               - production
           disqualification: 14 days
 
+  - uses:
+      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+
 # plugins:
 #   # - skipBotEvents: false
 #   - uses:
