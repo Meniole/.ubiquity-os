@@ -17,7 +17,7 @@ plugins:
     testUbqKey: 1234
     uses: 
       - plugin: Meniole/daemon-merging@fix/skip-bot-events
-        skipBotEvents: false
+        skipBotEvents: true
         runsOn: ['issue_comment.created']
         with:
           warning: 7 days
@@ -462,7 +462,7 @@ plugins:
   - uses:
       - plugin: Meniole/daemon-disqualifier@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
-        skipBotEvents: false
+        skipBotEvents: true
         with:
           warning: "1 minute"
           pullRequestRequired: true
