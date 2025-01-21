@@ -38,6 +38,29 @@ plugins:
 
   - uses:
       - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+        with:
+          reviewDelayTolerance: "3 Days"
+          taskStaleTimeoutDuration: "30 Days"
+          startRequiresWallet: false
+          maxConcurrentTasks:
+            member: 2
+            contributor: 2
+          emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
+          rolesWithReviewAuthority:
+            - "COLLABORATOR"
+            - "OWNER"
+            - "MEMBER"
+            - "ADMIN"
+          requiredLabelsToStart:
+            - name: "Priority: 1 (Normal)"
+              allowedRoles: ['collaborator']                
+            - name: "Priority: 2 (Medium)"
+              allowedRoles: ['contributor']            
+            - name: "Priority: 3 (High)"
+              allowedRoles: ['collaborator', 'contributor']
+            - name: "Priority: 4 (Urgent)"
+              allowedRoles: ['collaborator']
+            - name: "Priority: 5 (Emergency)"
 
 # plugins:
 #   # - skipBotEvents: false
