@@ -398,7 +398,6 @@ plugins:
   - uses:
       - plugin: Meniole/daemon-disqualifier@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
-        skipBotEvents: true
         with:
           warning: "1 minute"
           pullRequestRequired: true
