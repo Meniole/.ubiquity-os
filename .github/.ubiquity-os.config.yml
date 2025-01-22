@@ -1,8 +1,8 @@
 plugins:
   # - skipBotEvents: false
   - uses:
-      # - plugin: Meniole/text-conversation-rewards@development
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/text-conversation-rewards@development
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           logLevel: "debug"
           evmNetworkId: 100
@@ -396,7 +396,7 @@ plugins:
             setLabel: false
             fundExternalClosedIssue: false
   - uses:
-      - plugin: Meniole/daemon-disqualifier@development
+      - plugin: Meniole/daemon-disqualifier@feat/cron-job
       # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           warning: "1 minute"
