@@ -399,7 +399,7 @@ plugins:
             setLabel: false
             fundExternalClosedIssue: false
   - uses:
-      - plugin: Meniole/daemon-disqualifier@feat/cron-job
+      - plugin: Meniole/daemon-disqualifier@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           warning: "1 minute"
