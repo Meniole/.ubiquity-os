@@ -418,8 +418,8 @@ plugins:
               - production
           disqualification: "2 minutes"
   - uses:
-      # - plugin: Meniole/daemon-merging@development
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/daemon-merging@development
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           approvalsRequired:
             collaborator: 1
