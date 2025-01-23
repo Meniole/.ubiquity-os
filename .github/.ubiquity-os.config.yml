@@ -23,6 +23,9 @@ plugins:
               redeemTask: true
             dataPurge:
               skipCommentsWhileAssigned: "none"
+            reviewIncentivizer:
+              baseRate: 100
+              conclusiveReviewCredit: 25
             formattingEvaluator:
               multipliers:
                 - role:
