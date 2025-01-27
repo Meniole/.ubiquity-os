@@ -3,12 +3,12 @@ plugins:
   #     - plugin: "https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev"
 #   - uses:
 #       - plugin: "https://ubiquity-os-command-wallet-development.ubiquity.workers.dev"
-  - uses:
-      - plugin: "Meniole/command-ask@development"
+  # - uses:
+      # - plugin: "Meniole/command-ask@development"
 #   - uses:
 #       - plugin: "https://ubiquity-os-command-query-user-development.ubiquity.workers.dev"
-#   - uses:
-#       - plugin: "Meniole/daemon-pricing@development"
+  - uses:
+      - plugin: "Meniole/daemon-pricing@development"
 #   - uses:
 #       - plugin: "Meniole/text-conversation-rewards@development"
 #         with:
