@@ -8,7 +8,7 @@ plugins:
 #   - uses:
 #       - plugin: "https://ubiquity-os-command-query-user-development.ubiquity.workers.dev"
   - uses:
-      - plugin: "https://ubiquity-os-daemon-pricing-development.ubiquity.workers.dev"
+      - plugin: "https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev"
         with:
           labels:
             time:
