@@ -38,13 +38,13 @@ plugins:
   #             - name: "Priority: 5 (Emergency)"
   #               collaboratorOnly: false
   #         basePriceMultiplier: 2      
+  # - uses:
+  #     - plugin: "Meniole/text-conversation-rewards@development"
+  #       with:
+  #         evmPrivateEncrypted: "xGt-q9BWnT2nbmYv9OtJ1pUqOPFFWJVlbr5Egnwgo20BBcdGiitdme2vtV9oBkMbU-5L51rCxiOTQ3cTnhA49Lt9i9whKltzSv87tvlsoJCoHL_mJ7Y-oAzckLvEqDlyWNDk4r9CsSccNN8qClW270ntuEE"
+  #         evmNetworkId: 100
   - uses:
-      - plugin: "Meniole/text-conversation-rewards@development"
-        with:
-          evmPrivateEncrypted: "xGt-q9BWnT2nbmYv9OtJ1pUqOPFFWJVlbr5Egnwgo20BBcdGiitdme2vtV9oBkMbU-5L51rCxiOTQ3cTnhA49Lt9i9whKltzSv87tvlsoJCoHL_mJ7Y-oAzckLvEqDlyWNDk4r9CsSccNN8qClW270ntuEE"
-          evmNetworkId: 100
-#   - uses:
-#       - plugin: "Meniole/daemon-disqualifier@development"
+      - plugin: "Meniole/daemon-disqualifier@development"
 #   - uses:
 #       - plugin: "Meniole/daemon-merging@development"
 #   - uses:
