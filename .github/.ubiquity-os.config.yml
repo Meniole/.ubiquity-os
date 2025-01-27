@@ -8,7 +8,7 @@ plugins:
 #   - uses:
 #       - plugin: "https://ubiquity-os-command-query-user-development.ubiquity.workers.dev"
   - uses:
-      - plugin: "Meniole/daemon-pricing@development"
+      - plugin: "https://ubiquity-os-daemon-pricing-development.ubiquity.workers.dev"
         with:
           labels:
             time:
