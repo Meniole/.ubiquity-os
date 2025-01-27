@@ -1,6 +1,6 @@
 plugins:
   - uses:
-      - plugin: "https://ubiquity-os-command-start-stop-development.ubiquity.workers.dev"
+      - plugin: "https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev"
 #   - uses:
 #       - plugin: "https://ubiquity-os-command-wallet-development.ubiquity.workers.dev"
 #   - uses:
