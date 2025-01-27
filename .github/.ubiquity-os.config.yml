@@ -1,9 +1,8 @@
 plugins:
   - uses:
-    # - plugin: Meniole/plugin-test@development
-  - skipBotEvents: false
-  - uses:
-    - plugin: https://your-plugin-name-development.fernand-veyrier.workers.dev
+    - plugin: Meniole/plugin-test@development
+  # - uses:
+    # - plugin: https://your-plugin-name-development.fernand-veyrier.workers.dev
   - uses:
       - plugin: Meniole/text-conversation-rewards@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
