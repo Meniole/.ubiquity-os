@@ -1,33 +1,33 @@
 plugins:
   - uses:
       - plugin: "https://ubiquity-os-command-start-stop-development.ubiquity.workers.dev"
-  - uses:
-      - plugin: "https://ubiquity-os-command-wallet-development.ubiquity.workers.dev"
-  - uses:
-      - plugin: "Meniole/command-ask@development"
-  - uses:
-      - plugin: "https://ubiquity-os-command-query-user-development.ubiquity.workers.dev"
-  - uses:
-      - plugin: "Meniole/daemon-pricing@development"
-  - uses:
-      - plugin: "Meniole/text-conversation-rewards@development"
-        with:
-          evmPrivateEncrypted: "xGt-q9BWnT2nbmYv9OtJ1pUqOPFFWJVlbr5Egnwgo20BBcdGiitdme2vtV9oBkMbU-5L51rCxiOTQ3cTnhA49Lt9i9whKltzSv87tvlsoJCoHL_mJ7Y-oAzckLvEqDlyWNDk4r9CsSccNN8qClW270ntuEE"
-          evmNetworkId: 100
-  - uses:
-      - plugin: "Meniole/daemon-disqualifier@development"
-  - uses:
-      - plugin: "Meniole/daemon-merging@development"
-  - uses:
-      - plugin: "https://ubiquity-os-comment-vector-embeddings-development.ubiquity.workers.dev"
-  - uses:
-      - plugin: "Meniole/ubiquity-os-kernel-telegram@development"
-        with:
-          botId: 5112548588
-          storageOwner: "Meniole"
-  - uses:
-      - plugin: "https://ubiquity-os-telegram-bridge-development.ubiquity.workers.dev"
-        with:
-          botId: 5112548588
-          storageOwner: "Meniole"
+#   - uses:
+#       - plugin: "https://ubiquity-os-command-wallet-development.ubiquity.workers.dev"
+#   - uses:
+#       - plugin: "Meniole/command-ask@development"
+#   - uses:
+#       - plugin: "https://ubiquity-os-command-query-user-development.ubiquity.workers.dev"
+#   - uses:
+#       - plugin: "Meniole/daemon-pricing@development"
+#   - uses:
+#       - plugin: "Meniole/text-conversation-rewards@development"
+#         with:
+#           evmPrivateEncrypted: "xGt-q9BWnT2nbmYv9OtJ1pUqOPFFWJVlbr5Egnwgo20BBcdGiitdme2vtV9oBkMbU-5L51rCxiOTQ3cTnhA49Lt9i9whKltzSv87tvlsoJCoHL_mJ7Y-oAzckLvEqDlyWNDk4r9CsSccNN8qClW270ntuEE"
+#           evmNetworkId: 100
+#   - uses:
+#       - plugin: "Meniole/daemon-disqualifier@development"
+#   - uses:
+#       - plugin: "Meniole/daemon-merging@development"
+#   - uses:
+#       - plugin: "https://ubiquity-os-comment-vector-embeddings-development.ubiquity.workers.dev"
+#   - uses:
+#       - plugin: "Meniole/ubiquity-os-kernel-telegram@development"
+#         with:
+#           botId: 5112548588
+#           storageOwner: "Meniole"
+#   - uses:
+#       - plugin: "https://ubiquity-os-telegram-bridge-development.ubiquity.workers.dev"
+#         with:
+#           botId: 5112548588
+#           storageOwner: "Meniole"
   
