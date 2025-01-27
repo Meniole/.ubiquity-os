@@ -1,4 +1,6 @@
 plugins:
+  - uses:
+    - plugin: Meniole/plugin-test@development
   # - skipBotEvents: false
   - uses:
       - plugin: Meniole/text-conversation-rewards@development
