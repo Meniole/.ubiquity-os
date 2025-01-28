@@ -1,62 +1,62 @@
 plugins:
-  # - uses:
-  #     - plugin: "https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev"
-#   - uses:
-#       - plugin: "https://ubiquity-os-command-wallet-development.ubiquity.workers.dev"
-  # - uses:
-      # - plugin: "Meniole/command-ask@development"
-#   - uses:
-#       - plugin: "https://ubiquity-os-command-query-user-development.ubiquity.workers.dev"
-  # - uses:
-  #     - plugin: "https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev"
-  #       with:
-  #         labels:
-  #           time:
-  #             - name: "Time: <15 Minutes"
-  #               collaboratorOnly: false
-  #             - name: "Time: <1 Hour"
-  #               collaboratorOnly: false
-  #             - name: "Time: <2 Hours"
-  #               collaboratorOnly: false
-  #             - name: "Time: <4 Hours"
-  #               collaboratorOnly: false
-  #             - name: "Time: <1 Day"
-  #               collaboratorOnly: false
-  #             - name: "Time: <1 Week"
-  #               collaboratorOnly: false
-  #           priority:
-  #             - name: "Priority: 0 (Regression)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 1 (Normal)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 2 (Medium)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 3 (High)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 4 (Urgent)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 5 (Emergency)"
-  #               collaboratorOnly: false
-  #         basePriceMultiplier: 2      
-  # - uses:
-  #     - plugin: "Meniole/text-conversation-rewards@development"
-  #       with:
-  #         evmPrivateEncrypted: "xGt-q9BWnT2nbmYv9OtJ1pUqOPFFWJVlbr5Egnwgo20BBcdGiitdme2vtV9oBkMbU-5L51rCxiOTQ3cTnhA49Lt9i9whKltzSv87tvlsoJCoHL_mJ7Y-oAzckLvEqDlyWNDk4r9CsSccNN8qClW270ntuEE"
-  #         evmNetworkId: 100
+  - uses:
+      - plugin: "https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev"
+  - uses:
+      - plugin: "https://ubiquity-os-command-wallet-development.ubiquity.workers.dev"
+  - uses:
+      - plugin: "Meniole/command-ask@development"
+  - uses:
+      - plugin: "https://ubiquity-os-command-query-user-development.ubiquity.workers.dev"
+  - uses:
+      - plugin: "https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev"
+        with:
+          labels:
+            time:
+              - name: "Time: <15 Minutes"
+                collaboratorOnly: false
+              - name: "Time: <1 Hour"
+                collaboratorOnly: false
+              - name: "Time: <2 Hours"
+                collaboratorOnly: false
+              - name: "Time: <4 Hours"
+                collaboratorOnly: false
+              - name: "Time: <1 Day"
+                collaboratorOnly: false
+              - name: "Time: <1 Week"
+                collaboratorOnly: false
+            priority:
+              - name: "Priority: 0 (Regression)"
+                collaboratorOnly: false
+              - name: "Priority: 1 (Normal)"
+                collaboratorOnly: false
+              - name: "Priority: 2 (Medium)"
+                collaboratorOnly: false
+              - name: "Priority: 3 (High)"
+                collaboratorOnly: false
+              - name: "Priority: 4 (Urgent)"
+                collaboratorOnly: false
+              - name: "Priority: 5 (Emergency)"
+                collaboratorOnly: false
+          basePriceMultiplier: 2      
+  - uses:
+      - plugin: "Meniole/text-conversation-rewards@development"
+        with:
+          evmPrivateEncrypted: "xGt-q9BWnT2nbmYv9OtJ1pUqOPFFWJVlbr5Egnwgo20BBcdGiitdme2vtV9oBkMbU-5L51rCxiOTQ3cTnhA49Lt9i9whKltzSv87tvlsoJCoHL_mJ7Y-oAzckLvEqDlyWNDk4r9CsSccNN8qClW270ntuEE"
+          evmNetworkId: 100
   - uses:
       - plugin: "Meniole/daemon-disqualifier@development"
-#   - uses:
-#       - plugin: "Meniole/daemon-merging@development"
-#   - uses:
-#       - plugin: "https://ubiquity-os-comment-vector-embeddings-development.ubiquity.workers.dev"
-#   - uses:
-#       - plugin: "Meniole/ubiquity-os-kernel-telegram@development"
-#         with:
-#           botId: 5112548588
-#           storageOwner: "Meniole"
-#   - uses:
-#       - plugin: "https://ubiquity-os-telegram-bridge-development.ubiquity.workers.dev"
-#         with:
-#           botId: 5112548588
-#           storageOwner: "Meniole"
+  - uses:
+      - plugin: "Meniole/daemon-merging@development"
+  - uses:
+      - plugin: "https://ubiquity-os-comment-vector-embeddings-development.ubiquity.workers.dev"
+  - uses:
+      - plugin: "Meniole/ubiquity-os-kernel-telegram@development"
+        with:
+          botId: 5112548588
+          storageOwner: "Meniole"
+  - uses:
+      - plugin: "https://ubiquity-os-telegram-bridge-development.ubiquity.workers.dev"
+        with:
+          botId: 5112548588
+          storageOwner: "Meniole"
   
