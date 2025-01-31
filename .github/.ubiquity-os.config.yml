@@ -1,7 +1,7 @@
 plugins:
-  # - uses:
+  - uses:
   #   - plugin: Meniole/plugin-template@development
-  #   # - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: https://comic-bee-miserably.ngrok-free.app
   # - uses:
   #   - plugin: https://your-plugin-name-development.fernand-veyrier.workers.dev
   - uses:
