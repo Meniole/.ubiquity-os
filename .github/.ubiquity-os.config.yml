@@ -327,7 +327,7 @@ plugins:
   - skipBotEvents: false
     uses:
 #      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-      - plugin: https://ubiquity-os-command-start-stop-fork-ubiquity-whilefoo-fix.fernand-veyrier.workers.dev/
+      - plugin: https://ubiquity-os-command-start-stop-fork-ubiquity-whilefoo-fix.fernand-veyrier.workers.dev
 #      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           reviewDelayTolerance: "3 Days"
