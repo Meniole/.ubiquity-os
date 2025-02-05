@@ -431,7 +431,7 @@ plugins:
             collaborator: 1
             contributor: 2
           mergeTimeout:
-            collaborator: "3.5 days"
+            collaborator: "1 minute"
             contributor: "7 days"
           repos:
             monitor: []
