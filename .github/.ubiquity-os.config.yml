@@ -1,6 +1,6 @@
 plugins:
-  - uses:
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+  # - uses:
+    # - plugin: https://comic-bee-miserably.ngrok-free.app
 #    - plugin: Meniole/plugin-template@development
   # - uses:
   #   - plugin: https://your-plugin-name-development.fernand-veyrier.workers.dev
@@ -405,8 +405,8 @@ plugins:
             setLabel: false
             fundExternalClosedIssue: false
   - uses:
-      - plugin: Meniole/daemon-disqualifier@development
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
+      # - plugin: Meniole/daemon-disqualifier@development
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           warning: "1 minute"
           pullRequestRequired: true
