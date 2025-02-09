@@ -324,9 +324,8 @@ plugins:
       with:
         model: "openai/o1-mini"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
-  - skipBotEvents: false
-    uses:
-     - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+  - uses:
+      - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
 #      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           reviewDelayTolerance: "3 Days"
