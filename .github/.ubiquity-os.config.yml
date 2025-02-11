@@ -741,3 +741,7 @@ plugins:
               - priority
               - price
               - time
+  - uses:
+      - plugin: https://ubiquity-os-command-query-user-development.ubiquity.workers.dev
+        with:
+          allowPublicQuery: true
