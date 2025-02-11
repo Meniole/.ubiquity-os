@@ -5,8 +5,8 @@ plugins:
   # - uses:
   #   - plugin: https://your-plugin-name-development.fernand-veyrier.workers.dev
   - uses:
-      # - plugin: Meniole/text-conversation-rewards@development
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/text-conversation-rewards@development
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           logLevel: "debug"
           evmNetworkId: 100
