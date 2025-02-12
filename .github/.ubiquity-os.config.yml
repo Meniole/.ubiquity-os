@@ -146,7 +146,7 @@ plugins:
               - launch-party
               - staging
               - production
-          disqualification: "14 days"
+          disqualification: "5 minutes"
   - uses:
       - plugin: Meniole/daemon-merging@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
