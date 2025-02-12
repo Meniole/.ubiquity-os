@@ -150,7 +150,7 @@ plugins:
             - production
         disqualification: "14 days"
   - uses:
-      - plugin: Meniole/daemon-merging@development
+      - plugin: Meniole/daemon-merging@fork/ishowvel/development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           approvalsRequired:
