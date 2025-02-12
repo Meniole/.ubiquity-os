@@ -150,7 +150,7 @@ plugins:
             - production
         disqualification: "14 days"
   - uses:
-      - plugin: Meniole/daemon-merging@fork/ishowvel/development
+      - plugin: Meniole/daemon-merging@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           approvalsRequired:
@@ -178,7 +178,7 @@ plugins:
           jobMatchingThreshold: 0.75
 
   - uses:
-      - plugin: Meniole/daemon-pull-review@development
+      - plugin: Meniole/daemon-pull-review@fork/ishowvel/development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           openRouterBaseUrl: "https://api.openai.com/v1"
