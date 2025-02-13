@@ -1,7 +1,7 @@
 plugins:
   - uses:
     - plugin: https://comic-bee-miserably.ngrok-free.app
-      skipBotEvents: false
+      # skipBotEvents: false
   #  - plugin: Meniole/plugin-template@development
   # - uses:
   #   - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
