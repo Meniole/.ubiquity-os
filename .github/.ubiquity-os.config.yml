@@ -103,6 +103,8 @@ plugins:
         with:
           labels:
             time:
+              - name: "Time: <5 Minutes"
+                collaboratorOnly: false
               - name: "Time: <1 Hour"
                 collaboratorOnly: false
               - name: "Time: <2 Hours"
@@ -148,7 +150,7 @@ plugins:
               - launch-party
               - staging
               - production
-          disqualification: "20 minutes"
+          disqualification: "15 minutes"
   - uses:
       - plugin: Meniole/daemon-merging@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
