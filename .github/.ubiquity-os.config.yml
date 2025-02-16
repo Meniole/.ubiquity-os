@@ -1,6 +1,6 @@
 plugins:
-  - uses:
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+  # - uses:
+  #   - plugin: https://comic-bee-miserably.ngrok-free.app
       # skipBotEvents: false
   #  - plugin: Meniole/plugin-template@development
   - uses:
