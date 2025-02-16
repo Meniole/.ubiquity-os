@@ -97,8 +97,8 @@ plugins:
         with:
           allowPublicQuery: true
   - uses:
-      # - plugin: https://ubiquity-os-daemon-pricing-fix-action-label-populate.fernand-veyrier.workers.dev
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: https://ubiquity-os-daemon-pricing-fix-action-label-populate.fernand-veyrier.workers.dev
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         skipBotEvents: false
         with:
           labels:
