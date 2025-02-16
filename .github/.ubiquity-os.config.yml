@@ -1,10 +1,10 @@
 plugins:
-  - uses:
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+  # - uses:
+  #   - plugin: https://comic-bee-miserably.ngrok-free.app
       # skipBotEvents: false
   #  - plugin: Meniole/plugin-template@development
-  # - uses:
-  #   - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
+  - uses:
+    - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
   - uses:
       - plugin: Meniole/text-conversation-rewards@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
