@@ -97,8 +97,8 @@ plugins:
         with:
           allowPublicQuery: true
   - uses:
-      - plugin: https://ubiquity-os-daemon-pricing-fix-action-label-populate.fernand-veyrier.workers.dev
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
+      # - plugin: https://ubiquity-os-daemon-pricing-fix-action-label-populate.fernand-veyrier.workers.dev
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         skipBotEvents: false
         with:
           labels:
@@ -133,8 +133,8 @@ plugins:
             setLabel: false
             fundExternalClosedIssue: false
   - uses:
-      # - plugin: Meniole/daemon-disqualifier@feat/top-ups
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/daemon-disqualifier@feat/top-ups
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           warning: "1 minute"
           pullRequestRequired: true
@@ -180,8 +180,8 @@ plugins:
           jobMatchingThreshold: 0.75
 
   - uses:
-      # - plugin: Meniole/daemon-pull-review@fork/ishowvel/development
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/daemon-pull-review@fork/ishowvel/development
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           openRouterBaseUrl: "https://api.openai.com/v1"
           openRouterAiModel: "gpt-4o"
