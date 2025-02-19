@@ -4,7 +4,8 @@ plugins:
       # skipBotEvents: false
   #  - plugin: Meniole/plugin-template@development
   - uses:
-    - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
+    # - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
+    - plugin: https://comic-bee-miserably.ngrok-free.app
   - uses:
       - plugin: Meniole/text-conversation-rewards@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
@@ -97,8 +98,8 @@ plugins:
         with:
           allowPublicQuery: true
   - uses:
-      # - plugin: https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         skipBotEvents: false
         with:
           labels:
