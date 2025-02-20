@@ -139,7 +139,7 @@ plugins:
       # - plugin: Meniole/daemon-disqualifier@feat/top-ups
       - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
-          warning: "2 minutes"
+          warning: "1 minute"
           pullRequestRequired: false
           eventWhitelist:
             - 'pull_request.review_requested'
