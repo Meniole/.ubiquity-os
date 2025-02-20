@@ -140,7 +140,7 @@ plugins:
       - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           warning: "1 minute"
-          pullRequestRequired: false
+          pullRequestRequired: true
           eventWhitelist:
             - 'pull_request.review_requested'
             - 'pull_request.ready_for_review'
