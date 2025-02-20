@@ -104,6 +104,8 @@ plugins:
         with:
           labels:
             time:
+              - name: "Time: <1 Minutes"
+                collaboratorOnly: false
               - name: "Time: <5 Minutes"
                 collaboratorOnly: false
               - name: "Time: <1 Hour"
@@ -137,7 +139,7 @@ plugins:
       # - plugin: Meniole/daemon-disqualifier@feat/top-ups
       - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
-          warning: "1 minute"
+          warning: "2 minutes"
           pullRequestRequired: false
           eventWhitelist:
             - 'pull_request.review_requested'
