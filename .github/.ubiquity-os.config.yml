@@ -131,7 +131,7 @@ plugins:
                 collaboratorOnly: false
               - name: "Priority: 5 (Emergency)"
                 collaboratorOnly: false
-          basePriceMultiplier: 1.75
+          basePriceMultiplier: 3.5
           publicAccessControl:
             setLabel: false
             fundExternalClosedIssue: false
