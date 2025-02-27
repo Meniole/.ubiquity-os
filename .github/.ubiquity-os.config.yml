@@ -136,8 +136,8 @@ plugins:
   #           setLabel: false
   #           fundExternalClosedIssue: false
   - uses:
-      # - plugin: Meniole/daemon-disqualifier@feat/top-ups
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/daemon-disqualifier@feat/top-ups
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           followUpInterval: "1 minute"
           pullRequestRequired: false
