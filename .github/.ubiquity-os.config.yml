@@ -135,6 +135,8 @@ plugins:
           publicAccessControl:
             setLabel: false
             fundExternalClosedIssue: false
+          globalConfigUpdate:
+            excludeRepos: []
   # - uses:
   #     # - plugin: Meniole/daemon-disqualifier@feat/top-ups
   #     - plugin: https://comic-bee-miserably.ngrok-free.app
