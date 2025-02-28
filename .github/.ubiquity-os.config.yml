@@ -49,8 +49,8 @@ plugins:
 #         with:
 #           botId: 7543249164
   - uses:
-    # - plugin: Meniole/command-ask@development
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: Meniole/command-ask@fork/ubiquity-whilefoo/retry
+    # - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         model: "openai/o1-mini"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
