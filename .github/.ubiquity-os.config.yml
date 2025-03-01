@@ -136,7 +136,7 @@ plugins:
             setLabel: false
             fundExternalClosedIssue: false
           globalConfigUpdate:
-            excludedRepos: []
+            excludeRepos: []
   # - uses:
   #     # - plugin: Meniole/daemon-disqualifier@feat/top-ups
   #     - plugin: https://comic-bee-miserably.ngrok-free.app
