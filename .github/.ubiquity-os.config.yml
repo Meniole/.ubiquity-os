@@ -144,7 +144,7 @@ plugins:
       - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           followUpInterval: "1 minute"
-          pullRequestRequired: true
+          pullRequestRequired: false
           eventWhitelist:
             - 'pull_request.review_requested'
             - 'pull_request.ready_for_review'
