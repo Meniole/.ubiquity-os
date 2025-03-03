@@ -1,6 +1,6 @@
 plugins:
-  - uses:
-    - plugin: Meniole/personal-agent-bridge@development
+  # - uses:
+  #   - plugin: Meniole/personal-agent-bridge@development
   # - uses:
   #   - plugin: https://comic-bee-miserably.ngrok-free.app
 #       # skipBotEvents: false
@@ -50,12 +50,12 @@ plugins:
 #       - plugin: https://ubiquity-os-telegram-bridge-development.fernand-veyrier.workers.dev
 #         with:
 #           botId: 7543249164
-  # - uses:
-  #   - plugin: Meniole/command-ask@fork/ubiquity-whilefoo/retry
-  #   # - plugin: https://comic-bee-miserably.ngrok-free.app
-  #     with:
-  #       model: "openai/o1-mini"
-  #       openAiBaseUrl: "https://openrouter.ai/api/v1"
+  - uses:
+    - plugin: Meniole/command-ask@fork/ubiquity-whilefoo/retry
+    # - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+        model: "openai/o1-mini"
+        openAiBaseUrl: "https://openrouter.ai/api/v1"
 #   - uses:
 #     - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
 #     # - plugin: https://comic-bee-miserably.ngrok-free.app
