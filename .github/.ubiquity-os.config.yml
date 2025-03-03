@@ -50,12 +50,12 @@ plugins:
 #       - plugin: https://ubiquity-os-telegram-bridge-development.fernand-veyrier.workers.dev
 #         with:
 #           botId: 7543249164
-  - uses:
-    - plugin: Meniole/command-ask@fork/ubiquity-whilefoo/retry
-    # - plugin: https://comic-bee-miserably.ngrok-free.app
-      with:
-        model: "openai/o1-mini"
-        openAiBaseUrl: "https://openrouter.ai/api/v1"
+  # - uses:
+  #   - plugin: Meniole/command-ask@fork/ubiquity-whilefoo/retry
+  #   # - plugin: https://comic-bee-miserably.ngrok-free.app
+  #     with:
+  #       model: "openai/o1-mini"
+  #       openAiBaseUrl: "https://openrouter.ai/api/v1"
 #   - uses:
 #     - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
 #     # - plugin: https://comic-bee-miserably.ngrok-free.app
@@ -99,46 +99,46 @@ plugins:
 #       # - plugin: https://comic-bee-miserably.ngrok-free.app
 #         with:
 #           allowPublicQuery: true
-  # - uses:
-  #     - plugin: https://ubiquity-os-daemon-pricing-fix-label-generation.fernand-veyrier.workers.dev
-  #     # - plugin: https://comic-bee-miserably.ngrok-free.app
-  #       skipBotEvents: false
-  #       with:
-  #         labels:
-  #           time:
-  #             - name: "Time: <1 Minutes"
-  #               collaboratorOnly: false
-  #             - name: "Time: <5 Minutes"
-  #               collaboratorOnly: false
-  #             - name: "Time: <1 Hour"
-  #               collaboratorOnly: false
-  #             - name: "Time: <2 Hours"
-  #               collaboratorOnly: false
-  #             - name: "Time: <4 Hours"
-  #               collaboratorOnly: false
-  #             - name: "Time: <1 Day"
-  #               collaboratorOnly: false
-  #             - name: "Time: <1 Week"
-  #               collaboratorOnly: false
-  #           priority:
-  #             - name: "Priority: 0 (Regression)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 1 (Normal)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 2 (Medium)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 3 (High)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 4 (Urgent)"
-  #               collaboratorOnly: false
-  #             - name: "Priority: 5 (Emergency)"
-  #               collaboratorOnly: false
-  #         basePriceMultiplier: 2
-  #         publicAccessControl:
-  #           setLabel: false
-  #           fundExternalClosedIssue: false
-  #         globalConfigUpdate:
-  #           excludeRepos: []
+  - uses:
+      - plugin: https://ubiquity-os-daemon-pricing-fix-label-generation.fernand-veyrier.workers.dev
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
+        skipBotEvents: false
+        with:
+          labels:
+            time:
+              - name: "Time: <1 Minutes"
+                collaboratorOnly: false
+              - name: "Time: <5 Minutes"
+                collaboratorOnly: false
+              - name: "Time: <1 Hour"
+                collaboratorOnly: false
+              - name: "Time: <2 Hours"
+                collaboratorOnly: false
+              - name: "Time: <4 Hours"
+                collaboratorOnly: false
+              - name: "Time: <1 Day"
+                collaboratorOnly: false
+              - name: "Time: <1 Week"
+                collaboratorOnly: false
+            priority:
+              - name: "Priority: 0 (Regression)"
+                collaboratorOnly: false
+              - name: "Priority: 1 (Normal)"
+                collaboratorOnly: false
+              - name: "Priority: 2 (Medium)"
+                collaboratorOnly: false
+              - name: "Priority: 3 (High)"
+                collaboratorOnly: false
+              - name: "Priority: 4 (Urgent)"
+                collaboratorOnly: false
+              - name: "Priority: 5 (Emergency)"
+                collaboratorOnly: false
+          basePriceMultiplier: 2
+          publicAccessControl:
+            setLabel: false
+            fundExternalClosedIssue: false
+          globalConfigUpdate:
+            excludeRepos: []
   # - uses:
   #     # - plugin: Meniole/daemon-disqualifier@feat/top-ups
   #     - plugin: https://comic-bee-miserably.ngrok-free.app
