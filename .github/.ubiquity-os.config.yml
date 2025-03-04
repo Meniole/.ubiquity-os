@@ -1,5 +1,7 @@
 plugins:
   - uses:
+    - plugin: Meniole/daemon-responder@development
+  - uses:
     - plugin: Meniole/personal-agent-bridge@development
   # - uses:
   #   - plugin: https://comic-bee-miserably.ngrok-free.app
