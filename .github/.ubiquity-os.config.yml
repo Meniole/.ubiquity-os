@@ -1,6 +1,9 @@
 plugins:
   - uses:
     - plugin: Meniole/daemon-responder@fork/ubq-testing/development
+      with:
+        automatedReponses:
+          "daemon-responsoder": "We responding"
   - uses:
     - plugin: Meniole/personal-agent-bridge@development
   # - uses:
