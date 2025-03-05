@@ -145,8 +145,8 @@ plugins:
   #         globalConfigUpdate:
   #           excludeRepos: []
   - uses:
-      # - plugin: Meniole/daemon-disqualifier@development
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/daemon-disqualifier@fix/issue-post
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           followUpInterval: "1 minute"
           pullRequestRequired: true
