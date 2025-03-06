@@ -1,6 +1,6 @@
 plugins:
   - uses:
-    - plugin: Meniole/daemon-responder@fork/ubq-testing/development
+    - plugin: https://daemon-responder-fork-ubq-testing-development.fernand-veyrier.workers.dev
       with:
         automatedReponses:
           "daemon-responsoder": "We responding"
