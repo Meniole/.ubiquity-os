@@ -178,4 +178,4 @@ plugins:
         with:
           openRouterBaseUrl: "https://api.openai.com/v1"
           openRouterAiModel: "gpt-4o"
-          reviewInterval: "3 potatoes"
+          reviewInterval: "3 Days"
