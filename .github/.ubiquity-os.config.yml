@@ -173,8 +173,8 @@ plugins:
 #           jobMatchingThreshold: 0.75
 
   - uses:
-      - plugin: Meniole/daemon-pull-review@development
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
+      # - plugin: Meniole/daemon-pull-review@development
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           openRouterBaseUrl: "https://api.openai.com/v1"
           openRouterAiModel: "gpt-4o"
