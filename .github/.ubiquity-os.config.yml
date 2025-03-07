@@ -14,7 +14,7 @@ plugins:
 #     - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
 #     # - plugin: https://comic-bee-miserably.ngrok-free.app
   - uses:
-     - plugin: Meniole/text-conversation-rewards@fork/ishowvel/development
+     - plugin: Meniole/text-conversation-rewards@development
      # - plugin: https://comic-bee-miserably.ngrok-free.app
        with:
          logLevel: "debug"
