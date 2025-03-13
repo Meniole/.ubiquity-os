@@ -335,8 +335,8 @@ plugins:
         model: "openai/o1-mini"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
   - uses:
-    # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+    # - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         reviewDelayTolerance: "3 Days"
         taskStaleTimeoutDuration: "30 Days"
@@ -367,16 +367,16 @@ plugins:
 #   #         matchThreshold: 0.95
 #   #         warningThreshold: 0.75
 #   #         jobMatchingThreshold: 0.75
-#   - uses:
-#       - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
-#       # - plugin: https://comic-bee-miserably.ngrok-free.app
-#         with:
-#           registerWalletWithVerification: false
-#   - uses:
-#       - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
-#       # - plugin: https://comic-bee-miserably.ngrok-free.app
-#         with:
-#           allowPublicQuery: true
+  - uses:
+      - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
+        with:
+          registerWalletWithVerification: false
+  - uses:
+      - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
+        with:
+          allowPublicQuery: true
   - uses:
       - plugin: https://ubiquity-os-daemon-pricing-fix-label-generation.fernand-veyrier.workers.dev
       # - plugin: https://comic-bee-miserably.ngrok-free.app
