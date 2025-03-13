@@ -1,4 +1,4 @@
-# plugins:
+plugins:
 #   - uses:
 #     - plugin: https://daemon-responder-fork-ubq-testing-development.fernand-veyrier.workers.dev
 #       with:
