@@ -1,18 +1,18 @@
 plugins:
-#   - uses:
-#     - plugin: https://daemon-responder-fork-ubq-testing-development.fernand-veyrier.workers.dev
-#       with:
-#         automatedResponses:
-#           "daemon-responder": "We responding"
+  - uses:
+    # - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
+    - plugin: https://comic-bee-miserably.ngrok-free.app
+  # - uses:
+  #   - plugin: https://daemon-responder-fork-ubq-testing-development.fernand-veyrier.workers.dev
+  #     with:
+  #       automatedResponses:
+  #         "daemon-responder": "We responding"
 #   - uses:
 #     - plugin: Meniole/personal-agent-bridge@development
 #   # - uses:
 #   #   - plugin: https://comic-bee-miserably.ngrok-free.app
 # #       # skipBotEvents: false
 # #   #  - plugin: Meniole/plugin-template@development
-  - uses:
-    # - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
-    - plugin: https://comic-bee-miserably.ngrok-free.app
 #   - uses:
 #      - plugin: Meniole/text-conversation-rewards@development
 #      # - plugin: https://comic-bee-miserably.ngrok-free.app
