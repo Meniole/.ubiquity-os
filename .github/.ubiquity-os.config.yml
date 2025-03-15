@@ -1,7 +1,7 @@
 plugins:
   - uses:
-    # - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
+    # - plugin: https://comic-bee-miserably.ngrok-free.app
   - uses:
     - plugin: https://daemon-responder-fork-ubq-testing-development.fernand-veyrier.workers.dev
       with:
@@ -444,10 +444,10 @@ plugins:
           warningThreshold: 0.70
           jobMatchingThreshold: 0.75
 
-  # - uses:
-  #     # - plugin: Meniole/daemon-pull-review@development
-  #     - plugin: https://comic-bee-miserably.ngrok-free.app
-  #       with:
-  #         openRouterBaseUrl: "https://api.openai.com/v1"
-  #         openRouterAiModel: "gpt-4o"
-  #         reviewInterval: "3 Days"
+  - uses:
+      # - plugin: Meniole/daemon-pull-review@development
+      - plugin: https://comic-bee-miserably.ngrok-free.app
+        with:
+          openRouterBaseUrl: "https://api.openai.com/v1"
+          openRouterAiModel: "gpt-4o"
+          reviewInterval: "3 Days"
