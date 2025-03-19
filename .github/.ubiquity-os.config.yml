@@ -337,7 +337,7 @@ plugins:
 # #           botId: 7543249164
   - uses:
 #    - plugin: Meniole/command-ask@fork/ShivTestOrg/gdrive
-     - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         model: "deepseek/deepseek-r1-zero:free"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
