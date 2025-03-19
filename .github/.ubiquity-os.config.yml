@@ -329,8 +329,8 @@ plugins:
 # #         with:
 # #           botId: 7543249164
   - uses:
-    # - plugin: Meniole/command-ask@development
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: Meniole/command-ask@development
+    # - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         model: "deepseek/deepseek-r1-zero:free"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
@@ -451,3 +451,9 @@ plugins:
   #         openRouterBaseUrl: "https://api.openai.com/v1"
   #         openRouterAiModel: "gpt-4o"
   #         reviewInterval: "1 minute"
+
+  - uses:
+      - plugin: https://comic-bee-miserably.ngrok-free.app
+        with:
+            model: "deepseek/deepseek-r1-zero:free"
+            openAiBaseUrl: "https://openrouter.ai/api/v1"
