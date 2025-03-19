@@ -369,22 +369,16 @@ plugins:
             allowedRoles: ['collaborator']
           - name: "Priority: 5 (Emergency)"
 
-# #   # - uses:
-# #   #     - plugin: https://ubiquity-os-comment-vector-embeddings-development.fernand-veyrier.workers.dev
-# #   #       with:
-# #   #         matchThreshold: 0.95
-# #   #         warningThreshold: 0.75
-# #   #         jobMatchingThreshold: 0.75
-    - uses:
-       - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
-       # - plugin: https://comic-bee-miserably.ngrok-free.app
-         with:
-           registerWalletWithVerification: false
-    - uses:
-       - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
-       # - plugin: https://comic-bee-miserably.ngrok-free.app
-         with:
-           allowPublicQuery: true
+  - uses:
+     - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
+     # - plugin: https://comic-bee-miserably.ngrok-free.app
+       with:
+         registerWalletWithVerification: false
+  - uses:
+     - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
+     # - plugin: https://comic-bee-miserably.ngrok-free.app
+       with:
+         allowPublicQuery: true
 #   - uses:
 #       - plugin: https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev
 #       # - plugin: https://comic-bee-miserably.ngrok-free.app
