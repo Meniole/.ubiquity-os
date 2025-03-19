@@ -336,7 +336,7 @@ plugins:
 # #         with:
 # #           botId: 7543249164
   - uses:
-    - plugin: Meniole/command-ask@development
+    - plugin: Meniole/command-ask@fork/ShivTestOrg/gdrive
     # - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         model: "deepseek/deepseek-r1-zero:free"
