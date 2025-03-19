@@ -453,7 +453,7 @@ plugins:
   #         reviewInterval: "1 minute"
 
   - uses:
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: https://ubiquity-os-daemon-spec-rewriter-fork-ishowvel-development.fernand-veyrier.workers.dev
         with:
             model: "deepseek/deepseek-r1-zero:free"
             openAiBaseUrl: "https://openrouter.ai/api/v1"
