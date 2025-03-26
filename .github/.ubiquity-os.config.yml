@@ -410,7 +410,7 @@ plugins:
 #               - name: "Priority: 4 (Urgent)"
 #               - name: "Priority: 5 (Emergency)"
            basePriceMultiplier: 1
-           publicAccessControl: false
+           publicAccessControl: true
            globalConfigUpdate:
              excludeRepos: []
 ##   - uses:
