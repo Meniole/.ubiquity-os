@@ -52,8 +52,8 @@ plugins:
 #            model: "google/gemini-2.5-pro-exp-03-25:free"
 #            openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
-#  - uses:
-#     - plugin: Meniole/text-conversation-rewards@fork/Hephaestus-V/development
+  - uses:
+    - plugin: Meniole/text-conversation-rewards@fork/Hephaestus-V/development
 #    #  - plugin: https://comic-bee-miserably.ngrok-free.app
 #       with:
 #         logLevel: "debug"
