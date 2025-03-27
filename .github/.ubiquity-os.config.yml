@@ -81,7 +81,7 @@ plugins:
            baseRate: 100
            conclusiveReviewCredit: 25
           formattingEvaluator: {}
-          # permitGeneration: {}
+          permitGeneration: null
           githubComment:
            post: true
            debug: false
