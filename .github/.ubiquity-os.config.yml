@@ -53,7 +53,7 @@ plugins:
 #            openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
   - uses:
-     - plugin: Meniole/text-conversation-rewards@fork/Hephaestus-v/development
+     - plugin: Meniole/text-conversation-rewards@fork/Hephaestus-V/development
     #  - plugin: https://comic-bee-miserably.ngrok-free.app
        with:
          logLevel: "debug"
