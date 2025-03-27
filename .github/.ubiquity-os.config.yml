@@ -86,8 +86,8 @@ plugins:
            post: true
            debug: false
         dataCollection:
-        maxAttempts: 10
-        delayMs: 1000
+          maxAttempts: 10
+          delayMs: 1000
 
 ## #   - uses:
 ## #       - plugin: Meniole/ubiquity-os-kernel-telegram@development
