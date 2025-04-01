@@ -59,7 +59,7 @@ plugins:
      with:
        logLevel: "debug"
        evmNetworkId: 100
-       evmPrivateEncrypted: "YfEnpznMNbSPhCQzWy1Uevi4xQC25SqJrHd87CjjS1gsu92QrCReSgvl8Z_pVI1ZM57PNC1mZSgHbNgX9ITmOJc6qaOJ_mRe_sP_8jBcNimusDCQcWEkcPIW7Md-QGDPnwuN8FIavS7I0uiOIRYK6h0NK02-3uzPqhM"
+       evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
        erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
        incentives:
          eventIncentives: null
