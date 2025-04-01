@@ -53,42 +53,42 @@ plugins:
 #           model: "deepseek/deepseek-chat-v3-0324:free"
 #           openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
- - uses:
-   - plugin: Meniole/text-conversation-rewards@fork/Hephaestus-V/development
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
-     with:
-       logLevel: "debug"
-       evmNetworkId: 100
-       evmPrivateEncrypted: "giLxu7IVSTpEFO89DaeCgnkKemYf2aFlK9EUQkbt71YmFOcQdIkCT8JDpX5zV5Sg1TqBeziZ486U0E3a6nD3emg0x9oeG3ILRUTlOE4I3RBZ0yTadsnV4RvewJMCMZJaYDuom-rHzog8p9InBwaHBszFeWItttSwS7o" # https://github.com/ubiquibot/conversation-rewards/pull/111#issuecomment-2348639931
-       erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
-       incentives:
-         eventIncentives: null
-         collaboratorOnlyPaymentInvocation: false
-         limitRewards: true
-         requirePriceLabel: true
-         contentEvaluator:
-           openAi:
-             endpoint: "https://openrouter.ai/api/v1"
-             model: "deepseek/deepseek-chat-v3-0324:free"
-           multipliers:
-             - role:
-                 - "ISSUE_SPECIFICATION"
-               relevance: 1
-         userExtractor:
-          redeemTask: true
-         dataPurge:
-          skipCommentsWhileAssigned: "none"
-         reviewIncentivizer:
-          baseRate: 100
-          conclusiveReviewCredit: 25
-         formattingEvaluator: {}
-         permitGeneration: null
-         githubComment:
-          post: true
-          debug: false
-       dataCollection:
-         maxAttempts: 10
-         delayMs: 1000
+#  - uses:
+#    - plugin: Meniole/text-conversation-rewards@fork/Hephaestus-V/development
+# #    - plugin: https://comic-bee-miserably.ngrok-free.app
+#      with:
+#        logLevel: "debug"
+#        evmNetworkId: 100
+#        evmPrivateEncrypted: "giLxu7IVSTpEFO89DaeCgnkKemYf2aFlK9EUQkbt71YmFOcQdIkCT8JDpX5zV5Sg1TqBeziZ486U0E3a6nD3emg0x9oeG3ILRUTlOE4I3RBZ0yTadsnV4RvewJMCMZJaYDuom-rHzog8p9InBwaHBszFeWItttSwS7o" # https://github.com/ubiquibot/conversation-rewards/pull/111#issuecomment-2348639931
+#        erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
+#        incentives:
+#          eventIncentives: null
+#          collaboratorOnlyPaymentInvocation: false
+#          limitRewards: true
+#          requirePriceLabel: true
+#          contentEvaluator:
+#            openAi:
+#              endpoint: "https://openrouter.ai/api/v1"
+#              model: "deepseek/deepseek-chat-v3-0324:free"
+#            multipliers:
+#              - role:
+#                  - "ISSUE_SPECIFICATION"
+#                relevance: 1
+#          userExtractor:
+#           redeemTask: true
+#          dataPurge:
+#           skipCommentsWhileAssigned: "none"
+#          reviewIncentivizer:
+#           baseRate: 100
+#           conclusiveReviewCredit: 25
+#          formattingEvaluator: {}
+#          permitGeneration: null
+#          githubComment:
+#           post: true
+#           debug: false
+#        dataCollection:
+#          maxAttempts: 10
+#          delayMs: 1000
 
 ## #   - uses:
 ## #       - plugin: Meniole/ubiquity-os-kernel-telegram@development
