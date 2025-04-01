@@ -46,12 +46,12 @@ plugins:
 ## #       # skipBotEvents: false
 ## #   #  - plugin: Meniole/plugin-template@development
 #
-  - uses:
-    - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
-    # - plugin: https://comic-bee-miserably.ngrok-free.app
-      with:
-          model: "deepseek/deepseek-chat-v3-0324:free"
-          openAiBaseUrl: "https://openrouter.ai/api/v1"
+#   - uses:
+#     - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
+#     # - plugin: https://comic-bee-miserably.ngrok-free.app
+#       with:
+#           model: "deepseek/deepseek-chat-v3-0324:free"
+#           openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
 #  - uses:
 #    - plugin: Meniole/text-conversation-rewards@fork/Hephaestus-V/development
