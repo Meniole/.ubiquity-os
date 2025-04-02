@@ -135,7 +135,7 @@ plugins:
           - name: "Priority: 5 (Emergency)"
         taskAccessControl:
           usdPriceMax:
-            collaborator: 5000
+            collaborator: 5
             contributor: 10
 #
 #  - uses:
