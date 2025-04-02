@@ -136,7 +136,7 @@ plugins:
         taskAccessControl:
           usdPriceMax:
             collaborator: 5
-            contributor: 10
+            contributor: 5
 #
 #  - uses:
 #     - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
