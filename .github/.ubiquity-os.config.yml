@@ -2,7 +2,7 @@ plugins:
  - uses:
   #  - plugin: https://ubiquity-os-daemon-pricing-fix-public-access-control.fernand-veyrier.workers.dev
   #  - plugin: https://comic-bee-miserably.ngrok-free.app
-   - plugin: https://daemon-pricing.onrender.com
+   - plugin: https://daemon-pricing-mentlegen.onrender.com
      with:
        labels:
          time:
