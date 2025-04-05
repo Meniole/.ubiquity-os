@@ -55,7 +55,7 @@ plugins:
 #
  - uses:
   #  - plugin: Meniole/text-conversation-rewards@fork/hhio618/development
-   - plugin: Meniole/text-conversation-rewards@development
+   - plugin: Meniole/text-conversation-rewards@fix-no-wallet-warn
   #  - plugin: https://comic-bee-miserably.ngrok-free.app
      with:
        evmNetworkId: 100
