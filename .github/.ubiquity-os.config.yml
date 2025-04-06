@@ -53,43 +53,43 @@ plugins:
   #         model: "deepseek/deepseek-chat-v3-0324:free"
   #         openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
- - uses:
-  #  - plugin: Meniole/text-conversation-rewards@fork/hhio618/development
-   - plugin: Meniole/text-conversation-rewards@fix/no-wallet-warn
-  #  - plugin: https://comic-bee-miserably.ngrok-free.app
-     with:
-       evmNetworkId: 100
-       evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
-       erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
-       incentives:
-         eventIncentives: null
-         collaboratorOnlyPaymentInvocation: false
-         limitRewards: true
-         requirePriceLabel: true
-         contentEvaluator:
-           openAi:
-             endpoint: "https://openrouter.ai/api/v1"
-             model: "deepseek/deepseek-chat-v3-0324:free"
-           multipliers:
-             - role:
-                 - "ISSUE_SPECIFICATION"
-               relevance: 0
-         userExtractor:
-          redeemTask: true
-         dataPurge:
-          skipCommentsWhileAssigned: "none"
-         reviewIncentivizer:
-          baseRate: 100
-          conclusiveReviewCredit: 25
-         formattingEvaluator: {}
-         permitGeneration: {}
-         payment: {}
-         githubComment:
-          post: true
-          debug: false
-       dataCollection:
-         maxAttempts: 10
-         delayMs: 1000
+#  - uses:
+#   #  - plugin: Meniole/text-conversation-rewards@fork/hhio618/development
+#    - plugin: Meniole/text-conversation-rewards@fix/no-wallet-warn
+#   #  - plugin: https://comic-bee-miserably.ngrok-free.app
+#      with:
+#        evmNetworkId: 100
+#        evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
+#        erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
+#        incentives:
+#          eventIncentives: null
+#          collaboratorOnlyPaymentInvocation: false
+#          limitRewards: true
+#          requirePriceLabel: true
+#          contentEvaluator:
+#            openAi:
+#              endpoint: "https://openrouter.ai/api/v1"
+#              model: "deepseek/deepseek-chat-v3-0324:free"
+#            multipliers:
+#              - role:
+#                  - "ISSUE_SPECIFICATION"
+#                relevance: 0
+#          userExtractor:
+#           redeemTask: true
+#          dataPurge:
+#           skipCommentsWhileAssigned: "none"
+#          reviewIncentivizer:
+#           baseRate: 100
+#           conclusiveReviewCredit: 25
+#          formattingEvaluator: {}
+#          permitGeneration: {}
+#          payment: {}
+#          githubComment:
+#           post: true
+#           debug: false
+#        dataCollection:
+#          maxAttempts: 10
+#          delayMs: 1000
 
 ## #   - uses:
 ## #       - plugin: Meniole/ubiquity-os-kernel-telegram@development
@@ -150,19 +150,19 @@ plugins:
 #       with:
 #         allowPublicQuery: true
 
-##   - uses:
-##       - plugin: Meniole/daemon-disqualifier@development
-##       # - plugin: https://comic-bee-miserably.ngrok-free.app
-##         with:
-##           followUpInterval: "1 minute"
-##           pullRequestRequired: false
-##           eventWhitelist:
-##             - 'pull_request.review_requested'
-##             - 'pull_request.ready_for_review'
-##             - 'pull_request_review_comment.created'
-##             - 'issue_comment.created'
-##             - 'push'
-##           negligenceThreshold: "2 minutes"
+  - uses:
+      - plugin: Meniole/daemon-disqualifier@fix/extensions
+      # - plugin: https://comic-bee-miserably.ngrok-free.app
+        with:
+          followUpInterval: "20 minutes"
+          pullRequestRequired: false
+          eventWhitelist:
+            - 'pull_request.review_requested'
+            - 'pull_request.ready_for_review'
+            - 'pull_request_review_comment.created'
+            - 'issue_comment.created'
+            - 'push'
+          negligenceThreshold: "30 minutes"
 ##   - uses:
 ##       - plugin: Meniole/daemon-merging@development
 ##       # - plugin: https://comic-bee-miserably.ngrok-free.app
