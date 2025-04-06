@@ -154,7 +154,7 @@ plugins:
       - plugin: Meniole/daemon-disqualifier@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
-          followUpInterval: "20 minutes"
+          followUpInterval: "2 minutes"
           pullRequestRequired: false
           eventWhitelist:
             - 'pull_request.review_requested'
