@@ -150,19 +150,19 @@ plugins:
 #       with:
 #         allowPublicQuery: true
 
-   - uses:
-      - plugin: Meniole/daemon-disqualifier@development
-      # - plugin: https://comic-bee-miserably.ngrok-free.app
-        with:
-          followUpInterval: "2 minutes"
-          pullRequestRequired: false
-          eventWhitelist:
-            - 'pull_request.review_requested'
-            - 'pull_request.ready_for_review'
-            - 'pull_request_review_comment.created'
-            - 'issue_comment.created'
-            - 'push'
-          negligenceThreshold: "30 minutes"
+#   - uses:
+#      - plugin: Meniole/daemon-disqualifier@development
+#      # - plugin: https://comic-bee-miserably.ngrok-free.app
+#        with:
+#          followUpInterval: "2 minutes"
+#          pullRequestRequired: false
+#          eventWhitelist:
+#            - 'pull_request.review_requested'
+#            - 'pull_request.ready_for_review'
+#            - 'pull_request_review_comment.created'
+#            - 'issue_comment.created'
+#            - 'push'
+#          negligenceThreshold: "30 minutes"
 ##   - uses:
 ##       - plugin: Meniole/daemon-merging@development
 ##       # - plugin: https://comic-bee-miserably.ngrok-free.app
