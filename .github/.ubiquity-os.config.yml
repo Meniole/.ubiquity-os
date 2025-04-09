@@ -150,7 +150,7 @@ plugins:
 #       with:
 #         allowPublicQuery: true
 
-  - uses:
+   - uses:
       - plugin: Meniole/daemon-disqualifier@development
       # - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
