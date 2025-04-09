@@ -46,12 +46,12 @@ plugins:
 ## #       # skipBotEvents: false
 ## #   #  - plugin: Meniole/plugin-template@development
 #
-  # - uses:
-  #   - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
-  #   # - plugin: https://comic-bee-miserably.ngrok-free.app
-  #     with:
-  #         model: "deepseek/deepseek-chat-v3-0324:free"
-  #         openAiBaseUrl: "https://openrouter.ai/api/v1"
+  - uses:
+    - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
+    # - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+          model: "deepseek/deepseek-chat-v3-0324:free"
+          openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
 #  - uses:
 #   #  - plugin: Meniole/text-conversation-rewards@fork/hhio618/development
@@ -108,36 +108,36 @@ plugins:
 #        maxTokens: 100000
 #        maxDepth: 2
 #
-  - uses:
-    # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
-    - plugin: https://comic-bee-miserably.ngrok-free.app
-      with:
-        reviewDelayTolerance: "3 Days"
-        taskStaleTimeoutDuration: "30 Days"
-        startRequiresWallet: false
-        maxConcurrentTasks:
-          member: 2
-          contributor: 2
-        emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
-        rolesWithReviewAuthority:
-          - "COLLABORATOR"
-          - "OWNER"
-          - "MEMBER"
-          - "ADMIN"
-        requiredLabelsToStart:
-          - name: "Priority: 1 (Normal)"
-            allowedRoles: ['collaborator', 'contributor']
-          - name: "Priority: 2 (Medium)"
-            allowedRoles: ['contributor']
-          - name: "Priority: 3 (High)"
-            allowedRoles: ['collaborator', 'contributor']
-          - name: "Priority: 4 (Urgent)"
-            allowedRoles: ['collaborator']
-          - name: "Priority: 5 (Emergency)"
-        taskAccessControl:
-          usdPriceMax:
-            collaborator: 5
-            contributor: 5
+  # - uses:
+  #   # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+  #   - plugin: https://comic-bee-miserably.ngrok-free.app
+  #     with:
+  #       reviewDelayTolerance: "3 Days"
+  #       taskStaleTimeoutDuration: "30 Days"
+  #       startRequiresWallet: false
+  #       maxConcurrentTasks:
+  #         member: 2
+  #         contributor: 2
+  #       emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
+  #       rolesWithReviewAuthority:
+  #         - "COLLABORATOR"
+  #         - "OWNER"
+  #         - "MEMBER"
+  #         - "ADMIN"
+  #       requiredLabelsToStart:
+  #         - name: "Priority: 1 (Normal)"
+  #           allowedRoles: ['collaborator', 'contributor']
+  #         - name: "Priority: 2 (Medium)"
+  #           allowedRoles: ['contributor']
+  #         - name: "Priority: 3 (High)"
+  #           allowedRoles: ['collaborator', 'contributor']
+  #         - name: "Priority: 4 (Urgent)"
+  #           allowedRoles: ['collaborator']
+  #         - name: "Priority: 5 (Emergency)"
+  #       taskAccessControl:
+  #         usdPriceMax:
+  #           collaborator: 5
+  #           contributor: 5
 #
 #  - uses:
 #     - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
