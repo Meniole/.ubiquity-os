@@ -2,7 +2,7 @@ plugins:
  - uses:
 #   - plugin: https://daemon-pricing.vercel.app/api
     - plugin: https://comic-bee-miserably.ngrok-free.app
-     with:
+      with:
        labels:
          time:
            - name: "Time: <1 Minutes"
@@ -16,17 +16,17 @@ plugins:
            - name: "(Normal) 1 prio level"
            - name: "(Med) 2 prio level"
            - name: "(High) 3 prio level"
-#               - name: "p0"
-#               - name: "p1"
-#               - name: "p2"
-#               - name: "p3"
-#               - name: "p4"
-#               - name: "Priority: 0 (Regression)"
-#               - name: "Priority: 1 (Normal)"
-#               - name: "Priority: 2 (Medium)"
-#               - name: "Priority: 3 (High)"
-#               - name: "Priority: 4 (Urgent)"
-#               - name: "Priority: 5 (Emergency)"
+      #               - name: "p0"
+      #               - name: "p1"
+      #               - name: "p2"
+      #               - name: "p3"
+      #               - name: "p4"
+      #               - name: "Priority: 0 (Regression)"
+      #               - name: "Priority: 1 (Normal)"
+      #               - name: "Priority: 2 (Medium)"
+      #               - name: "Priority: 3 (High)"
+      #               - name: "Priority: 4 (Urgent)"
+      #               - name: "Priority: 5 (Emergency)"
        basePriceMultiplier: 1
        shouldFundContributorClosedIssue: true
        globalConfigUpdate:
