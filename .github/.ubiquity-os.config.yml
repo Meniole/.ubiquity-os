@@ -1,7 +1,7 @@
 plugins:
   - uses:
-  #   - plugin: https://daemon-pricing.vercel.app/api
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: https://daemon-pricing.vercel.app
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         labels:
           time:
