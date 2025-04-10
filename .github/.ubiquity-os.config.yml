@@ -82,7 +82,8 @@ plugins:
            conclusiveReviewCredit: 25
           formattingEvaluator: {}
           permitGeneration: {}
-          payment: {}
+          payment:
+            automaticTransferMode: false
           githubComment:
            post: true
            debug: false
