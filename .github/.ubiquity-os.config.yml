@@ -1,6 +1,7 @@
 plugins:
   - uses:
-    - plugin: https://gentlementlegen-daemon-pricing.vercel.app
+#    - plugin: https://gentlementlegen-daemon-pricing.vercel.app
+    - plugin: https://gentlementlegen-daemon-pricing-3ub5qpvl2-mentlegens-projects.vercel.app
 #    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         labels:
