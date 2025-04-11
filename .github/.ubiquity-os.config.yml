@@ -1,8 +1,8 @@
 plugins:
   - uses:
 #    - plugin: https://gentlementlegen-daemon-pricing.vercel.app
-    - plugin: https://gentlementlegen-daemon-pricing-h7noyzsdq-mentlegens-projects.vercel.app
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: https://gentlementlegen-daemon-pricing-5625q8v2b-mentlegens-projects.vercel.app
+      #    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         labels:
           time:
