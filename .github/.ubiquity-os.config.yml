@@ -51,7 +51,7 @@ plugins:
    # - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
     - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
-         model: "deepseek/deepseek-chat-v3-0324:free"
+         openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
          openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
   - uses:
