@@ -1,6 +1,7 @@
 plugins:
   - uses:
-    - plugin: https://gentlementlegen-daemon-pricing.vercel.app
+#    - plugin: https://gentlementlegen-daemon-pricing.vercel.app
+    - plugin: https://meniole-command-start-stop.azurewebsites.net
 #    - plugin: https://gentlementlegen-daemon-pricing-5t36t9jnq-mentlegens-projects.vercel.app
       #    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
