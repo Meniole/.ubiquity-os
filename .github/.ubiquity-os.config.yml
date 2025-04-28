@@ -33,6 +33,10 @@ plugins:
         shouldFundContributorClosedIssue: true
         globalConfigUpdate:
            excludeRepos: []
+        taskAccessControl:
+          usdPriceMax:
+            collaborator: 5000
+            contributor: 0
 ##   - uses:
 ##     - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
 ##     # - plugin: https://comic-bee-miserably.ngrok-free.app
