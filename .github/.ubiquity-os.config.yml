@@ -36,7 +36,7 @@ plugins:
         taskAccessControl:
           usdPriceMax:
             collaborator: 5000
-            contributor: 0
+            contributor: -1
 ##   - uses:
 ##     - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
 ##     # - plugin: https://comic-bee-miserably.ngrok-free.app
