@@ -145,7 +145,7 @@ plugins:
 #           collaborator: 5
 #           contributor: -1
 #
- - uses:
+  - uses:
     # - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
     - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
