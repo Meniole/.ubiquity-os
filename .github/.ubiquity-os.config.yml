@@ -71,14 +71,14 @@ plugins:
            collaboratorOnlyPaymentInvocation: false
            limitRewards: true
            requirePriceLabel: true
- #          contentEvaluator:
- #            openAi:
- #              endpoint: "https://openrouter.ai/api/v1"
- #              model: "deepseek/deepseek-chat-v3-0324:free"
- #            multipliers:
- #              - role:
- #                  - "ISSUE_SPECIFICATION"
- #                relevance: 0
+           contentEvaluator:
+             openAi:
+               endpoint: "https://openrouter.ai/api/v1"
+               model: "deepseek/deepseek-chat-v3-0324:free"
+             multipliers:
+               - role:
+                   - "ISSUE_SPECIFICATION"
+                 relevance: 0
            userExtractor:
             redeemTask: true
            dataPurge:
