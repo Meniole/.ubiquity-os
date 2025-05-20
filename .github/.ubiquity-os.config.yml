@@ -105,14 +105,14 @@ plugins:
 ## #       - plugin: https://ubiquity-os-telegram-bridge-development.fernand-veyrier.workers.dev
 ## #         with:
 ## #           botId: 7543249164
-#  - uses:
-##    - plugin: Meniole/command-ask@fork/ShivTestOrg/gdrive
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
-#      with:
-#        model: "deepseek/deepseek-r1-zero:free"
-#        openAiBaseUrl: "https://openrouter.ai/api/v1"
-#        maxTokens: 100000
-#        maxDepth: 2
+  - uses:
+#    - plugin: Meniole/command-ask@fork/ShivTestOrg/gdrive
+    - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+        model: "deepseek/deepseek-r1-zero:free"
+        openAiBaseUrl: "https://openrouter.ai/api/v1"
+        maxTokens: 100000
+        maxDepth: 2
 #
 #  - uses:
 #   # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
@@ -145,11 +145,11 @@ plugins:
 #           collaborator: 5
 #           contributor: -1
 #
-  - uses:
-    # - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
-    - plugin: https://comic-bee-miserably.ngrok-free.app
-      with:
-        registerWalletWithVerification: false
+#  - uses:
+#    # - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
+#      with:
+#        registerWalletWithVerification: false
 #  - uses:
 #     - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
 #     # - plugin: https://comic-bee-miserably.ngrok-free.app
