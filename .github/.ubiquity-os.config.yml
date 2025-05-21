@@ -69,7 +69,7 @@ plugins:
         maxDepth: 2
 
   - uses:
-    - plugin: Meniole/text-conversation-rewards@fix/rpc-gen
+    - plugin: Meniole/text-conversation-rewards@development
     #     - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
        evmNetworkId: 100
