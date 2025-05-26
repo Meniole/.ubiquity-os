@@ -63,7 +63,8 @@ plugins:
 #    - plugin: Meniole/command-ask@fork/ubiquity-whilefoo/document-parsing
     - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
-        model: "deepseek/deepseek-r1-zero:free"
+#        model: "deepseek/deepseek-r1-zero:free"
+        model: "openai/gpt-4o-mini"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
         maxTokens: 100000
         maxDepth: 2
