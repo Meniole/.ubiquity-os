@@ -64,7 +64,7 @@ plugins:
     - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
 #        model: "deepseek/deepseek-r1-zero:free"
-        model: "openai/gpt-4o-mini"
+        model: "openai/gpt-4.1"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
         maxTokens: 100000
         maxDepth: 2
