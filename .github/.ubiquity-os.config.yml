@@ -60,8 +60,8 @@ plugins:
 #         openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
   - uses:
-    - plugin: Meniole/command-ask@fork/ubiquity-whilefoo/document-parsing
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
+#    - plugin: Meniole/command-ask@fork/ubiquity-whilefoo/document-parsing
+    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         model: "deepseek/deepseek-r1-zero:free"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
