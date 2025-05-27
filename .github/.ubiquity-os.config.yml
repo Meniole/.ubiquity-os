@@ -60,8 +60,8 @@ plugins:
 #         openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
   - uses:
-#    - plugin: Meniole/command-ask@fork/ubiquity-whilefoo/document-parsing
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: Meniole/command-ask@development
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         model: "deepseek/deepseek-chat-v3-0324:free"
 #        model: "openai/gpt-4.1"
@@ -117,36 +117,36 @@ plugins:
 ## #           botId: 7543249164
 
 #
-#  - uses:
-#   # - plugin: https://ubiquity-os-command-start-stop-development.fernand-veyrier.workers.dev
+  - uses:
+    - plugin: https://command-start-stop.deno.dev
 #    - plugin: https://comic-bee-miserably.ngrok-free.app
-#      with:
-#       reviewDelayTolerance: "3 Days"
-#       taskStaleTimeoutDuration: "30 Days"
-#       startRequiresWallet: false
-#       maxConcurrentTasks:
-#         member: 2
-#         contributor: 2
-#       emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
-#       rolesWithReviewAuthority:
-#         - "COLLABORATOR"
-#         - "OWNER"
-#         - "MEMBER"
-#         - "ADMIN"
-#       requiredLabelsToStart:
-#         - name: "Priority: 1 (Normal)"
-#           allowedRoles: ['collaborator', 'contributor']
-#         - name: "Priority: 2 (Medium)"
-#           allowedRoles: ['contributor']
-#         - name: "Priority: 3 (High)"
-#           allowedRoles: ['collaborator', 'contributor']
-#         - name: "Priority: 4 (Urgent)"
-#           allowedRoles: ['collaborator']
-#         - name: "Priority: 5 (Emergency)"
-#       taskAccessControl:
-#         usdPriceMax:
-#           collaborator: 5
-#           contributor: -1
+      with:
+       reviewDelayTolerance: "3 Days"
+       taskStaleTimeoutDuration: "30 Days"
+       startRequiresWallet: false
+       maxConcurrentTasks:
+         member: 2
+         contributor: 2
+       emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
+       rolesWithReviewAuthority:
+         - "COLLABORATOR"
+         - "OWNER"
+         - "MEMBER"
+         - "ADMIN"
+       requiredLabelsToStart:
+         - name: "Priority: 1 (Normal)"
+           allowedRoles: ['collaborator', 'contributor']
+         - name: "Priority: 2 (Medium)"
+           allowedRoles: ['contributor']
+         - name: "Priority: 3 (High)"
+           allowedRoles: ['collaborator', 'contributor']
+         - name: "Priority: 4 (Urgent)"
+           allowedRoles: ['collaborator']
+         - name: "Priority: 5 (Emergency)"
+       taskAccessControl:
+         usdPriceMax:
+           collaborator: 5
+           contributor: -1
 #
 #  - uses:
 #    # - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
