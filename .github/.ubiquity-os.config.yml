@@ -118,7 +118,7 @@ plugins:
 
 #
   - uses:
-    - plugin: https://command-start-stop-develop.deno.dev
+    - plugin: https://command-start-stop-main.deno.dev
 #    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
        reviewDelayTolerance: "3 Days"
