@@ -145,12 +145,12 @@ plugins:
          usdPriceMax:
            collaborator: 5
            contributor: -1
-#
-#  - uses:
-#    # - plugin: https://ubiquity-os-command-wallet-development.fernand-veyrier.workers.dev
+
+  - uses:
+     - plugin: https://command-wallet-development.deno.dev
 #    - plugin: https://comic-bee-miserably.ngrok-free.app
-#      with:
-#        registerWalletWithVerification: false
+       with:
+         registerWalletWithVerification: true
 #  - uses:
 #     - plugin: https://ubiquity-os-command-query-user-development.fernand-veyrier.workers.dev
 #     # - plugin: https://comic-bee-miserably.ngrok-free.app
