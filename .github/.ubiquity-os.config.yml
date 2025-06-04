@@ -79,6 +79,7 @@ plugins:
          collaboratorOnlyPaymentInvocation: false
          limitRewards: true
          requirePriceLabel: true
+         simplificationIncentivizer: {}
          externalContent:
            llmImageModel:
              model: meta-llama/llama-4-maverick:free
