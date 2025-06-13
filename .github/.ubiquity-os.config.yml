@@ -1,5 +1,7 @@
 plugins:
   - uses:
+      - plugin: https://comic-bee-miserably.ngrok-free.app
+  - uses:
     - plugin: https://daemon-pricing-development.deno.dev
       #    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
