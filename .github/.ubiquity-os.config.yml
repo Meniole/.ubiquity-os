@@ -1,6 +1,6 @@
 plugins:
-  - uses:
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+#  - uses:
+#      - plugin: https://comic-bee-miserably.ngrok-free.app
   - uses:
     - plugin: https://daemon-pricing-development.deno.dev
       #    - plugin: https://comic-bee-miserably.ngrok-free.app
@@ -60,8 +60,8 @@ plugins:
 #         openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
   - uses:
-    - plugin: Meniole/command-ask@development
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
+#    - plugin: Meniole/command-ask@development
+    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         model: "deepseek/deepseek-chat-v3-0324:free"
 #        model: "openai/gpt-4.1"
