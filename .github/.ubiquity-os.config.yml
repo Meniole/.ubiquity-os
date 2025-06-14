@@ -1,1 +1,216 @@
-plugins: []
+plugins:
+  - uses:
+      - plugin: https://comic-bee-miserably.ngrok-free.app
+  - uses:
+    - plugin: https://daemon-pricing-development.deno.dev
+      #    - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+        labels:
+          time:
+            - name: "Time: <1 Minutes"
+            - name: "Time: <5 Minutes"
+            - name: "Time: <1 Hour"
+            - name: "Time: <2 Hours"
+            - name: "Time: <4 Hours"
+            - name: "Time: <1 Day"
+            - name: "Time: <1 Week"
+          priority:
+#           - name: "(Normal) 1 prio level"
+#           - name: "(Med) 2 prio level"
+#           - name: "(High) 3 prio level"
+      #               - name: "p0"
+      #               - name: "p1"
+      #               - name: "p2"
+      #               - name: "p3"
+      #               - name: "p4"
+            - name: "Priority: 0 (Regression)"
+            - name: "Priority: 1 (Normal)"
+            - name: "Priority: 2 (Medium)"
+            - name: "Priority: 3 (High)"
+            - name: "Priority: 4 (Urgent)"
+            - name: "Priority: 5 (Emergency)"
+        basePriceMultiplier: 7
+        shouldFundContributorClosedIssue: true
+        globalConfigUpdate:
+           excludeRepos: []
+        taskAccessControl:
+          usdPriceMax:
+            collaborator: 5000
+            contributor: -1
+##   - uses:
+##     - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
+##     # - plugin: https://comic-bee-miserably.ngrok-free.app
+##   - uses:
+##     - plugin: https://daemon-responder-fork-ubq-testing-development.fernand-veyrier.workers.dev
+##       with:
+##         automatedResponses:
+##           "daemon-responder": "We responding"
+##   - uses:
+##     - plugin: Meniole/personal-agent-bridge@development
+##   # - uses:
+##   #   - plugin: https://comic-bee-miserably.ngrok-free.app
+## #       # skipBotEvents: false
+## #   #  - plugin: Meniole/plugin-template@development
+#
+#  - uses:
+#   # - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
+#      with:
+#         openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
+#         openAiBaseUrl: "https://openrouter.ai/api/v1"
+#
+  - uses:
+    - plugin: Meniole/command-ask@development
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+        model: "deepseek/deepseek-chat-v3-0324:free"
+#        model: "openai/gpt-4.1"
+        openAiBaseUrl: "https://openrouter.ai/api/v1"
+        maxTokens: 100000
+        maxDepth: 2
+
+  - uses:
+    - plugin: Meniole/text-conversation-rewards@feat/external-content-relevance
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+       evmNetworkId: 100
+       evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
+       erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
+       incentives:
+         eventIncentives: null
+         collaboratorOnlyPaymentInvocation: false
+         limitRewards: true
+         requirePriceLabel: true
+         simplificationIncentivizer: {}
+         externalContent:
+           llmImageModel:
+             model: meta-llama/llama-4-maverick:free
+           llmWebsiteModel:
+             model: deepseek/deepseek-r1-0528:free
+         contentEvaluator:
+           openAi:
+             endpoint: "https://openrouter.ai/api/v1"
+             model: mistralai/devstral-small:free
+           multipliers:
+             - role:
+                 - "ISSUE_SPECIFICATION"
+               relevance: 0
+         userExtractor:
+          redeemTask: true
+         dataPurge:
+          skipCommentsWhileAssigned: "none"
+         reviewIncentivizer:
+          baseRate: 100
+          conclusiveReviewCredit: 25
+         formattingEvaluator: {}
+         permitGeneration: {}
+         payment:
+           automaticTransferMode: false
+         githubComment:
+          post: true
+          debug: false
+       dataCollection:
+         maxAttempts: 10
+         delayMs: 1000
+
+## #   - uses:
+## #       - plugin: Meniole/ubiquity-os-kernel-telegram@development
+## #         with:
+## #           botId: 7543249164
+## #   - uses:
+## #       - plugin: https://ubiquity-os-telegram-bridge-development.fernand-veyrier.workers.dev
+## #         with:
+## #           botId: 7543249164
+
+#
+  - uses:
+    - plugin: https://command-start-stop-develop.deno.dev
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+       reviewDelayTolerance: "3 Days"
+       taskStaleTimeoutDuration: "30 Days"
+       startRequiresWallet: false
+       maxConcurrentTasks:
+         member: 2
+         contributor: 2
+       emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
+       rolesWithReviewAuthority:
+         - "COLLABORATOR"
+         - "OWNER"
+         - "MEMBER"
+         - "ADMIN"
+       requiredLabelsToStart:
+         - name: "Priority: 1 (Normal)"
+           allowedRoles: ['collaborator', 'contributor']
+         - name: "Priority: 2 (Medium)"
+           allowedRoles: ['contributor']
+         - name: "Priority: 3 (High)"
+           allowedRoles: ['collaborator', 'contributor']
+         - name: "Priority: 4 (Urgent)"
+           allowedRoles: ['collaborator']
+         - name: "Priority: 5 (Emergency)"
+       taskAccessControl:
+         usdPriceMax:
+           collaborator: 5
+           contributor: -1
+
+  - uses:
+     - plugin: https://command-wallet-development.deno.dev
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
+       with:
+         registerWalletWithVerification: false
+
+  - uses:
+     - plugin: https://command-query-development.deno.dev
+     # - plugin: https://comic-bee-miserably.ngrok-free.app
+       with:
+         allowPublicQuery: true
+
+#   - uses:
+#      - plugin: Meniole/daemon-disqualifier@development
+#      # - plugin: https://comic-bee-miserably.ngrok-free.app
+#        with:
+#          followUpInterval: "2 minutes"
+#          pullRequestRequired: false
+#          eventWhitelist:
+#            - 'pull_request.review_requested'
+#            - 'pull_request.ready_for_review'
+#            - 'pull_request_review_comment.created'
+#            - 'issue_comment.created'
+#            - 'push'
+#          negligenceThreshold: "30 minutes"
+##   - uses:
+##       - plugin: Meniole/daemon-merging@development
+##       # - plugin: https://comic-bee-miserably.ngrok-free.app
+##         with:
+##           approvalsRequired:
+##             collaborator: 1
+##             contributor: 2
+##           mergeTimeout:
+##             collaborator: "1 minute"
+##             contributor: "1 minute"
+##           repos:
+##             monitor: []
+##             ignore:
+##               - ubiquibot
+##               - launch-party
+##               - staging
+##               - production
+##           allowedReviewerRoles:
+##             - "COLLABORATOR"
+##             - "MEMBER"
+##             - "OWNER"
+##   - uses:
+##       - plugin: Meniole/text-vector-embeddings@development
+##         with:
+##           matchThreshold: 0.90
+##           warningThreshold: 0.70
+##           jobMatchingThreshold: 0.75
+#
+#  # - uses:
+#  #     # - plugin: Meniole/daemon-pull-review@development
+#  #     - plugin: https://comic-bee-miserably.ngrok-free.app
+#  #       with:
+#  #         openRouterBaseUrl: "https://api.openai.com/v1"
+#  #         openRouterAiModel: "gpt-4o"
+#  #         reviewInterval: "1 minute"
