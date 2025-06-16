@@ -181,7 +181,7 @@ plugins:
 #            - 'push'
 #          negligenceThreshold: "30 minutes"
   - uses:
-    - plugin: Meniole/daemon-merging@fix/cron
+    - plugin: Meniole/daemon-merging@development
     # - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         approvalsRequired:
