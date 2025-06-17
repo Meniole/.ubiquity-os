@@ -71,7 +71,7 @@ plugins:
         maxDepth: 2
 
   - uses:
-    - plugin: Meniole/text-conversation-rewards@feat/external-content-relevance
+    - plugin: Meniole/text-conversation-rewards@fork/ubiquity-whilefoo/new-permit-contract
 #    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
        evmNetworkId: 100
