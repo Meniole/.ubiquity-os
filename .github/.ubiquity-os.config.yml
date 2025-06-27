@@ -51,17 +51,17 @@ plugins:
 ##   #   - plugin: https://comic-bee-miserably.ngrok-free.app
 ## #       # skipBotEvents: false
 ## #   #  - plugin: Meniole/plugin-template@development
-#
-#  - uses:
-#   # - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
-#      with:
-#         openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
-#         openAiBaseUrl: "https://openrouter.ai/api/v1"
-#
+
   - uses:
-#    - plugin: Meniole/command-ask@development
+   # - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
     - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+         openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
+         openAiBaseUrl: "https://openrouter.ai/api/v1"
+
+  - uses:
+    - plugin: Meniole/command-ask@development
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
 #        model: "google/gemini-2.5-pro-exp-03-25"
         model: "deepseek/deepseek-chat-v3-0324:free"
