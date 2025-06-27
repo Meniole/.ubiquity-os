@@ -60,8 +60,8 @@ plugins:
 #         openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
   - uses:
-    - plugin: Meniole/command-ask@development
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
+#    - plugin: Meniole/command-ask@development
+    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         model: "google/gemini-2.5-pro-exp-03-25"
 #        model: "deepseek/deepseek-chat-v3-0324:free"
@@ -71,8 +71,8 @@ plugins:
         maxDepth: 2
 
   - uses:
-#    - plugin: Meniole/text-conversation-rewards@fork/ubiquity-whilefoo/new-permit-contract
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: Meniole/text-conversation-rewards@development
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         rewards:
           evmNetworkId: 100
