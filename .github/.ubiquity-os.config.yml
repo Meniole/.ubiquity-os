@@ -53,8 +53,8 @@ plugins:
 ## #   #  - plugin: Meniole/plugin-template@development
 
   - uses:
-#    - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
          openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
          openAiBaseUrl: "https://openrouter.ai/api/v1"
@@ -125,9 +125,9 @@ plugins:
 ## #           botId: 7543249164
 
 #
-#  - uses:
+  - uses:
 #    - plugin: https://command-start-stop-develop.deno.dev
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: https://comic-bee-miserably.ngrok-free.app
 #      with:
 #       reviewDelayTolerance: "3 Days"
 #       taskStaleTimeoutDuration: "30 Days"
