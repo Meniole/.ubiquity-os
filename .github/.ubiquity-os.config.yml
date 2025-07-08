@@ -1,40 +1,41 @@
 plugins:
-#  - uses:
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
-##    - plugin: https://daemon-pricing-development.deno.dev
-#      with:
-#        labels:
-#          time:
-#            - name: "Time: <1 Minutes"
-#            - name: "Time: <5 Minutes"
-#            - name: "Time: <1 Hour"
-#            - name: "Time: <2 Hours"
-#            - name: "Time: <4 Hours"
-#            - name: "Time: <1 Day"
-#            - name: "Time: <1 Week"
-#          priority:
-##           - name: "(Normal) 1 prio level"
-##           - name: "(Med) 2 prio level"
-##           - name: "(High) 3 prio level"
-#      #               - name: "p0"
-#      #               - name: "p1"
-#      #               - name: "p2"
-#      #               - name: "p3"
-#      #               - name: "p4"
-#            - name: "Priority: 0 (Regression)"
-#            - name: "Priority: 1 (Normal)"
-#            - name: "Priority: 2 (Medium)"
-#            - name: "Priority: 3 (High)"
-#            - name: "Priority: 4 (Urgent)"
-#            - name: "Priority: 5 (Emergency)"
-#        basePriceMultiplier: 1
-#        shouldFundContributorClosedIssue: true
-#        globalConfigUpdate:
-#           excludeRepos: []
-#        taskAccessControl:
-#          usdPriceMax:
-#            collaborator: 5000
-#            contributor: -1
+  - uses:
+    - plugin: https://comic-bee-miserably.ngrok-free.app
+#    - plugin: https://daemon-pricing-development.deno.dev
+      with:
+        labels:
+          time:
+            - name: "Time: <1 Minutes"
+            - name: "Time: <5 Minutes"
+            - name: "Time: <1 Hour"
+            - name: "Time: <2 Hours"
+            - name: "Time: <4 Hours"
+            - name: "Time: <1 Day"
+            - name: "Time: <1 Week"
+          priority:
+#           - name: "(Normal) 1 prio level"
+#           - name: "(Med) 2 prio level"
+#           - name: "(High) 3 prio level"
+      #               - name: "p0"
+      #               - name: "p1"
+      #               - name: "p2"
+      #               - name: "p3"
+      #               - name: "p4"
+            - name: "Priority: 0 (Regression)"
+            - name: "Priority: 1 (Normal)"
+            - name: "Priority: 2 (Medium)"
+            - name: "Priority: 3 (High)"
+            - name: "Priority: 4 (Urgent)"
+            - name: "Priority: 5 (Emergency)"
+        basePriceMultiplier: 1
+        shouldFundContributorClosedIssue: true
+        globalConfigUpdate:
+           excludeRepos: []
+        taskAccessControl:
+          usdPriceMax:
+            collaborator: 5000
+            contributor: -1
+
 ##   - uses:
 ##     - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
 ##     # - plugin: https://comic-bee-miserably.ngrok-free.app
@@ -51,8 +52,8 @@ plugins:
 ## #   #  - plugin: Meniole/plugin-template@development
 
   - uses:
-#    - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
          openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
          openAiBaseUrl: "https://openrouter.ai/api/v1"
