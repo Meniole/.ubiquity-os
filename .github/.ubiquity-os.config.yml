@@ -186,7 +186,7 @@ plugins:
       with:
         approvalsRequired:
          collaborator: 1
-         contributor: 2
+         contributor: 1
         mergeTimeout:
          collaborator: "1 minute"
          contributor: "1 minute"
