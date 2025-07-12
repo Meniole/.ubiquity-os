@@ -125,36 +125,36 @@ plugins:
 ## #           botId: 7543249164
 
 #
-#  - uses:
+  - uses:
 #    - plugin: https://command-start-stop-develop.deno.dev
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
-#      with:
-#       reviewDelayTolerance: "3 Days"
-#       taskStaleTimeoutDuration: "30 Days"
-#       startRequiresWallet: false
-#       maxConcurrentTasks:
-#         member: 2
-#         contributor: 2
-#       emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
-#       rolesWithReviewAuthority:
-#         - "COLLABORATOR"
-#         - "OWNER"
-#         - "MEMBER"
-#         - "ADMIN"
-#       requiredLabelsToStart:
-#         - name: "Priority: 1 (Normal)"
-#           allowedRoles: ['collaborator', 'contributor']
-#         - name: "Priority: 2 (Medium)"
-#           allowedRoles: ['contributor']
-#         - name: "Priority: 3 (High)"
-#           allowedRoles: ['collaborator', 'contributor']
-#         - name: "Priority: 4 (Urgent)"
-#           allowedRoles: ['collaborator']
-#         - name: "Priority: 5 (Emergency)"
-#       taskAccessControl:
-#         usdPriceMax:
-#           collaborator: 5
-#           contributor: -1
+    - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+       reviewDelayTolerance: "3 Days"
+       taskStaleTimeoutDuration: "30 Days"
+       startRequiresWallet: false
+       maxConcurrentTasks:
+         member: 2
+         contributor: 2
+       emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
+       rolesWithReviewAuthority:
+         - "COLLABORATOR"
+         - "OWNER"
+         - "MEMBER"
+         - "ADMIN"
+       requiredLabelsToStart:
+         - name: "Priority: 1 (Normal)"
+           allowedRoles: ['collaborator', 'contributor']
+         - name: "Priority: 2 (Medium)"
+           allowedRoles: ['contributor']
+         - name: "Priority: 3 (High)"
+           allowedRoles: ['collaborator', 'contributor']
+         - name: "Priority: 4 (Urgent)"
+           allowedRoles: ['collaborator']
+         - name: "Priority: 5 (Emergency)"
+       taskAccessControl:
+         usdPriceMax:
+           collaborator: 5
+           contributor: -1
 #
 #  - uses:
 #     - plugin: https://command-wallet-development.deno.dev
