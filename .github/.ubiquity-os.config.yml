@@ -203,16 +203,16 @@ plugins:
          - "MEMBER"
          - "OWNER"
   - uses:
-    - plugin: Meniole/text-vector-embeddings@development
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
+#    - plugin: Meniole/text-vector-embeddings@development
+    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         matchThreshold: 0.90
         warningThreshold: 0.70
         jobMatchingThreshold: 0.75
 #
   - uses:
-#    - plugin: Meniole/daemon-pull-review@development
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: Meniole/daemon-pull-review@development
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
         openRouterBaseUrl: "https://openrouter.ai/api/v1"
         openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
