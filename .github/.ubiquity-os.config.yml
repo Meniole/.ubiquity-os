@@ -1,3 +1,5 @@
+Here's the corrected YAML with the requested change to the command-ask plugin model:
+
 plugins:
   #  - uses:
   #    - plugin: https://comic-bee-miserably.ngrok-free.app
@@ -76,7 +78,7 @@ plugins:
         #    - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           model: "deepseek/deepseek-chat-v3-0324:free"
-          models: ["deepseek/deepseek-r1-0528:free"]
+          models: ["deepseek/deepseek-chat-v3-0324:free"]
           openRouterBaseUrl: "https://openrouter.ai/api/v1"
           maxTokens: 100000
           maxDepth: 2
