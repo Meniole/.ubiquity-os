@@ -51,28 +51,28 @@ plugins:
   ## #       # skipBotEvents: false
   ## #   #  - plugin: Meniole/plugin-template@development
 
-  - uses:
-      - plugin: https://comic-bee-miserably.ngrok-free.app
-        with:
-          baseUrl: "https://openrouter.ai/api/v1"
-          parserPath: "https://github.com/Meniole/ubiquity-os-kernel.git"
-          configPath: ".github/.ubiquity-os.config.yml"
-          devConfigPath: ".github/.ubiquity-os.config.dev.yml"
-          model: deepseek/deepseek-chat-v3-0324:free
-          defaultTargets:
-            - name: "https://github.com/Meniole/.ubiquity-os.git"
-              branch: "main"
-              type: "dev"
+#  - uses:
+#      - plugin: https://comic-bee-miserably.ngrok-free.app
+#        with:
+#          baseUrl: "https://openrouter.ai/api/v1"
+#          parserPath: "https://github.com/Meniole/ubiquity-os-kernel.git"
+#          configPath: ".github/.ubiquity-os.config.yml"
+#          devConfigPath: ".github/.ubiquity-os.config.dev.yml"
+#          model: deepseek/deepseek-chat-v3-0324:free
+#          defaultTargets:
+#            - name: "https://github.com/Meniole/.ubiquity-os.git"
+#              branch: "main"
+#              type: "dev"
 
   - uses:
-      - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
-        #    - plugin: https://comic-bee-miserably.ngrok-free.app
+#      - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
           openAiBaseUrl: "https://openrouter.ai/api/v1"
 
   - uses:
-      - plugin: Meniole/command-ask@fix/multiple-llm
+      - plugin: Meniole/command-ask@development
         #    - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           model: "deepseek/deepseek-chat-v3-0324:free"
@@ -179,19 +179,20 @@ plugins:
   #       with:
   #         allowPublicQuery: true
 
-  #   - uses:
-  #      - plugin: Meniole/daemon-disqualifier@development
-  #      # - plugin: https://comic-bee-miserably.ngrok-free.app
-  #        with:
-  #          followUpInterval: "2 minutes"
-  #          pullRequestRequired: false
-  #          eventWhitelist:
-  #            - 'pull_request.review_requested'
-  #            - 'pull_request.ready_for_review'
-  #            - 'pull_request_review_comment.created'
-  #            - 'issue_comment.created'
-  #            - 'push'
-  #          negligenceThreshold: "30 minutes"
+  - uses:
+    - plugin: Meniole/daemon-disqualifier@development
+    # - plugin: https://comic-bee-miserably.ngrok-free.app
+      with:
+        followUpInterval: "2 minutes"
+        pullRequestRequired: false
+        eventWhitelist:
+          - 'pull_request.review_requested'
+          - 'pull_request.ready_for_review'
+          - 'pull_request_review_comment.created'
+          - 'issue_comment.created'
+          - 'push'
+        negligenceThreshold: "30 minutes"
+
   - uses:
       - plugin: Meniole/daemon-merging@fix/workflow
         #    - plugin: https://comic-bee-miserably.ngrok-free.app
