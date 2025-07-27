@@ -194,7 +194,7 @@ plugins:
         negligenceThreshold: "30 minutes"
 
   - uses:
-      - plugin: Meniole/daemon-merging@fix/workflow
+      - plugin: Meniole/daemon-merging@development
         #    - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           approvalsRequired:
