@@ -1,40 +1,40 @@
 plugins:
-#  - uses:
-#    - plugin: https://comic-bee-miserably.ngrok-free.app
-#  #    - plugin: https://daemon-pricing-development.deno.dev
-#      with:
-#        labels:
-#          time:
-#            - name: "Time: <1 Minutes"
-#            - name: "Time: <5 Minutes"
-#            - name: "Time: <1 Hour"
-#            - name: "Time: <2 Hours"
-#            - name: "Time: <4 Hours"
-#            - name: "Time: <1 Day"
-#            - name: "Time: <1 Week"
-#          priority:
-#  #           - name: "(Normal) 1 prio level"
-#  #           - name: "(Med) 2 prio level"
-#  #           - name: "(High) 3 prio level"
-#      #               - name: "p0"
-#      #               - name: "p1"
-#      #               - name: "p2"
-#      #               - name: "p3"
-#      #               - name: "p4"
-#            - name: "Priority: 0 (Regression)"
-#            - name: "Priority: 1 (Normal)"
-#            - name: "Priority: 2 (Medium)"
-#            - name: "Priority: 3 (High)"
-#            - name: "Priority: 4 (Urgent)"
-#            - name: "Priority: 5 (Emergency)"
-#        basePriceMultiplier: 1
-#        shouldFundContributorClosedIssue: false
-#        globalConfigUpdate:
-#           excludeRepos: []
-#        taskAccessControl:
-#          usdPriceMax:
-#            collaborator: 5000
-#            contributor: -1
+  #  - uses:
+  #    - plugin: https://comic-bee-miserably.ngrok-free.app
+  #  #    - plugin: https://daemon-pricing-development.deno.dev
+  #      with:
+  #        labels:
+  #          time:
+  #            - name: "Time: <1 Minutes"
+  #            - name: "Time: <5 Minutes"
+  #            - name: "Time: <1 Hour"
+  #            - name: "Time: <2 Hours"
+  #            - name: "Time: <4 Hours"
+  #            - name: "Time: <1 Day"
+  #            - name: "Time: <1 Week"
+  #          priority:
+  #  #           - name: "(Normal) 1 prio level"
+  #  #           - name: "(Med) 2 prio level"
+  #  #           - name: "(High) 3 prio level"
+  #      #               - name: "p0"
+  #      #               - name: "p1"
+  #      #               - name: "p2"
+  #      #               - name: "p3"
+  #      #               - name: "p4"
+  #            - name: "Priority: 0 (Regression)"
+  #            - name: "Priority: 1 (Normal)"
+  #            - name: "Priority: 2 (Medium)"
+  #            - name: "Priority: 3 (High)"
+  #            - name: "Priority: 4 (Urgent)"
+  #            - name: "Priority: 5 (Emergency)"
+  #        basePriceMultiplier: 1
+  #        shouldFundContributorClosedIssue: false
+  #        globalConfigUpdate:
+  #           excludeRepos: []
+  #        taskAccessControl:
+  #          usdPriceMax:
+  #            collaborator: 5000
+  #            contributor: -1
 
   ##   - uses:
   ##     - plugin: https://ubiquity-os-plugin-demo-development.fernand-veyrier.workers.dev
@@ -64,12 +64,25 @@ plugins:
               branch: "main"
               type: "dev"
 
-#  - uses:
-##      - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
-#      - plugin: https://comic-bee-miserably.ngrok-free.app
-#        with:
-#          openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
-#          openAiBaseUrl: "https://openrouter.ai/api/v1"
+  - uses:
+      - plugin: Meniole/command-config@development
+        with:
+          baseUrl: "https://openrouter.ai/api/v1"
+          parserPath: "https://github.com/Meniole/ubiquity-os-kernel.git"
+          configPath: ".github/.ubiquity-os.config.yml"
+          devConfigPath: ".github/.ubiquity-os.config.dev.yml"
+          model: deepseek/deepseek-chat-v3-0324:free
+          defaultTargets:
+            - name: "https://github.com/Meniole/.ubiquity-os.git"
+              branch: "main"
+              type: "dev"
+
+  #  - uses:
+  ##      - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
+  #      - plugin: https://comic-bee-miserably.ngrok-free.app
+  #        with:
+  #          openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
+  #          openAiBaseUrl: "https://openrouter.ai/api/v1"
 
   - uses:
       - plugin: Meniole/command-ask@development
@@ -180,18 +193,18 @@ plugins:
   #         allowPublicQuery: true
 
   - uses:
-    - plugin: Meniole/daemon-disqualifier@development
-    # - plugin: https://comic-bee-miserably.ngrok-free.app
-      with:
-        followUpInterval: "2 minutes"
-        pullRequestRequired: false
-        eventWhitelist:
-          - 'pull_request.review_requested'
-          - 'pull_request.ready_for_review'
-          - 'pull_request_review_comment.created'
-          - 'issue_comment.created'
-          - 'push'
-        negligenceThreshold: "30 minutes"
+      - plugin: Meniole/daemon-disqualifier@development
+        # - plugin: https://comic-bee-miserably.ngrok-free.app
+        with:
+          followUpInterval: "2 minutes"
+          pullRequestRequired: false
+          eventWhitelist:
+            - "pull_request.review_requested"
+            - "pull_request.ready_for_review"
+            - "pull_request_review_comment.created"
+            - "issue_comment.created"
+            - "push"
+          negligenceThreshold: "30 minutes"
 
   - uses:
       - plugin: Meniole/daemon-merging@development
