@@ -51,18 +51,18 @@ plugins:
   ## #       # skipBotEvents: false
   ## #   #  - plugin: Meniole/plugin-template@development
 
-#  - uses:
-#      - plugin: https://comic-bee-miserably.ngrok-free.app
-#        with:
-#          baseUrl: "https://openrouter.ai/api/v1"
-#          parserPath: "https://github.com/Meniole/ubiquity-os-kernel.git"
-#          configPath: ".github/.ubiquity-os.config.yml"
-#          devConfigPath: ".github/.ubiquity-os.config.dev.yml"
-#          model: deepseek/deepseek-chat-v3-0324:free
-#          defaultTargets:
-#            - name: "https://github.com/Meniole/.ubiquity-os.git"
-#              branch: "main"
-#              type: "dev"
+  - uses:
+      - plugin: https://comic-bee-miserably.ngrok-free.app
+        with:
+          baseUrl: "https://openrouter.ai/api/v1"
+          parserPath: "https://github.com/Meniole/ubiquity-os-kernel.git"
+          configPath: ".github/.ubiquity-os.config.yml"
+          devConfigPath: ".github/.ubiquity-os.config.dev.yml"
+          model: deepseek/deepseek-chat-v3-0324:free
+          defaultTargets:
+            - name: "https://github.com/Meniole/.ubiquity-os.git"
+              branch: "main"
+              type: "dev"
 
 #  - uses:
 ##      - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
