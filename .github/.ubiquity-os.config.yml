@@ -216,7 +216,7 @@ plugins:
             - "OWNER"
 
   - uses:
-      - plugin: Meniole/text-vector-embeddings@development
+      - plugin: Meniole/text-vector-embeddings@feat/image-description
 #      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           matchThreshold: 0.90
