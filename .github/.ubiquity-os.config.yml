@@ -82,7 +82,7 @@ plugins:
           maxDepth: 2
 
   - uses:
-      - plugin: Meniole/text-conversation-rewards@fix/flesch
+      - plugin: Meniole/text-conversation-rewards@sdk-bump
         #    - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
           rewards:
