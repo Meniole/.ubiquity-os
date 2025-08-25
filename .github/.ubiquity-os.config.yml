@@ -1,7 +1,7 @@
 plugins:
   - uses:
-    - plugin: https://comic-bee-miserably.ngrok-free.app
-#    - plugin: https://meniole-pricing.deno.dev
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: https://meniole-pricing.deno.dev
       with:
         labels:
           time:
