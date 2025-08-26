@@ -64,12 +64,12 @@ plugins:
 #              branch: "main"
 #              type: "dev"
 
-#  - uses:
-##      - plugin: Meniole/daemon-spec-rewriter@fork/ishowvel/development
+  - uses:
+      - plugin: Meniole/daemon-spec-rewriter@fix/payload-decode
 #      - plugin: https://comic-bee-miserably.ngrok-free.app
-#        with:
-#          openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
-#          openAiBaseUrl: "https://openrouter.ai/api/v1"
+        with:
+          openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
+          openAiBaseUrl: "https://openrouter.ai/api/v1"
 
   - uses:
       - plugin: Meniole/command-ask@development
