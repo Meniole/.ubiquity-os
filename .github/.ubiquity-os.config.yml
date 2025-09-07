@@ -108,7 +108,7 @@ plugins:
               multipliers:
                 - role:
                     - "ISSUE_SPECIFICATION"
-                  relevance: 0
+                  relevance: 0.1
             userExtractor:
               redeemTask: true
             dataPurge:
