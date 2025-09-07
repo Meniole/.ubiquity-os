@@ -108,6 +108,8 @@ plugins:
               multipliers:
                 - role:
                     - "ISSUE_SPECIFICATION"
+                    - "PULL_SPECIFICATION"
+                    - "PULL_AUTHOR"
                   relevance: 0.1
             userExtractor:
               redeemTask: true
