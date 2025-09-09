@@ -186,7 +186,7 @@ plugins:
 #    - plugin: Meniole/daemon-disqualifier@development
     - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
-        followUpInterval: "2 minutes"
+        followUpInterval: "1 minutes"
         pullRequestRequired: false
         eventWhitelist:
           - 'pull_request.review_requested'
@@ -194,7 +194,7 @@ plugins:
           - 'pull_request_review_comment.created'
           - 'issue_comment.created'
           - 'push'
-        negligenceThreshold: "3 minutes"
+        negligenceThreshold: "2 minutes"
 
   - uses:
       - plugin: Meniole/daemon-merging@development
