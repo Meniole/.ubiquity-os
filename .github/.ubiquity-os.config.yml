@@ -194,7 +194,7 @@ plugins:
           - 'pull_request_review_comment.created'
           - 'issue_comment.created'
           - 'push'
-        negligenceThreshold: "30 minutes"
+        negligenceThreshold: "3 minutes"
 
   - uses:
       - plugin: Meniole/daemon-merging@development
