@@ -121,7 +121,30 @@ plugins:
             reviewIncentivizer:
               baseRate: 100
               conclusiveReviewCredit: 25
-            formattingEvaluator: {}
+            formattingEvaluator:
+              multipliers:
+                - role:
+                    - ISSUE_SPECIFICATION
+                    - ISSUE_AUTHOR
+                    - ISSUE_COLLABORATOR
+                    - PULL_COLLABORATOR
+                    - PULL_SPECIFICATION
+                  multiplier: 2
+                  rewards:
+                    wordValue: 0.1
+                - role:
+                    - ISSUE_CONTRIBUTOR
+                    - ISSUE_ASSIGNEE
+                  multiplier: 1
+                  rewards:
+                    wordValue: 0.1
+                - role:
+                    - PULL_AUTHOR
+                    - PULL_CONTRIBUTOR
+                    - PULL_ASSIGNEE
+                  multiplier: 1
+                  rewards:
+                    wordValue: 1
             permitGeneration: {}
             payment:
               automaticTransferMode: false
