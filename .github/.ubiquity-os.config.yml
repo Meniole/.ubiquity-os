@@ -110,7 +110,10 @@ plugins:
                     - "ISSUE_SPECIFICATION"
                     - "PULL_SPECIFICATION"
                     - "PULL_AUTHOR"
-                  relevance: 0.1
+                    - "PULL_ASSIGNEE"
+                    - "PULL_CONTRIBUTOR"
+                    - "PULL_COLLABORATOR"
+                  relevance: 1
             userExtractor:
               redeemTask: true
             dataPurge:
