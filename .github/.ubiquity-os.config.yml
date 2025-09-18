@@ -166,7 +166,7 @@ plugins:
         with:
           reviewDelayTolerance: 3 Days
           taskStaleTimeoutDuration: 30 Days
-          startRequiresWallet: true
+          startRequiresWallet: false
           assignedIssueScope: org
           maxConcurrentTasks:
             collaborator: 2
