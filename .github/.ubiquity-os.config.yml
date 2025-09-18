@@ -82,8 +82,8 @@ plugins:
           maxDepth: 2
 
   - uses:
-#      - plugin: Meniole/text-conversation-rewards@feat/permit-pr
-      - plugin: https://comic-bee-miserably.ngrok-free.app
+      - plugin: Meniole/text-conversation-rewards@feat/permit-pr
+#      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
 #          rewards:
 #            evmNetworkId: 100
@@ -160,42 +160,56 @@ plugins:
   ## #           botId: 7543249164
 
   #
-  #  - uses:
-  ##    - plugin: https://command-start-stop-develop.deno.dev
-  #    - plugin: https://comic-bee-miserably.ngrok-free.app
-  #      with:
-  #       reviewDelayTolerance: "3 Days"
-  #       taskStaleTimeoutDuration: "30 Days"
-  #       startRequiresWallet: false
-  #       maxConcurrentTasks:
-  #         member: 2
-  #         contributor: 2
-  #       emptyWalletText: "Please set your wallet address with the /wallet command first and try again."
-  #       rolesWithReviewAuthority:
-  #         - "COLLABORATOR"
-  #         - "OWNER"
-  #         - "MEMBER"
-  #         - "ADMIN"
-  #       requiredLabelsToStart:
-  #         - name: "Priority: 1 (Normal)"
-  #           allowedRoles: ['collaborator', 'contributor']
-  #         - name: "Priority: 2 (Medium)"
-  #           allowedRoles: ['contributor']
-  #         - name: "Priority: 3 (High)"
-  #           allowedRoles: ['collaborator', 'contributor']
-  #         - name: "Priority: 4 (Urgent)"
-  #           allowedRoles: ['collaborator']
-  #         - name: "Priority: 5 (Emergency)"
-  #       taskAccessControl:
-  #         usdPriceMax:
-  #           collaborator: 5
-  #           contributor: -1
-  #
-  #  - uses:
-  #     - plugin: https://command-wallet-development.deno.dev
-  ##    - plugin: https://comic-bee-miserably.ngrok-free.app
-  #       with:
-  #         registerWalletWithVerification: false
+  - uses:
+  #    - plugin: https://meniole-start-stop.deno.dev
+      - plugin: https://comic-bee-miserably.ngrok-free.app
+        with:
+          reviewDelayTolerance: 3 Days
+          taskStaleTimeoutDuration: 30 Days
+          startRequiresWallet: true
+          assignedIssueScope: org
+          maxConcurrentTasks:
+            collaborator: 2
+            contributor: 2
+          emptyWalletText: Please set your wallet address with the /wallet command first
+            and try again.
+          rolesWithReviewAuthority:
+            - COLLABORATOR
+            - OWNER
+            - MEMBER
+            - ADMIN
+          requiredLabelsToStart:
+            - name: "Priority: 0 (Regression)"
+              allowedRoles:
+                - collaborator
+                - contributor
+            - name: "Priority: 1 (Normal)"
+              allowedRoles:
+                - collaborator
+                - contributor
+            - name: "Priority: 2 (Medium)"
+              allowedRoles:
+                - collaborator
+                - contributor
+            - name: "Priority: 3 (High)"
+              allowedRoles:
+                - collaborator
+            - name: "Priority: 4 (Urgent)"
+              allowedRoles:
+                - collaborator
+            - name: "Priority: 5 (Emergency)"
+              allowedRoles:
+                - collaborator
+          taskAccessControl:
+            usdPriceMax:
+              contributor: -1
+              collaborator: Infinity
+
+#  - uses:
+#       - plugin: https://command-wallet-development.deno.dev
+#  #    - plugin: https://comic-bee-miserably.ngrok-free.app
+#         with:
+#           registerWalletWithVerification: false
   #
   #  - uses:
   #     - plugin: https://command-query-development.deno.dev
