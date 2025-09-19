@@ -1,3 +1,6 @@
+allRoles: &allRoles
+  - collaborator
+  - contributor
 plugins:
   - uses:
 #    - plugin: https://comic-bee-miserably.ngrok-free.app
