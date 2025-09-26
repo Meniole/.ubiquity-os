@@ -207,8 +207,8 @@ plugins:
               collaborator: Infinity
 
   - uses:
-#    - plugin: https://meniole-command-wallet.deno.dev
-    - plugin: https://comic-bee-miserably.ngrok-free.app
+    - plugin: https://meniole-command-wallet.deno.dev
+#    - plugin: https://comic-bee-miserably.ngrok-free.app
       with:
        registerWalletWithVerification: false
   #
