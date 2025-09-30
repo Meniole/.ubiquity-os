@@ -85,8 +85,8 @@ plugins:
           maxDepth: 2
 
   - uses:
-      - plugin: Meniole/text-conversation-rewards@feat/permit-pr
-#      - plugin: https://comic-bee-miserably.ngrok-free.app
+#      - plugin: Meniole/text-conversation-rewards@feat/permit-pr
+      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
 #          rewards:
 #            evmNetworkId: 100
