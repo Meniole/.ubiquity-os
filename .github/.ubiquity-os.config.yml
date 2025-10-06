@@ -94,6 +94,8 @@ plugins:
 #            evmPrivateEncrypted: "N3nUc6hto8g_5Y-mxsJTCaXD_sH49lHFGgkR4ReYNlywXumOH74e6R9xoj9GtD2FN5YQJAVh1mHM15lxoxPP2YO-Ahdz3ydbtvcTgIQ2xdvg7UAb060eDYDvZc_JEhNwJy1kROL237Ge8eDB1wvAWNObCejAqHPIYp8"
 #            erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
           incentives:
+            closeTaskRewards:
+              durationThreshold: "0.0001 Days"
             eventIncentives: null
             collaboratorOnlyPaymentInvocation: false
             limitRewards: true
