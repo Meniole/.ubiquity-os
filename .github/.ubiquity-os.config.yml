@@ -279,4 +279,4 @@ plugins:
       - plugin: https://comic-bee-miserably.ngrok-free.app
 #      - plugin: https://meniole-daemon-xp.deno.dev
         with:
-
+          value: 0
