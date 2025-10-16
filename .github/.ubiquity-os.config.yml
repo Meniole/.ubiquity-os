@@ -205,7 +205,7 @@ plugins:
                 - collaborator
           taskAccessControl:
             usdPriceMax:
-              contributor: -1
+              contributor: Infinity
               collaborator: Infinity
 
   - uses:
