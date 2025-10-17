@@ -197,6 +197,7 @@ plugins:
             - name: "Priority: 3 (High)"
               allowedRoles:
                 - collaborator
+                - contributor
             - name: "Priority: 4 (Urgent)"
               allowedRoles:
                 - collaborator
