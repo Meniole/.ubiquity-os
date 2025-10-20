@@ -208,14 +208,14 @@ plugins:
             usdPriceMax:
               contributor: Infinity
               collaborator: Infinity
+            experience:
+              priorityThresholds:
+                - label: "Priority: 3 (High)"
+                  minimumXp: 500
+                - label: "Priority: 4 (Urgent)"
+                  minimumXp: 1000
           accountRequiredAge:
             minimumDays: 300000
-          experience:
-            priorityThresholds:
-              - label: "Priority: 3 (High)"
-                minimumXp: 500
-              - label: "Priority: 4 (Urgent)"
-                minimumXp: 1000
 
   - uses:
     - plugin: https://meniole-command-wallet.deno.dev
