@@ -289,3 +289,4 @@ plugins:
       - plugin: https://meniole-daemon-xp.deno.dev
         with:
           disableCommentPosting: false
+          disqualificationBanThreshold: -10
