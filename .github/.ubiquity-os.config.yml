@@ -103,7 +103,7 @@ plugins:
             simplificationIncentivizer: {}
             externalContent:
               llmImageModel:
-                model: meta-llama/llama-3.2-11b-vision-instruct:free
+                model: meta-llama/llama-3.2-3b-instruct:free
               llmWebsiteModel:
                 model: deepseek/deepseek-chat-v3.1:free
             contentEvaluator:
