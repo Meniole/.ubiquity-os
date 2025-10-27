@@ -85,7 +85,7 @@ plugins:
           maxDepth: 2
 
   - uses:
-      - plugin: Meniole/text-conversation-rewards@development
+      - plugin: Meniole/text-conversation-rewards@fix/deletions
 #      - plugin: https://comic-bee-miserably.ngrok-free.app
         with:
 #          rewards:
