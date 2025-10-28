@@ -105,11 +105,13 @@ plugins:
               llmImageModel:
                 model: meta-llama/llama-3.2-3b-instruct:free
               llmWebsiteModel:
-                model: deepseek/deepseek-chat-v3.1:free
+                model: nvidia/nemotron-nano-9b-v2:free
+#                model: deepseek/deepseek-chat-v3.1:free
             contentEvaluator:
               openAi:
                 endpoint: "https://openrouter.ai/api/v1"
-                model: deepseek/deepseek-chat-v3.1:free
+                model: nvidia/nemotron-nano-9b-v2:free
+#                model: deepseek/deepseek-chat-v3.1:free
               multipliers:
                 - role:
                     - "ISSUE_SPECIFICATION"
