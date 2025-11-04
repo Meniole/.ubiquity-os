@@ -5,7 +5,7 @@ allRoles: &allRoles
 plugins:
   "https://meniole-pricing.deno.dev":
         skipBotEvents: 123
-      ff: 55
+      ff: 55fc
 
 #  "https://meniole-pricing.deno.dev":
 #    something-wrong: 1
