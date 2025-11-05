@@ -1,15 +1,12 @@
-allRoles: &allRoles
-  - collaborator
-  - contributor
-
 plugins:
-  "https://comic-bee-miserably.ngrok-free.app":
-#  "Meniole/command-ask@development":
+  - plugin: "https://comic-bee-miserably.ngrok-free.app"
     with:
-#      model: "deepseek/deepseek-chat-v3.1:free"
       model: "nvidia/nemotron-nano-9b-v2:free"
       models:
         - deepseek/deepseek-r1-0528:free
       openRouterBaseUrl: "https://openrouter.ai/api/v1"
       maxTokens: 100000
       maxDepth: 2
+  - plugin: "Meniole/command-xp@main"
+    with:
+      model: "command-xp/model:latest"
