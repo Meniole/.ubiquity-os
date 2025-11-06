@@ -1,15 +1,4 @@
-allRoles: &allRoles
-  - collaborator
-  - contributor
-
-plugins:
-  "https://comic-bee-miserably.ngrok-free.app":
-#  "Meniole/command-ask@development":
-    with:
-#      model: "deepseek/deepseek-chat-v3.1:free"
-      model: "nvidia/nemotron-nano-9b-v2:free"
-      models:
-        - deepseek/deepseek-r1-0528:free
-      openRouterBaseUrl: "https://openrouter.ai/api/v1"
-      maxTokens: 100000
-      maxDepth: 2
+meniole/command-xp:
+  with:
+    # Add necessary properties here if required by the plugin
+    # Example defaults could be added based on manifests, but none specified
