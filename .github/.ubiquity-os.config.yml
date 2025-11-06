@@ -1,15 +1,20 @@
-allRoles: &allRoles
-  - collaborator
-  - contributor
-
 plugins:
   "https://comic-bee-miserably.ngrok-free.app":
-#  "Meniole/command-ask@development":
+    #  "Meniole/command-ask@development":
     with:
-#      model: "deepseek/deepseek-chat-v3.1:free"
+      #      model: "deepseek/deepseek-chat-v3.1:free"
       model: "nvidia/nemotron-nano-9b-v2:free"
       models:
         - deepseek/deepseek-r1-0528:free
       openRouterBaseUrl: "https://openrouter.ai/api/v1"
       maxTokens: 100000
       maxDepth: 2
+
+  # Conversation rewards plugin added
+  "https://text-vector-embeddings-dev.deno.dev":
+    with:
+      embedModel: "deepseek/deepseek-r1-0528"
+      dbCollection: "conversation_rewards"
+      deduplicate: true
+      maxThreshold: 0.95
+      # Keep existing configuration properties if any were defined
