@@ -4,12 +4,36 @@ allRoles: &allRoles
 
 plugins:
   "https://comic-bee-miserably.ngrok-free.app":
-#  "Meniole/command-ask@development":
+    #  "Meniole/command-ask@development":
     with:
-#      model: "deepseek/deepseek-chat-v3.1:free"
+      #      model: "deepseek/deepseek-chat-v3.1:free"
       model: "nvidia/nemotron-nano-9b-v2:free"
       models:
         - deepseek/deepseek-r1-0528:free
       openRouterBaseUrl: "https://openrouter.ai/api/v1"
       maxTokens: 100000
       maxDepth: 2
+  "ubiquity-os-marketplace/text-conversation-rewards@development":
+    with:
+      rewards:
+        evmNetworkId: 100
+        evmPrivateEncrypted: "0x000..."
+        erc20RewardToken: "0xC6ed4f520f6A4e4DC27273509239b7F8A68d2068"
+      incentives:
+        closeTaskReward:
+          rewardAmount: 5
+          stalenessDuration: "30 days"
+        shouldProcessUnlinkedPullRequests: false
+      userExtractor:
+      dataPurge:
+      reviewIncentivizer:
+      eventIncentives:
+      simplificationIncentivizer:
+      formattingEvaluator:
+      payment:
+      githubComment:
+      specialUsers:
+        - ["Copilot", "copilot-swe-agent"]
+      externalContent:
+        llmWebsiteModel:
+          model: "deepseek/deepseek-r1-0528"
