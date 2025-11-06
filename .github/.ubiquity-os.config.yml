@@ -1,7 +1,3 @@
-allRoles: &allRoles
-  - collaborator
-  - contributor
-
 plugins:
   "https://comic-bee-miserably.ngrok-free.app":
     #  "Meniole/command-ask@development":
