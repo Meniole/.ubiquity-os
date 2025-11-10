@@ -60,14 +60,14 @@ plugins:
         admin:
           evmNetworkId: 100
           evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
-          erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
+#          erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
         collaborator:
           evmNetworkId: 100
           evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
           erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
-        contributor:
-          evmNetworkId: 100
-          evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
+#        contributor:
+#          evmNetworkId: 100
+#          evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
       #    erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
       # rewards:
       #   evmNetworkId: 100
