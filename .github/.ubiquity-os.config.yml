@@ -187,8 +187,8 @@ plugins:
         accountRequiredAge:
           minimumDays: 360
 
-  "https://meniole-command-wallet.deno.dev":
-#  "https://comic-bee-miserably.ngrok-free.app":
+#  "https://meniole-command-wallet.deno.dev":
+  "https://comic-bee-miserably.ngrok-free.app":
     with:
       registerWalletWithVerification: false
       # allowPublicQuery: true (command-query service)
