@@ -45,14 +45,14 @@ plugins:
 #      openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
 ##  "https://comic-bee-miserably.ngrok-free.app":
-  "Meniole/command-ask@development":
-    with:
-      model: "deepseek/deepseek-chat-v3.1:free"
-      models:
-        - deepseek/deepseek-r1-0528:free
-      openRouterBaseUrl: "https://openrouter.ai/api/v1"
-      maxTokens: 100000
-      maxDepth: 2
+#  "Meniole/command-ask@development":
+#    with:
+#      model: "deepseek/deepseek-chat-v3.1:free"
+#      models:
+#        - deepseek/deepseek-r1-0528:free
+#      openRouterBaseUrl: "https://openrouter.ai/api/v1"
+#      maxTokens: 100000
+#      maxDepth: 2
 #
 #  "Meniole/text-conversation-rewards@feat/reward-config-users":
 #    with:
@@ -245,3 +245,6 @@ plugins:
 #      disableCommentPosting: false
 #      disqualificationBanThreshold: -10
 #
+  "https://command-config-development.deno.dev":
+    with:
+      model: "deepseek/deepseek-chat-v3.1:free"
