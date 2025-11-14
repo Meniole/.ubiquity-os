@@ -54,7 +54,8 @@ plugins:
       maxTokens: 100000
       maxDepth: 2
 
-  "Meniole/text-conversation-rewards@feat/reward-config-users":
+  Meniole/text-conversation-rewards@development:
+#  "Meniole/text-conversation-rewards@feat/reward-config-users":
     with:
       rewards:
         admin:
