@@ -248,4 +248,4 @@ plugins:
 #  "https://meniole-command-config.deno.dev":
   "https://comic-bee-miserably.ngrok-free.app":
     with:
-      model: "deepseek/deepseek-chat-v3.1:free"
+      model: "nvidia/nemotron-nano-12b-v2-vl:free"
