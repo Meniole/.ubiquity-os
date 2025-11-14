@@ -245,6 +245,6 @@ plugins:
 #      disableCommentPosting: false
 #      disqualificationBanThreshold: -10
 #
-  "https://command-config-development.deno.dev":
+  "https://meniole-command-config.deno.dev":
     with:
       model: "deepseek/deepseek-chat-v3.1:free"
