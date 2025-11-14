@@ -245,6 +245,7 @@ plugins:
 #      disableCommentPosting: false
 #      disqualificationBanThreshold: -10
 #
-  "https://meniole-command-config.deno.dev":
+#  "https://meniole-command-config.deno.dev":
+  "https://comic-bee-miserably.ngrok-free.app":
     with:
       model: "deepseek/deepseek-chat-v3.1:free"
