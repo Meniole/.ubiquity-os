@@ -241,7 +241,8 @@ plugins:
       openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
       reviewInterval: "1 minute"
 
-  "https://meniole-daemon-xp.deno.dev":
+#  "https://meniole-daemon-xp.deno.dev":
+  "https://comic-bee-miserably.ngrok-free.app":
     with:
       disableCommentPosting: false
       disqualificationBanThreshold: -10
