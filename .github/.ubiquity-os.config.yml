@@ -253,3 +253,5 @@ plugins:
       model: "nvidia/nemotron-nano-12b-v2-vl:free"
 
   "https://meniole-daemon-planner.deno.dev":
+
+  "https://daemon-xp-development.deno.dev":
