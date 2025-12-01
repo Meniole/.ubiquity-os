@@ -187,7 +187,7 @@ plugins:
             - label: "Priority: 4 (Urgent)"
               minimumXp: 1000
         accountRequiredAge:
-          minimumDays: 360
+          minimumDays: 365
 
   "https://meniole-command-wallet.deno.dev":
 #  "https://comic-bee-miserably.ngrok-free.app":
