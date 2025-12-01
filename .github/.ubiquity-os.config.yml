@@ -139,7 +139,8 @@ plugins:
         maxAttempts: 10
         delayMs: 1000
 
-  "https://meniole-start-stop.deno.dev":
+#  "https://meniole-start-stop.deno.dev":
+  Meniole/command-start-stop@development:
     with:
       reviewDelayTolerance: 3 Days
       taskStaleTimeoutDuration: 30 Days
@@ -253,5 +254,3 @@ plugins:
       model: "nvidia/nemotron-nano-12b-v2-vl:free"
 
   "https://meniole-daemon-planner.deno.dev":
-
-  "https://daemon-xp-development.deno.dev":
