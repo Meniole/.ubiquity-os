@@ -139,8 +139,8 @@ plugins:
         maxAttempts: 10
         delayMs: 1000
 
-#  "https://meniole-start-stop.deno.dev":
-  Meniole/command-start-stop@development:
+  "https://meniole-start-stop.deno.dev":
+#  Meniole/command-start-stop@development:
     with:
       reviewDelayTolerance: 3 Days
       taskStaleTimeoutDuration: 30 Days
