@@ -208,7 +208,7 @@ plugins:
         - push
       negligenceThreshold: "2 minutes"
 
-  "Meniole/daemon-merging@development":
+  "Meniole/daemon-merging:compute.yml@development":
     with:
       approvalsRequired:
         collaborator: 1
