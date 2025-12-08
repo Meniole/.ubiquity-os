@@ -3,7 +3,6 @@ allRoles: &allRoles
   - contributor
 
 plugins:
-  1234/44:
   Meniole/daemon-pricing@development:
     something-wrong: 1
     with:
