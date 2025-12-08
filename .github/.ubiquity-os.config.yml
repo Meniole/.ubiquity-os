@@ -229,7 +229,7 @@ plugins:
         - MEMBER
         - OWNER
 
-  "Meniole/text-vector-embeddings@feat/image-description":
+  "Meniole/text-vector-embeddings@development":
     with:
       matchThreshold: 0.90
       warningThreshold: 0.70
@@ -255,5 +255,5 @@ plugins:
     with:
       model: "nvidia/nemotron-nano-12b-v2-vl:free"
 
-  "Maniole/daemon-planner":
+  Meniole/daemon-planner:
   Meniole/command-query:
