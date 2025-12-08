@@ -77,7 +77,7 @@ plugins:
         erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
       incentives:
         closeTaskReward:
-          durationThreshold: "0.0001 Days"
+          durationThreshold: "1 Days"
         eventIncentives: null
         collaboratorOnlyPaymentInvocation: false
         limitRewards: true
