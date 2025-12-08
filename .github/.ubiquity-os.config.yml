@@ -3,8 +3,8 @@ allRoles: &allRoles
   - contributor
 
 plugins:
-  https://comic-bee-miserably.ngrok-free.app:
-#  Meniole/daemon-pricing@development:
+#  https://comic-bee-miserably.ngrok-free.app:
+  Meniole/daemon-pricing@development:
     something-wrong: 1
     with:
       labels:
