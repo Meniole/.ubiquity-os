@@ -3,7 +3,7 @@ allRoles: &allRoles
   - contributor
 
 plugins:
-  Meniole/daemon-pricings@development:
+  Meniole/daemon-pricing@development:
     something-wrong: 1
     with:
       labels:
