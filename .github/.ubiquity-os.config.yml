@@ -3,7 +3,7 @@ allRoles: &allRoles
   - contributor
 
 plugins:
-  "https://meniole-pricing.deno.dev":
+  Meniole/daemon-pricings@development:
     something-wrong: 1
     with:
       labels:
@@ -39,7 +39,7 @@ plugins:
           collaborator: 5000
           contributor: -1
 
-  "Meniole/daemon-spec-rewriter@development":
+  Meniole/daemon-spec-rewriter@development:
     with:
       openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
       openAiBaseUrl: "https://openrouter.ai/api/v1"
@@ -140,8 +140,8 @@ plugins:
         delayMs: 1000
 
 #  "https://meniole-start-stop.deno.dev":
-  https://comic-bee-miserably.ngrok-free.app:
-    #  Meniole/command-start-stop@development:
+#  https://comic-bee-miserably.ngrok-free.app:
+  Meniole/command-start-stop@development:
     with:
       reviewDelayTolerance: 3 Days
       taskStaleTimeoutDuration: 30 Days
@@ -190,7 +190,7 @@ plugins:
         accountRequiredAge:
           minimumDays: 365
 
-  "https://meniole-command-wallet.deno.dev":
+  "Meniole/command-wallet":
 #  "https://comic-bee-miserably.ngrok-free.app":
     with:
       registerWalletWithVerification: false
@@ -243,15 +243,15 @@ plugins:
       openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
       reviewInterval: "1 minute"
 
-  "https://meniole-daemon-xp.deno.dev":
+  "Meniole/daemon-xp":
 #  "https://comic-bee-miserably.ngrok-free.app":
     with:
       disableCommentPosting: false
       disqualificationBanThreshold: -10
 #
-  "https://meniole-command-config.deno.dev":
+  "Meniole/command-config":
 #  "https://comic-bee-miserably.ngrok-free.app":
     with:
       model: "nvidia/nemotron-nano-12b-v2-vl:free"
 
-  "https://meniole-daemon-planner.deno.dev":
+  "Maniole/daemon-planner":
