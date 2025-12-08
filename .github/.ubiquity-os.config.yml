@@ -16,7 +16,7 @@ plugins:
           - name: "Time: <1 Day"
           - name: "Time: <1 Week"
         priority:
-          # - name: "(Normal) 1 prio level"
+          # - name: "(Normal) 1 prio  level"
           # - name: "(Med) 2 prio level"
           # - name: "(High) 3 prio level"
           # - name: "p0"
