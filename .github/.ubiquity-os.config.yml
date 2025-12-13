@@ -143,7 +143,7 @@ plugins:
 ##  "https://meniole-start-stop.deno.dev":
 ##  https://comic-bee-miserably.ngrok-free.app:
   Meniole/command-start-stop@fix/installation-auth:
-    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
+#    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
     with:
       reviewDelayTolerance: 3 Days
       taskStaleTimeoutDuration: 30 Days
@@ -258,7 +258,7 @@ plugins:
 #
 #  Meniole/command-query:
   Meniole/daemon-planner:
-#    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
+    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
     with:
       organizations:
         - Meniole
