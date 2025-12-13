@@ -257,3 +257,6 @@ plugins:
 #
 #  Meniole/command-query:
   Meniole/daemon-planner:
+    with:
+      organizations:
+        - Meniole
