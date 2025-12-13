@@ -142,54 +142,55 @@ plugins:
 #
 ##  "https://meniole-start-stop.deno.dev":
 ##  https://comic-bee-miserably.ngrok-free.app:
-#  Meniole/command-start-stop@development:
-#    with:
-#      reviewDelayTolerance: 3 Days
-#      taskStaleTimeoutDuration: 30 Days
-#      startRequiresWallet: true
-#      assignedIssueScope: org
-#      maxConcurrentTasks:
-#        collaborator: 2
-#        contributor: 2
-#      emptyWalletText: Please set your wallet address with the /wallet command first and try again.
-#      rolesWithReviewAuthority:
-#        - COLLABORATOR
-#        - OWNER
-#        - MEMBER
-#        - ADMIN
-#      requiredLabelsToStart:
-#        - name: "Priority: 0 (Regression)"
-#          allowedRoles: *allRoles
-#        - name: "Priority: 1 (Normal)"
-#          allowedRoles:
-#            - collaborator
-#            - contributor
-#        - name: "Priority: 2 (Medium)"
-#          allowedRoles:
-#            - collaborator
-#            - contributor
-#        - name: "Priority: 3 (High)"
-#          allowedRoles:
-#            - collaborator
-#            - contributor
-#        - name: "Priority: 4 (Urgent)"
-#          allowedRoles:
-#            - collaborator
-#        - name: "Priority: 5 (Emergency)"
-#          allowedRoles:
-#            - collaborator
-#      taskAccessControl:
-#        usdPriceMax:
-#          contributor: Infinity
-#          collaborator: Infinity
-#        experience:
-#          priorityThresholds:
-#            - label: "Priority: 3 (High)"
-#              minimumXp: -500
-#            - label: "Priority: 4 (Urgent)"
-#              minimumXp: 1000
-#        accountRequiredAge:
-#          minimumDays: 365
+  Meniole/command-start-stop@development:
+    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
+    with:
+      reviewDelayTolerance: 3 Days
+      taskStaleTimeoutDuration: 30 Days
+      startRequiresWallet: true
+      assignedIssueScope: org
+      maxConcurrentTasks:
+        collaborator: 2
+        contributor: 2
+      emptyWalletText: Please set your wallet address with the /wallet command first and try again.
+      rolesWithReviewAuthority:
+        - COLLABORATOR
+        - OWNER
+        - MEMBER
+        - ADMIN
+      requiredLabelsToStart:
+        - name: "Priority: 0 (Regression)"
+          allowedRoles: *allRoles
+        - name: "Priority: 1 (Normal)"
+          allowedRoles:
+            - collaborator
+            - contributor
+        - name: "Priority: 2 (Medium)"
+          allowedRoles:
+            - collaborator
+            - contributor
+        - name: "Priority: 3 (High)"
+          allowedRoles:
+            - collaborator
+            - contributor
+        - name: "Priority: 4 (Urgent)"
+          allowedRoles:
+            - collaborator
+        - name: "Priority: 5 (Emergency)"
+          allowedRoles:
+            - collaborator
+      taskAccessControl:
+        usdPriceMax:
+          contributor: Infinity
+          collaborator: Infinity
+        experience:
+          priorityThresholds:
+            - label: "Priority: 3 (High)"
+              minimumXp: -500
+            - label: "Priority: 4 (Urgent)"
+              minimumXp: 1000
+        accountRequiredAge:
+          minimumDays: 365
 #
 #  "Meniole/command-wallet":
 ##  "https://comic-bee-miserably.ngrok-free.app":
@@ -257,7 +258,7 @@ plugins:
 #
 #  Meniole/command-query:
   Meniole/daemon-planner:
-    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
+#    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
     with:
       organizations:
         - Meniole
