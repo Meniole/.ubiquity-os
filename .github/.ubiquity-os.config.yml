@@ -142,7 +142,7 @@ plugins:
 #
 ##  "https://meniole-start-stop.deno.dev":
 ##  https://comic-bee-miserably.ngrok-free.app:
-  Meniole/command-start-stop@development:
+  Meniole/command-start-stop@fix/installation-auth:
     homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
     with:
       reviewDelayTolerance: 3 Days
