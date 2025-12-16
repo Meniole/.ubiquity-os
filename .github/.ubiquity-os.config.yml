@@ -257,7 +257,7 @@ plugins:
 #
 #  Meniole/command-query:
   Meniole/daemon-planner:
-    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
+#    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
     with:
       dryRun: true
       organizations:
