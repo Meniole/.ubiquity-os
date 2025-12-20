@@ -35,10 +35,10 @@ plugins:
       shouldFundContributorClosedIssue: false
       globalConfigUpdate:
         excludeRepos: []
-      taskAccessControl:
-        usdPriceMax:
-          collaborator: 5000
-          contributor: -1
+#      taskAccessControl:
+#        usdPriceMax:
+#          collaborator: 5000
+#          contributor: -1
 #
 #  Meniole/daemon-spec-rewriter@development:
 #    with:
