@@ -55,7 +55,7 @@ plugins:
 ##      maxTokens: 100000
 ##      maxDepth: 2
 #
-  Meniole/text-conversation-rewards@fix/permit-nonce-upsert:
+  Meniole/text-conversation-rewards@fix/permit-save-fail-run:
     with:
 #      rewards:
 #        admin:
