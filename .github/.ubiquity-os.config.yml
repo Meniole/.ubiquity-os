@@ -268,5 +268,5 @@ plugins:
   Meniole/daemon-task-matcher@development:
     with:
       openRouter:
-        model: "deepseek/deepseek-chat-v3.1:free"
+        model: "deepseek/deepseek-r1-0528:free"
         endpoint: "https://openrouter.ai/api/v1"
