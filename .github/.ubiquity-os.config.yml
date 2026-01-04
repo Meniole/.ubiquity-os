@@ -266,3 +266,6 @@ plugins:
 #        - mentlegen-2
 
   Meniole/daemon-task-matcher@development:
+    with:
+      model: "deepseek/deepseek-chat-v3.1:free"
+      endpoint: "https://openrouter.ai/api/v1"
