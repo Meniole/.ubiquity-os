@@ -266,6 +266,7 @@ plugins:
 #        - mentlegen-2
 
   Meniole/daemon-task-matcher@development:
+    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
     with:
       openRouter:
         model: "deepseek/deepseek-r1-0528:free"
