@@ -272,3 +272,4 @@ plugins:
         model: "xiaomi/mimo-v2-flash:free"
 #        model: "deepseek/deepseek-r1-0528:free"
         endpoint: "https://openrouter.ai/api/v1"
+        confidenceThreshold: 0.5
