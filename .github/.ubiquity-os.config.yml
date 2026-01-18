@@ -140,7 +140,7 @@ plugins:
      maxAttempts: 10
      delayMs: 1000
 #
- "https://meniole-start-stop.deno.dev":
+  "https://meniole-start-stop.deno.dev":
 ##  https://comic-bee-miserably.ngrok-free.app:
   Meniole/command-start-stop@development:
 #    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
@@ -256,8 +256,8 @@ plugins:
 #    with:
 #      model: "nvidia/nemotron-nano-12b-v2-vl:free"
 #
- Meniole/command-query:
- Meniole/daemon-planner:
+  Meniole/command-query:
+  Meniole/daemon-planner:
 #    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
    with:
      dryRun: false
