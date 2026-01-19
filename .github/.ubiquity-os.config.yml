@@ -40,10 +40,10 @@ plugins:
     #          collaborator: 5000
     #          contributor: -1
 #
-#  Meniole/daemon-spec-rewriter@development:
-#    with:
-#      openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
-#      openAiBaseUrl: "https://openrouter.ai/api/v1"
+  Meniole/daemon-spec-rewriter@development:
+    with:
+      openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
+      openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
 ##  "https://comic-bee-miserably.ngrok-free.app":
 ##  "Meniole/command-ask@development":
