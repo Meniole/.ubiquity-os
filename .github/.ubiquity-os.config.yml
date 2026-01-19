@@ -192,23 +192,23 @@ plugins:
        accountRequiredAge:
          minimumDays: 365
 #
-#  "Meniole/command-wallet":
-##  "https://comic-bee-miserably.ngrok-free.app":
-#    with:
-#      registerWalletWithVerification: false
-#      # allowPublicQuery: true (command-query service)
-#
-#  "Meniole/daemon-disqualifier@development":
-#    with:
-#      followUpInterval: "1 minutes"
-#      pullRequestRequired: false
-#      eventWhitelist:
-#        - pull_request.review_requested
-#        - pull_request.ready_for_review
-#        - pull_request_review_comment.created
-#        - issue_comment.created
-#        - push
-#      negligenceThreshold: "2 minutes"
+  "Meniole/command-wallet":
+#  "https://comic-bee-miserably.ngrok-free.app":
+    with:
+      registerWalletWithVerification: false
+      # allowPublicQuery: true (command-query service)
+
+  "Meniole/daemon-disqualifier@development":
+    with:
+      followUpInterval: "1 minutes"
+      pullRequestRequired: false
+      eventWhitelist:
+        - pull_request.review_requested
+        - pull_request.ready_for_review
+        - pull_request_review_comment.created
+        - issue_comment.created
+        - push
+      negligenceThreshold: "2 minutes"
 #
 #  "Meniole/daemon-merging:compute.yml@development":
 #    with:
