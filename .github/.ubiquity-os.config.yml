@@ -245,16 +245,16 @@ plugins:
 #      openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
 #      reviewInterval: "1 minute"
 #
-#  "Meniole/daemon-xp":
-##  "https://comic-bee-miserably.ngrok-free.app":
-#    with:
-#      disableCommentPosting: false
-#      disqualificationBanThreshold: -10
-##
-#  "Meniole/command-config":
-##  "https://comic-bee-miserably.ngrok-free.app":
-#    with:
-#      model: "nvidia/nemotron-nano-12b-v2-vl:free"
+  "Meniole/daemon-xp":
+#  "https://comic-bee-miserably.ngrok-free.app":
+    with:
+      disableCommentPosting: false
+      disqualificationBanThreshold: -10
+#
+  "Meniole/command-config":
+#  "https://comic-bee-miserably.ngrok-free.app":
+    with:
+      model: "nvidia/nemotron-nano-12b-v2-vl:free"
 #
   Meniole/command-query:
   Meniole/daemon-planner:
