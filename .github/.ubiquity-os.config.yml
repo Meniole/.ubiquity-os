@@ -4,7 +4,7 @@ allRoles: &allRoles
 
 plugins:
 #  https://comic-bee-miserably.ngrok-free.app:
-  Meniole/daemon-pricing@development:
+  Meniole/daemon-pricing@fix/label-update:
     something-wrong: 1
     with:
      labels:
