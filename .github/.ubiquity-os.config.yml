@@ -210,18 +210,18 @@ plugins:
 #         - push
 #       negligenceThreshold: "2 minutes"
 #
-  "Meniole/daemon-merging:compute.yml@fix/dispatch":
-    with:
-      approvalsRequired:
-        collaborator: 1
-        contributor: 1
-      mergeTimeout:
-        collaborator: "1 minute"
-      excludedRepos: []
-      allowedReviewerRoles:
-        - COLLABORATOR
-        - MEMBER
-        - OWNER
+#   "Meniole/daemon-merging:compute.yml@fix/dispatch":
+#     with:
+#       approvalsRequired:
+#         collaborator: 1
+#         contributor: 1
+#       mergeTimeout:
+#         collaborator: "1 minute"
+#       excludedRepos: []
+#       allowedReviewerRoles:
+#         - COLLABORATOR
+#         - MEMBER
+#         - OWNER
 #
 #  "Meniole/text-vector-embeddings@development":
 #    with:
