@@ -4,7 +4,7 @@ allRoles: &allRoles
 
 plugins:
 #  https://comic-bee-miserably.ngrok-free.app:
-  Meniole/daemon-pricing@fix/label-update:
+  Meniole/daemon-pricing@development:
     something-wrong: 1
     with:
      labels:
@@ -238,8 +238,8 @@ plugins:
 #      openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
 #      reviewInterval: "1 minute"
 #
-  "Meniole/daemon-xp":
-#  "https://comic-bee-miserably.ngrok-free.app":
+#  "Meniole/daemon-xp@e2e-pr-issue-15":
+  "https://comic-bee-miserably.ngrok-free.app":
     with:
       disableCommentPosting: false
       disqualificationBanThreshold: -10
