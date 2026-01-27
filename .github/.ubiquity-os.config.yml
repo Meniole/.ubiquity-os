@@ -11,3 +11,4 @@ plugins:
         - COLLABORATOR
         - MEMBER
         - OWNER
+        - NONE
