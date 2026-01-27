@@ -4,19 +4,19 @@ allRoles: &allRoles
 
 plugins:
 #  https://comic-bee-miserably.ngrok-free.app:
-  Meniole/daemon-pricing@fix/label-update:
-    something-wrong: 1
-    with:
-     labels:
-       time:
-         - name: "Time: <1 Minutes"
-         - name: "Time: <5 Minutes"
-         - name: "Time: <1 Hour"
-         - name: "Time: <2 Hours"
-         - name: "Time: <4 Hours"
-         - name: "Time: <1 Day"
-         - name: "Time: <1 Week"
-       priority:
+#   Meniole/daemon-pricing@fix/label-update:
+#     something-wrong: 1
+#     with:
+#      labels:
+#        time:
+#          - name: "Time: <1 Minutes"
+#          - name: "Time: <5 Minutes"
+#          - name: "Time: <1 Hour"
+#          - name: "Time: <2 Hours"
+#          - name: "Time: <4 Hours"
+#          - name: "Time: <1 Day"
+#          - name: "Time: <1 Week"
+#        priority:
          # - name: "(Normal) 1 prio  level"
          # - name: "(Med) 2 prio level"
          # - name: "(High) 3 prio level"
@@ -25,25 +25,25 @@ plugins:
          # - name: "p2"
          # - name: "p3"
          # - name: "p4"
-         - name: "Priority: 0 (Regression)"
-         - name: "Priority: 1 (Normal)"
-         - name: "Priority: 2 (Medium)"
-         - name: "Priority: 3 (High)"
-         - name: "Priority: 4 (Urgent)"
-         - name: "Priority: 5 (Emergency)"
-     basePriceMultiplier: 1
-     shouldFundContributorClosedIssue: false
-     globalConfigUpdate:
-       excludeRepos: []
+#          - name: "Priority: 0 (Regression)"
+#          - name: "Priority: 1 (Normal)"
+#          - name: "Priority: 2 (Medium)"
+#          - name: "Priority: 3 (High)"
+#          - name: "Priority: 4 (Urgent)"
+#          - name: "Priority: 5 (Emergency)"
+#      basePriceMultiplier: 1
+#      shouldFundContributorClosedIssue: false
+#      globalConfigUpdate:
+#        excludeRepos: []
     #      taskAccessControl:
     #        usdPriceMax:
     #          collaborator: 5000
     #          contributor: -1
 #
-  Meniole/daemon-spec-rewriter@development:
-    with:
-      openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
-      openAiBaseUrl: "https://openrouter.ai/api/v1"
+#   Meniole/daemon-spec-rewriter@development:
+#     with:
+#       openRouterAiModel: mistralai/mistral-small-3.2-24b-instruct:free
+#       openAiBaseUrl: "https://openrouter.ai/api/v1"
 #
 ##  "https://comic-bee-miserably.ngrok-free.app":
 ##  "Meniole/command-ask@development":
@@ -55,9 +55,9 @@ plugins:
 ##      maxTokens: 100000
 ##      maxDepth: 2
 #
-  Meniole/text-conversation-rewards@development:
+#   Meniole/text-conversation-rewards@development:
 #    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
-    with:
+#     with:
     #      rewards:
     #        admin:
     #          evmNetworkId: 100
@@ -71,157 +71,157 @@ plugins:
     ##          evmNetworkId: 100
     ##          evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
     #      #    erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
-      rewards:
-        evmNetworkId: 100
-        evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
+#       rewards:
+#         evmNetworkId: 100
+#         evmPrivateEncrypted: "UNa06aE6RYtt7r_bFw_DDKnA4BFhr8pngZAcCGUIQACrKB5HwCw2qU1ZVmMau4tKNIA8ZItc46pwH3bT7dru2N45oXjfl35bb7SEm46CkJDVHF5vPe9q8AbdlpiXnW1cDE18q-GK47XvuuzpTFJ5m6UzVjpiyoArvL8"
         #         evmPrivateEncrypted: "N3nUc6hto8g_5Y-mxsJTCaXD_sH49lHFGgkR4ReYNlywXumOH74e6R9xoj9GtD2FN5YQJAVh1mHM15lxoxPP2YO-Ahdz3ydbtvcTgIQ2xdvg7UAb060eDYDvZc_JEhNwJy1kROL237Ge8eDB1wvAWNObCejAqHPIYp8"
-        erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
-      incentives:
-        closeTaskReward:
-         durationThreshold: "1 Days"
-      eventIncentives: null
-      collaboratorOnlyPaymentInvocation: false
-      limitRewards: true
-      requirePriceLabel: true
-      simplificationIncentivizer: {}
+#         erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
+#       incentives:
+#         closeTaskReward:
+#          durationThreshold: "1 Days"
+#       eventIncentives: null
+#       collaboratorOnlyPaymentInvocation: false
+#       limitRewards: true
+#       requirePriceLabel: true
+#       simplificationIncentivizer: {}
       #        externalContent:
       #          llmImageModel:
       #            model: meta-llama/llama-3.2-3b-instruct:free
       #          llmWebsiteModel:
       #            model: nvidia/nemotron-nano-9b-v2:free
            # model: deepseek/deepseek-chat-v3.1:free
-      contentEvaluator:
-        openAi:
-          endpoint: "https://openrouter.ai/api/v1"
-          model: nvidia/nemotron-nano-9b-v2:free
+#       contentEvaluator:
+#         openAi:
+#           endpoint: "https://openrouter.ai/api/v1"
+#           model: nvidia/nemotron-nano-9b-v2:free
           # model: deepseek/deepseek-chat-v3.1:free
-        multipliers:
-          - role:
-              - "ISSUE_SPECIFICATION"
-            relevance: 1
-        userExtractor:
-         redeemTask: true
-        dataPurge:
-         skipCommentsWhileAssigned: "none"
-        reviewIncentivizer:
-         baseRate: 100
-         conclusiveReviewCredit: 25
-        formattingEvaluator:
-         multipliers:
-           - role:
-               - ISSUE_SPECIFICATION
-               - ISSUE_AUTHOR
-               - ISSUE_COLLABORATOR
-               - PULL_COLLABORATOR
-               - PULL_SPECIFICATION
-             multiplier: 2
-             rewards:
-               wordValue: 0.1
-           - role:
-               - ISSUE_CONTRIBUTOR
-               - ISSUE_ASSIGNEE
-             multiplier: 1
-             rewards:
-               wordValue: 0.1
-           - role:
-               - PULL_AUTHOR
-               - PULL_CONTRIBUTOR
-               - PULL_ASSIGNEE
-             multiplier: 1
-             rewards:
-               wordValue: 1
-        permitGeneration: {}
-        payment:
-         automaticTransferMode: false
-        githubComment:
-         post: true
-         debug: false
-      dataCollection:
-       maxAttempts: 10
-       delayMs: 1000
+#         multipliers:
+#           - role:
+#               - "ISSUE_SPECIFICATION"
+#             relevance: 1
+#         userExtractor:
+#          redeemTask: true
+#         dataPurge:
+#          skipCommentsWhileAssigned: "none"
+#         reviewIncentivizer:
+#          baseRate: 100
+#          conclusiveReviewCredit: 25
+#         formattingEvaluator:
+#          multipliers:
+#            - role:
+#                - ISSUE_SPECIFICATION
+#                - ISSUE_AUTHOR
+#                - ISSUE_COLLABORATOR
+#                - PULL_COLLABORATOR
+#                - PULL_SPECIFICATION
+#              multiplier: 2
+#              rewards:
+#                wordValue: 0.1
+#            - role:
+#                - ISSUE_CONTRIBUTOR
+#                - ISSUE_ASSIGNEE
+#              multiplier: 1
+#              rewards:
+#                wordValue: 0.1
+#            - role:
+#                - PULL_AUTHOR
+#                - PULL_CONTRIBUTOR
+#                - PULL_ASSIGNEE
+#              multiplier: 1
+#              rewards:
+#                wordValue: 1
+#         permitGeneration: {}
+#         payment:
+#          automaticTransferMode: false
+#         githubComment:
+#          post: true
+#          debug: false
+#       dataCollection:
+#        maxAttempts: 10
+#        delayMs: 1000
 #
 #  "https://meniole-start-stop.deno.dev":
 ##  https://comic-bee-miserably.ngrok-free.app:
-  Meniole/command-start-stop@development:
+#   Meniole/command-start-stop@development:
 #    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
-    with:
-     reviewDelayTolerance: 3 Days
-     taskStaleTimeoutDuration: 30 Days
-     startRequiresWallet: true
-     assignedIssueScope: org
-     maxConcurrentTasks:
-       collaborator: 2
-       contributor: 2
-     emptyWalletText: Please set your wallet address with the /wallet command first and try again.
-     rolesWithReviewAuthority:
-       - COLLABORATOR
-       - OWNER
-       - MEMBER
-       - ADMIN
-     requiredLabelsToStart:
-       - name: "Priority: 0 (Regression)"
-         allowedRoles: *allRoles
-       - name: "Priority: 1 (Normal)"
-         allowedRoles:
-           - collaborator
-           - contributor
-       - name: "Priority: 2 (Medium)"
-         allowedRoles:
-           - collaborator
-           - contributor
-       - name: "Priority: 3 (High)"
-         allowedRoles:
-           - collaborator
-           - contributor
-       - name: "Priority: 4 (Urgent)"
-         allowedRoles:
-           - collaborator
-       - name: "Priority: 5 (Emergency)"
-         allowedRoles:
-           - collaborator
-     taskAccessControl:
-       usdPriceMax:
-         contributor: Infinity
-         collaborator: Infinity
-       experience:
-         priorityThresholds:
-           - label: "Priority: 3 (High)"
-             minimumXp: -500
-           - label: "Priority: 4 (Urgent)"
-             minimumXp: 1000
-       accountRequiredAge:
-         minimumDays: 365
+#     with:
+#      reviewDelayTolerance: 3 Days
+#      taskStaleTimeoutDuration: 30 Days
+#      startRequiresWallet: true
+#      assignedIssueScope: org
+#      maxConcurrentTasks:
+#        collaborator: 2
+#        contributor: 2
+#      emptyWalletText: Please set your wallet address with the /wallet command first and try again.
+#      rolesWithReviewAuthority:
+#        - COLLABORATOR
+#        - OWNER
+#        - MEMBER
+#        - ADMIN
+#      requiredLabelsToStart:
+#        - name: "Priority: 0 (Regression)"
+#          allowedRoles: *allRoles
+#        - name: "Priority: 1 (Normal)"
+#          allowedRoles:
+#            - collaborator
+#            - contributor
+#        - name: "Priority: 2 (Medium)"
+#          allowedRoles:
+#            - collaborator
+#            - contributor
+#        - name: "Priority: 3 (High)"
+#          allowedRoles:
+#            - collaborator
+#            - contributor
+#        - name: "Priority: 4 (Urgent)"
+#          allowedRoles:
+#            - collaborator
+#        - name: "Priority: 5 (Emergency)"
+#          allowedRoles:
+#            - collaborator
+#      taskAccessControl:
+#        usdPriceMax:
+#          contributor: Infinity
+#          collaborator: Infinity
+#        experience:
+#          priorityThresholds:
+#            - label: "Priority: 3 (High)"
+#              minimumXp: -500
+#            - label: "Priority: 4 (Urgent)"
+#              minimumXp: 1000
+#        accountRequiredAge:
+#          minimumDays: 365
 #
-  "Meniole/command-wallet":
+#   "Meniole/command-wallet":
 #  "https://comic-bee-miserably.ngrok-free.app":
-    with:
-      registerWalletWithVerification: false
+#     with:
+#       registerWalletWithVerification: false
       # allowPublicQuery: true (command-query service)
 
-  "Meniole/daemon-disqualifier@development":
-    with:
-      followUpInterval: "1 minutes"
-      pullRequestRequired: false
-      eventWhitelist:
-        - pull_request.review_requested
-        - pull_request.ready_for_review
-        - pull_request_review_comment.created
-        - issue_comment.created
-        - push
-      negligenceThreshold: "2 minutes"
+#   "Meniole/daemon-disqualifier@development":
+#     with:
+#       followUpInterval: "1 minutes"
+#       pullRequestRequired: false
+#       eventWhitelist:
+#         - pull_request.review_requested
+#         - pull_request.ready_for_review
+#         - pull_request_review_comment.created
+#         - issue_comment.created
+#         - push
+#       negligenceThreshold: "2 minutes"
 #
-  "Meniole/daemon-merging:compute.yml@fix/dispatch":
-    with:
-      approvalsRequired:
-        collaborator: 1
-        contributor: 1
-      mergeTimeout:
-        collaborator: "1 minute"
-      excludedRepos: []
-      allowedReviewerRoles:
-        - COLLABORATOR
-        - MEMBER
-        - OWNER
+#   "Meniole/daemon-merging:compute.yml@fix/dispatch":
+#     with:
+#       approvalsRequired:
+#         collaborator: 1
+#         contributor: 1
+#       mergeTimeout:
+#         collaborator: "1 minute"
+#       excludedRepos: []
+#       allowedReviewerRoles:
+#         - COLLABORATOR
+#         - MEMBER
+#         - OWNER
 #
 #  "Meniole/text-vector-embeddings@development":
 #    with:
@@ -238,31 +238,31 @@ plugins:
 #      openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
 #      reviewInterval: "1 minute"
 #
-  "Meniole/daemon-xp":
+  "Meniole/daemon-xp@issue-6-xp-scoped-display":
 #  "https://comic-bee-miserably.ngrok-free.app":
     with:
       disableCommentPosting: false
       disqualificationBanThreshold: -10
 #
-  "Meniole/command-config":
+#   "Meniole/command-config":
 #  "https://comic-bee-miserably.ngrok-free.app":
-    with:
-      model: "nvidia/nemotron-nano-12b-v2-vl:free"
+#     with:
+#       model: "nvidia/nemotron-nano-12b-v2-vl:free"
 #
-  Meniole/command-query:
-  Meniole/daemon-planner:
+#   Meniole/command-query:
+#   Meniole/daemon-planner:
 #    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
-   with:
-     dryRun: false
-     organizations:
-       - Meniole
-       - mentlegen-2
+#    with:
+#      dryRun: false
+#      organizations:
+#        - Meniole
+#        - mentlegen-2
 
-  Meniole/daemon-task-matcher@development:
+#   Meniole/daemon-task-matcher@development:
     # homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
-    with:
-      openRouter:
-        model: "xiaomi/mimo-v2-flash:free"
+#     with:
+#       openRouter:
+#         model: "xiaomi/mimo-v2-flash:free"
   #        model: "deepseek/deepseek-r1-0528:free"
-        endpoint: "https://openrouter.ai/api/v1"
-        confidenceThreshold: 0.5
+#         endpoint: "https://openrouter.ai/api/v1"
+#         confidenceThreshold: 0.5
