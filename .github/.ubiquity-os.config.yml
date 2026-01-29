@@ -3,7 +3,7 @@ allRoles: &allRoles
   - contributor
 
 plugins:
-  lolh
+  Test/Lolgfregergre:
 #  https://comic-bee-miserably.ngrok-free.app:
   Meniole/daemon-pricing@development:
     something-wrong: 1
