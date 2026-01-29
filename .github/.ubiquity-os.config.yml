@@ -3,7 +3,7 @@ allRoles: &allRoles
   - contributor
 
 plugins:
-  invalid-stuff
+  invalid-stuffs
 #  https://comic-bee-miserably.ngrok-free.app:
   Meniole/daemon-pricing@development:
     something-wrong: 1
