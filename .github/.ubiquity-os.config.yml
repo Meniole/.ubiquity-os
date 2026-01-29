@@ -2,7 +2,6 @@ allRoles: &allRoles
   - collaborator
   - contributor
 
-invalid-stuffse
 plugins:
 #  https://comic-bee-miserably.ngrok-free.app:
   Meniole/daemon-pricing@development:
