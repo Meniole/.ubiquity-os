@@ -141,8 +141,8 @@ plugins:
        delayMs: 1000
 #
 #  "https://meniole-start-stop.deno.dev":
-##  https://comic-bee-miserably.ngrok-free.app:
-  Meniole/command-start-stop@development:
+  https://comic-bee-miserably.ngrok-free.app:
+#  Meniole/command-start-stop@development:
 #    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
     with:
      reviewDelayTolerance: 3 Days
@@ -238,8 +238,8 @@ plugins:
 #      openRouterAiModel: "deepseek/deepseek-chat-v3-0324:free"
 #      reviewInterval: "1 minute"
 #
-#  "Meniole/daemon-xp@e2e-pr-issue-15":
-  "https://comic-bee-miserably.ngrok-free.app":
+  "Meniole/daemon-xp@development":
+#  "https://comic-bee-miserably.ngrok-free.app":
     with:
       disableCommentPosting: false
       disqualificationBanThreshold: -10
