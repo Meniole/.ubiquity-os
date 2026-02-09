@@ -140,8 +140,8 @@ plugins:
        maxAttempts: 10
        delayMs: 1000
 #
-#  "https://meniole-start-stop.deno.dev":
-  https://comic-bee-miserably.ngrok-free.app:
+  "https://meniole-start-stop.deno.dev":
+#  https://comic-bee-miserably.ngrok-free.app:
 #  Meniole/command-start-stop@development:
 #    homepageUrlOverride: https://comic-bee-miserably.ngrok-free.app
     with:
