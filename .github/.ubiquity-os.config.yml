@@ -247,8 +247,8 @@ plugins:
 #  "Meniole/command-config":
   "https://comic-bee-miserably.ngrok-free.app":
 #  "https://comic-bee-miserably.ngrok-free.app":
-    with:
-      model: "nvidia/nemotron-nano-12b-v2-vl:free"
+#    with:
+#      model: "nvidia/nemotron-nano-12b-v2-vl:free"
 ##
 #  Meniole/command-query:
 #  Meniole/daemon-planner:
