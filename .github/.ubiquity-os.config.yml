@@ -79,66 +79,66 @@ plugins:
       incentives:
         closeTaskReward:
          durationThreshold: "1 Days"
-      eventIncentives: null
-      collaboratorOnlyPaymentInvocation: false
-      limitRewards: true
-      requirePriceLabel: true
-      simplificationIncentivizer: {}
+        eventIncentives: null
+        collaboratorOnlyPaymentInvocation: false
+        limitRewards: true
+        requirePriceLabel: true
+        simplificationIncentivizer: {}
       #        externalContent:
       #          llmImageModel:
       #            model: meta-llama/llama-3.2-3b-instruct:free
       #          llmWebsiteModel:
       #            model: nvidia/nemotron-nano-9b-v2:free
            # model: deepseek/deepseek-chat-v3.1:free
-      contentEvaluator:
-        openAi:
-          endpoint: "https://openrouter.ai/api/v1"
-          model: nvidia/nemotron-nano-9b-v2:free
-          # model: deepseek/deepseek-chat-v3.1:free
-        multipliers:
-          - role:
-              - "ISSUE_SPECIFICATION"
-            relevance: 1
-        userExtractor:
-         redeemTask: true
-        dataPurge:
-         skipCommentsWhileAssigned: "none"
-        reviewIncentivizer:
-         baseRate: 100
-         conclusiveReviewCredit: 25
-        formattingEvaluator:
-         multipliers:
-           - role:
-               - ISSUE_SPECIFICATION
-               - ISSUE_AUTHOR
-               - ISSUE_COLLABORATOR
-               - PULL_COLLABORATOR
-               - PULL_SPECIFICATION
-             multiplier: 2
-             rewards:
-               wordValue: 0.1
-           - role:
-               - ISSUE_CONTRIBUTOR
-               - ISSUE_ASSIGNEE
-             multiplier: 1
-             rewards:
-               wordValue: 0.1
-           - role:
-               - PULL_AUTHOR
-               - PULL_CONTRIBUTOR
-               - PULL_ASSIGNEE
-             multiplier: 1
-             rewards:
-               wordValue: 1
-        permitGeneration: {}
-        payment:
-         automaticTransferMode: false
-        githubComment:
-         post: true
-         debug: false
-      dataCollection:
-       maxAttempts: 10
-       delayMs: 1000
+        contentEvaluator:
+          openAi:
+            endpoint: "https://openrouter.ai/api/v1"
+            model: nvidia/nemotron-nano-9b-v2:free
+            # model: deepseek/deepseek-chat-v3.1:free
+          multipliers:
+            - role:
+                - "ISSUE_SPECIFICATION"
+              relevance: 1
+          userExtractor:
+           redeemTask: true
+          dataPurge:
+           skipCommentsWhileAssigned: "none"
+          reviewIncentivizer:
+           baseRate: 100
+           conclusiveReviewCredit: 25
+          formattingEvaluator:
+           multipliers:
+             - role:
+                 - ISSUE_SPECIFICATION
+                 - ISSUE_AUTHOR
+                 - ISSUE_COLLABORATOR
+                 - PULL_COLLABORATOR
+                 - PULL_SPECIFICATION
+               multiplier: 2
+               rewards:
+                 wordValue: 0.1
+             - role:
+                 - ISSUE_CONTRIBUTOR
+                 - ISSUE_ASSIGNEE
+               multiplier: 1
+               rewards:
+                 wordValue: 0.1
+             - role:
+                 - PULL_AUTHOR
+                 - PULL_CONTRIBUTOR
+                 - PULL_ASSIGNEE
+               multiplier: 1
+               rewards:
+                 wordValue: 1
+          permitGeneration: {}
+          payment:
+           automaticTransferMode: false
+          githubComment:
+           post: true
+           debug: false
+        dataCollection:
+         maxAttempts: 10
+         delayMs: 1000
 
   # "https://meniole-start-stop.deno.dev":
   # https://comic-bee-miserably.ngrok-free.app:
